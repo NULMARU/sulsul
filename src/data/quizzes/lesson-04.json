@@ -1,0 +1,135 @@
+[
+  {
+    "id": "q-04-int-01",
+    "lessonId": "lesson-04",
+    "type": "multiple_choice",
+    "difficulty": 2,
+    "tags": ["미래시제", "will", "be going to"],
+    "prompt": "친구가 \"누가 문 좀 닫아줘\"라고 하자, 듣자마자 \"내가 닫을게\"라고 답한다. 어떤 표현이 가장 자연스러울까요?",
+    "promptKo": "방금 떠오른 즉흥 결정.",
+    "choices": [
+      { "id": "a", "text": "I close the door." },
+      { "id": "b", "text": "I'm closing the door." },
+      { "id": "c", "text": "I'll close the door." },
+      { "id": "d", "text": "I'm going to close the door." }
+    ],
+    "answer": "c",
+    "explanation": "방금 떠오른 가벼운 결정은 will이 가장 자연스러워요. be going to는 \"이미 마음먹은\" 무게라 즉흥엔 살짝 무거워요.",
+    "reference": { "lessonId": "lesson-04", "cardId": "lesson-04-card-04" }
+  },
+  {
+    "id": "q-04-fin-01",
+    "lessonId": "lesson-04",
+    "type": "situation_match",
+    "difficulty": 2,
+    "tags": ["미래시제", "will"],
+    "scenario": "전화벨이 울리는데 다른 사람들은 바빠 보여요. 즉흥적으로 \"내가 받을게\"라고 말하고 싶어요.",
+    "scenarioEmoji": "📞",
+    "choices": [
+      { "id": "a", "en": "I get it.", "ko": "나는 그걸 받는 사람이야." },
+      { "id": "b", "en": "I'm getting it.", "ko": "나 (지금) 받고 있어." },
+      { "id": "c", "en": "I will get it.", "ko": "내가 받을게.(즉흥)" },
+      { "id": "d", "en": "I'm going to get it.", "ko": "(계획해 두었던) 내가 받을 거야." }
+    ],
+    "answer": "c",
+    "explanation": "전화벨을 보고 그 순간 결정한 가벼운 마음 — will. SPEC에서 명시한 미래시제의 핵심 신호예요."
+  },
+  {
+    "id": "q-04-fin-02",
+    "lessonId": "lesson-04",
+    "type": "multiple_choice",
+    "difficulty": 2,
+    "tags": ["미래시제", "be -ing"],
+    "prompt": "어제 톰이랑 \"내일 7시 강남역\"으로 약속을 잡아두었어요. 친구가 내일 뭐하냐고 물어보면?",
+    "promptKo": "이미 시간장소까지 박힌 약속.",
+    "choices": [
+      { "id": "a", "text": "I'll meet Tom at 7." },
+      { "id": "b", "text": "I'm meeting Tom at 7." },
+      { "id": "c", "text": "I meet Tom at 7." },
+      { "id": "d", "text": "I met Tom at 7." }
+    ],
+    "answer": "b",
+    "explanation": "시간(7시)·상대(Tom)까지 박힌 약속은 가장 단단한 미래 — 진행형 옷을 빌려 입어요."
+  },
+  {
+    "id": "q-04-fin-03",
+    "lessonId": "lesson-04",
+    "type": "ox",
+    "difficulty": 2,
+    "tags": ["미래시제", "will vs be going to"],
+    "prompt": "한 달 전부터 다이어트 시작하기로 마음먹었다는 뜻을 \"I will start a diet from tomorrow.\"로 표현하면 가장 자연스럽다.",
+    "answer": false,
+    "explanation": "이미 마음먹은 계획은 be going to가 어울려요 — 'I'm going to start a diet from tomorrow.' will은 방금 결정했을 때 더 자연스러워요."
+  },
+  {
+    "id": "q-04-fin-04",
+    "lessonId": "lesson-04",
+    "type": "fill_blank",
+    "difficulty": 1,
+    "tags": ["미래시제", "will"],
+    "prompt": "A: \"Someone is at the door.\" B: \"I ___ get it.\"",
+    "promptKo": "B는 그 순간 \"내가 받을게\"라고 즉흥 결정.",
+    "inputMode": "choices",
+    "choices": ["will", "am going to", "am", "would"],
+    "answer": ["will"],
+    "explanation": "방금 떠오른 가벼운 결정 — will이에요. \"will\"은 \"'ll\"로 줄여 \"I'll get it.\"이라고도 해요."
+  },
+  {
+    "id": "q-04-fin-05",
+    "lessonId": "lesson-04",
+    "type": "word_arrange",
+    "difficulty": 3,
+    "tags": ["미래시제", "be going to"],
+    "promptKo": "나 다음달에 일본 여행 갈 계획이야.",
+    "tokens": [
+      { "id": "t1", "text": "I'm" },
+      { "id": "t2", "text": "going" },
+      { "id": "t3", "text": "to" },
+      { "id": "t4", "text": "travel" },
+      { "id": "t5", "text": "to" },
+      { "id": "t6", "text": "Japan" },
+      { "id": "t7", "text": "next" },
+      { "id": "t8", "text": "month" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+    "explanation": "이미 마음먹은 계획 — be going to. 'I'm going to travel to Japan next month.' 두 번째 to는 '~로'를 뜻하는 전치사예요."
+  },
+  {
+    "id": "q-04-fin-06",
+    "lessonId": "lesson-04",
+    "type": "translation",
+    "difficulty": 3,
+    "tags": ["미래시제", "be -ing"],
+    "promptKo": "그녀는 내일 7시에 톰을 만나기로 했다.",
+    "tokens": [
+      { "id": "t1", "text": "She" },
+      { "id": "t2", "text": "is" },
+      { "id": "t3", "text": "meeting" },
+      { "id": "t4", "text": "meets" },
+      { "id": "t5", "text": "Tom" },
+      { "id": "t6", "text": "at" },
+      { "id": "t7", "text": "7" },
+      { "id": "t8", "text": "tomorrow" },
+      { "id": "t9", "text": "will" }
+    ],
+    "answer": ["t1", "t2", "t3", "t5", "t6", "t7", "t8"],
+    "explanation": "시간(7시)·상대(Tom)까지 박힌 약속 — 진행형 옷으로 미래를 표현해요. She is meeting Tom at 7 tomorrow."
+  },
+  {
+    "id": "q-04-fin-07",
+    "lessonId": "lesson-04",
+    "type": "situation_match",
+    "difficulty": 2,
+    "tags": ["미래시제", "be going to"],
+    "scenario": "운동 시작하기로 마음먹은 지 2주째. 친구에게 \"나 다음주부터 헬스장 다닐 거야\"라고 알려주고 싶어요.",
+    "scenarioEmoji": "💪",
+    "choices": [
+      { "id": "a", "en": "I will go to the gym next week.", "ko": "(즉흥) 다음주에 헬스장 갈게." },
+      { "id": "b", "en": "I'm going to go to the gym next week.", "ko": "(이미 마음먹음) 다음주에 헬스장 다닐 거야." },
+      { "id": "c", "en": "I go to the gym next week.", "ko": "(평소) 다음주에 헬스장 가는 사람이야." },
+      { "id": "d", "en": "I went to the gym next week.", "ko": "(어제) 다음주에 헬스장 갔어." }
+    ],
+    "answer": "b",
+    "explanation": "이미 마음먹어 둔 계획 — be going to. 한 자리에 going to go가 두 번 나오는 게 어색해 보여도 영어에선 자연스러워요."
+  }
+]

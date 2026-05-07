@@ -1,0 +1,110 @@
+{
+  "id": "lesson-15",
+  "stageId": "stage-3-advanced",
+  "order": 15,
+  "title": "조동사 심화",
+  "subtitle": "could / would / might — 한 발짝 부드러워지는 도구",
+  "estimatedMinutes": 6,
+  "objectives": [
+    "could / would / might는 can / will / may의 한 발짝 부드러워진 모습이다",
+    "정중한 부탁·약한 추측·과거의 가능을 표현할 수 있다",
+    "must have / should have로 과거에 대한 추측이나 후회도 만들 수 있다"
+  ],
+  "keyPhrases": [
+    "Could you help me?",
+    "Would you like some coffee?",
+    "It might rain tomorrow.",
+    "I could swim when I was young.",
+    "You should have called me."
+  ],
+  "cards": [
+    {
+      "id": "lesson-15-card-01",
+      "order": 1,
+      "type": "hook",
+      "emoji": "🌬️",
+      "text": "\"Can you help me?\"는 자연스럽지만, 처음 만난 사람한텐 살짝 부담스러울 수 있어요. 한 발짝 더 부드러워질 방법은?"
+    },
+    {
+      "id": "lesson-15-card-02",
+      "order": 2,
+      "type": "narration",
+      "text": "조동사를 한 칸 과거 옷으로 바꾸면 신기한 일이 일어나요 — 부드러워져요. can → could, will → would, may → might. 시제는 살짝 뒤로 밀고, 마음의 무게는 살짝 가벼워지는 거죠."
+    },
+    {
+      "id": "lesson-15-card-03",
+      "order": 3,
+      "type": "analogy",
+      "emoji": "🌬️",
+      "text": "마치 한 발짝 뒤로 물러선 모습이에요. \"바로 줘\"가 \"가능하면 좀 받을 수 있을까?\"가 되는 느낌. could you, would you, might는 모두 이 \"한 발짝 물러섬\"을 담아요.",
+      "examples": [
+        { "emoji": "🤝", "en": "Can you help me?", "ko": "도와줄 수 있어요?(가능)" },
+        { "emoji": "🌬️", "en": "Could you help me?", "ko": "혹시 도와주실 수 있을까요?(부드러움)" }
+      ]
+    },
+    {
+      "id": "lesson-15-card-04",
+      "order": 4,
+      "type": "example",
+      "text": "would는 will의 부드러운 옷. \"~해줄래?\"가 \"~해주시겠어요?\"로, \"좀 드릴까?\"가 \"한 잔 드시겠어요?\"가 돼요. 카페·식당에서 자주 듣는 표현이에요.",
+      "examples": [
+        { "emoji": "☕", "en": "Would you like some coffee?", "ko": "커피 한 잔 드릴까요?" }
+      ],
+      "highlight": "Would you like"
+    },
+    {
+      "id": "lesson-15-card-05",
+      "order": 5,
+      "type": "example",
+      "emoji": "🌦️",
+      "text": "might는 may보다 살짝 더 약한 추측이에요. \"비가 올 수도 있어\" 같은 느낌. 확신은 없지만 가능성은 있다는 정도.",
+      "examples": [
+        { "emoji": "🌦️", "en": "It might rain tomorrow.", "ko": "내일 비 올지도 몰라." },
+        { "emoji": "🤔", "en": "He might be at home.", "ko": "그 사람 집에 있을지도 몰라." }
+      ],
+      "highlight": "might rain / might be",
+      "afterCardQuizId": "q-15-int-01"
+    },
+    {
+      "id": "lesson-15-card-06",
+      "order": 6,
+      "type": "analogy",
+      "emoji": "🕰️",
+      "text": "could는 또 다른 얼굴이 있어요 — \"옛날엔 ~할 수 있었다\"는 과거의 가능. 시제가 진짜로 과거로 간 모습이에요.",
+      "examples": [
+        { "emoji": "🏊", "en": "I could swim when I was young.", "ko": "어렸을 땐 수영할 수 있었어." }
+      ]
+    },
+    {
+      "id": "lesson-15-card-07",
+      "order": 7,
+      "type": "example",
+      "text": "조동사 + have + p.p.는 과거에 대한 추측·후회를 담아요. \"should have called\" = \"전화했어야 했는데\"라는 후회.",
+      "examples": [
+        { "emoji": "📞", "en": "You should have called me.", "ko": "전화했어야지.(후회)" },
+        { "emoji": "❓", "en": "She must have been tired.", "ko": "(추측) 그녀 피곤했나봐." }
+      ],
+      "highlight": "should have / must have"
+    },
+    {
+      "id": "lesson-15-card-08",
+      "order": 8,
+      "type": "summary",
+      "emoji": "🌬️",
+      "text": "could / would / might는 한 발짝 부드러워진 조동사. 정중함, 약한 추측, 과거의 가능을 모두 담아요. 조동사 + have + p.p.는 과거에 대한 추측·후회까지 담아내요.",
+      "examples": [
+        { "emoji": "🚪", "en": "Could you open the door?", "ko": "문 좀 열어주실래요?" }
+      ]
+    }
+  ],
+  "interstitialQuizIds": ["q-15-int-01"],
+  "finalQuizIds": [
+    "q-15-fin-01",
+    "q-15-fin-02",
+    "q-15-fin-03",
+    "q-15-fin-04",
+    "q-15-fin-05",
+    "q-15-fin-06",
+    "q-15-fin-07"
+  ]
+}

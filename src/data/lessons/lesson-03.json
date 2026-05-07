@@ -1,0 +1,107 @@
+{
+  "id": "lesson-03",
+  "stageId": "stage-1-core",
+  "order": 3,
+  "title": "과거시제",
+  "subtitle": "이미 끝나버린 일",
+  "estimatedMinutes": 5,
+  "objectives": [
+    "끝나버린 일은 동사 꼬리가 -ed로 변하거나, 다른 형태로 옷을 갈아입는다",
+    "도우미 did가 동사 꼬리에 녹아들어 -ed가 된다",
+    "부정·의문에선 도우미 did가 다시 밖으로 나온다"
+  ],
+  "keyPhrases": [
+    "I watched a movie yesterday.",
+    "She went to school.",
+    "I didn't watch TV.",
+    "Did you go to the party?",
+    "We had pizza last night."
+  ],
+  "cards": [
+    {
+      "id": "lesson-03-card-01",
+      "order": 1,
+      "type": "hook",
+      "emoji": "🎞️",
+      "text": "\"I went to Busan\". 가는 중일까요? 갈 거라는 뜻일까요?"
+    },
+    {
+      "id": "lesson-03-card-02",
+      "order": 2,
+      "type": "narration",
+      "text": "둘 다 아니에요. 이미 다녀와서 끝난 일이에요. 평소도 아니고 지금도 아니고, 그냥 끝나서 닫혀버린 사건이죠."
+    },
+    {
+      "id": "lesson-03-card-03",
+      "order": 3,
+      "type": "analogy",
+      "emoji": "👕",
+      "text": "동사가 옷을 갈아입어요. 끝난 일을 말할 땐 동사가 어제의 옷으로 바꿔 입어요. drink → drank, go → went, watch → watched. 사실은 도우미 did가 동사 꼬리에 녹아들어 -ed가 된 거예요.",
+      "examples": [
+        { "emoji": "📺", "en": "I watch TV.", "ko": "(평소) 나 TV 봐." },
+        { "emoji": "🎞️", "en": "I watched TV.", "ko": "(어제) 나 TV 봤어." }
+      ]
+    },
+    {
+      "id": "lesson-03-card-04",
+      "order": 4,
+      "type": "example",
+      "text": "규칙적으로 옷을 갈아입는 동사들은 꼬리에 -ed만 살짝 붙여줘요. 시간 단어(yesterday, last~)와 자주 함께 다닙니다.",
+      "examples": [
+        { "emoji": "🎬", "en": "I watched a movie yesterday.", "ko": "나 어제 영화 봤어." }
+      ],
+      "highlight": "watched"
+    },
+    {
+      "id": "lesson-03-card-05",
+      "order": 5,
+      "type": "example",
+      "emoji": "🏫",
+      "text": "그런데 어떤 동사들은 옷을 통째로 바꿔 입어요. 통째로 새 옷 — go → went, eat → ate, have → had. 자주 쓰는 동사일수록 이런 불규칙이 많아요.",
+      "examples": [
+        { "emoji": "🏫", "en": "She went to school.", "ko": "그녀는 학교에 갔어." },
+        { "emoji": "🍕", "en": "We had pizza last night.", "ko": "우리 어젯밤에 피자 먹었어." }
+      ],
+      "highlight": "went",
+      "afterCardQuizId": "q-03-int-01"
+    },
+    {
+      "id": "lesson-03-card-06",
+      "order": 6,
+      "type": "analogy",
+      "emoji": "🫥",
+      "text": "꼬리에 녹아 있던 도우미 did가 부정·의문에선 다시 밖으로 나와요. didn't가 not을 짊어지면, 동사는 다시 원래 모습으로 돌아가요. 도우미가 짐을 가져갔으니까요."
+    },
+    {
+      "id": "lesson-03-card-07",
+      "order": 7,
+      "type": "example",
+      "text": "I didn't watched가 아니라 I didn't watch — 이미 didn't가 \"끝난 일이고 부정\"이라는 두 가지를 다 짊어졌으니, 동사는 가벼운 원래 모습으로 충분해요.",
+      "examples": [
+        { "emoji": "📺", "en": "I didn't watch TV.", "ko": "나 (어제) TV 안 봤어." },
+        { "emoji": "❓", "en": "Did you go to the party?", "ko": "너 (어제) 파티에 갔어?" }
+      ],
+      "highlight": "didn't watch"
+    },
+    {
+      "id": "lesson-03-card-08",
+      "order": 8,
+      "type": "summary",
+      "emoji": "🎞️",
+      "text": "끝난 일은 동사가 어제 옷으로 갈아입고, 부정·의문엔 didn't / Did가 밖으로 나와요. 시간 단어(yesterday, last week, ago)가 좋은 친구!",
+      "examples": [
+        { "emoji": "🛏️", "en": "I slept early last night.", "ko": "나 어젯밤 일찍 잤어." }
+      ]
+    }
+  ],
+  "interstitialQuizIds": ["q-03-int-01"],
+  "finalQuizIds": [
+    "q-03-fin-01",
+    "q-03-fin-02",
+    "q-03-fin-03",
+    "q-03-fin-04",
+    "q-03-fin-05",
+    "q-03-fin-06",
+    "q-03-fin-07"
+  ]
+}

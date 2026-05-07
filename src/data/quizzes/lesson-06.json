@@ -1,0 +1,129 @@
+[
+  {
+    "id": "q-06-int-01",
+    "lessonId": "lesson-06",
+    "type": "ox",
+    "difficulty": 1,
+    "tags": ["to부정사", "동명사"],
+    "prompt": "I enjoy to play soccer.",
+    "answer": false,
+    "explanation": "enjoy는 \"이미 즐기고 있는\" 익숙함을 가리키는 동사라 -ing와 짝이에요. 'I enjoy playing soccer.'가 맞습니다.",
+    "hint": "이미 손에 닿아 있는 익숙함은 어느 쪽이었나요?",
+    "reference": { "lessonId": "lesson-06", "cardId": "lesson-06-card-05" }
+  },
+  {
+    "id": "q-06-fin-01",
+    "lessonId": "lesson-06",
+    "type": "multiple_choice",
+    "difficulty": 1,
+    "tags": ["to부정사"],
+    "prompt": "I want ___ a new phone.",
+    "promptKo": "나 새 폰 사고 싶어.",
+    "choices": [
+      { "id": "a", "text": "buy" },
+      { "id": "b", "text": "buying" },
+      { "id": "c", "text": "to buy" },
+      { "id": "d", "text": "bought" }
+    ],
+    "answer": "c",
+    "explanation": "want는 \"앞으로 하고 싶은 마음\" — 화살표 to와 짝이에요."
+  },
+  {
+    "id": "q-06-fin-02",
+    "lessonId": "lesson-06",
+    "type": "multiple_choice",
+    "difficulty": 2,
+    "tags": ["동명사"],
+    "prompt": "She finished ___ the report yesterday.",
+    "promptKo": "그녀는 어제 보고서를 다 썼다.",
+    "choices": [
+      { "id": "a", "text": "to write" },
+      { "id": "b", "text": "writing" },
+      { "id": "c", "text": "write" },
+      { "id": "d", "text": "wrote" }
+    ],
+    "answer": "b",
+    "explanation": "finish는 \"이미 하고 있던 일을 끝냈다\"는 뜻이라 익숙한 -ing와 짝!"
+  },
+  {
+    "id": "q-06-fin-03",
+    "lessonId": "lesson-06",
+    "type": "ox",
+    "difficulty": 2,
+    "tags": ["to부정사"],
+    "prompt": "He decided staying home.",
+    "answer": false,
+    "explanation": "decide는 \"앞으로 어떻게 할지 정하는\" 미래 시선이라 to와 짝이에요. 'He decided to stay home.'"
+  },
+  {
+    "id": "q-06-fin-04",
+    "lessonId": "lesson-06",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["동명사"],
+    "prompt": "I avoid ___ coffee at night.",
+    "promptKo": "나 밤에 커피 마시는 거 피해.",
+    "inputMode": "choices",
+    "choices": ["drinking", "to drink", "drink", "drank"],
+    "answer": ["drinking"],
+    "explanation": "avoid는 \"이미 어떤 행위가 있는 걸 피한다\"는 의미라 -ing와 짝이에요."
+  },
+  {
+    "id": "q-06-fin-05",
+    "lessonId": "lesson-06",
+    "type": "word_arrange",
+    "difficulty": 2,
+    "tags": ["to부정사"],
+    "promptKo": "그는 영어를 배우려고 한다.",
+    "tokens": [
+      { "id": "t1", "text": "He" },
+      { "id": "t2", "text": "wants" },
+      { "id": "t3", "text": "to" },
+      { "id": "t4", "text": "learn" },
+      { "id": "t5", "text": "English" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4", "t5"],
+    "explanation": "want의 짝은 to + 동사 원형. He는 -s 신호도 챙겨야 해서 wants."
+  },
+  {
+    "id": "q-06-fin-06",
+    "lessonId": "lesson-06",
+    "type": "situation_match",
+    "difficulty": 2,
+    "tags": ["동명사"],
+    "scenario": "친구가 \"취미가 뭐야?\"라고 물어요. \"음악 듣는 거 즐겨\"라고 답하고 싶어요.",
+    "scenarioEmoji": "🎧",
+    "choices": [
+      { "id": "a", "en": "I enjoy to listen to music.", "ko": "음악 들으려고 즐겨.(어색)" },
+      { "id": "b", "en": "I enjoy listening to music.", "ko": "음악 듣는 거 즐겨." },
+      { "id": "c", "en": "I want listening to music.", "ko": "음악 듣고 싶어.(어색)" },
+      { "id": "d", "en": "I will listen to music.", "ko": "음악 들을 거야." }
+    ],
+    "answer": "b",
+    "explanation": "enjoy는 \"이미 즐기고 있는\" 익숙함이라 -ing! 취미는 평소 즐기는 일이니 더 자연스러워요."
+  },
+  {
+    "id": "q-06-fin-07",
+    "lessonId": "lesson-06",
+    "type": "translation",
+    "difficulty": 3,
+    "tags": ["to부정사", "동명사"],
+    "promptKo": "나는 다음달에 여행 갈 계획이고 매일 영어 공부하는 걸 즐긴다.",
+    "tokens": [
+      { "id": "t1", "text": "I" },
+      { "id": "t2", "text": "plan" },
+      { "id": "t3", "text": "to" },
+      { "id": "t4", "text": "travel" },
+      { "id": "t5", "text": "next" },
+      { "id": "t6", "text": "month" },
+      { "id": "t7", "text": "and" },
+      { "id": "t8", "text": "enjoy" },
+      { "id": "t9", "text": "studying" },
+      { "id": "t10", "text": "English" },
+      { "id": "t11", "text": "every" },
+      { "id": "t12", "text": "day" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9", "t10", "t11", "t12"],
+    "explanation": "plan은 미래 시선 → to travel. enjoy는 이미 즐기는 행위 → studying. 한 문장에 두 종류가 같이 등장!"
+  }
+]

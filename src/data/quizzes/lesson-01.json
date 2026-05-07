@@ -1,0 +1,118 @@
+[
+  {
+    "id": "q-01-int-01",
+    "lessonId": "lesson-01",
+    "type": "ox",
+    "difficulty": 1,
+    "tags": ["현재시제", "3인칭단수"],
+    "prompt": "He drink milk.",
+    "answer": false,
+    "explanation": "He에는 -s 신호가 필요해요. 'He drinks milk.'가 맞습니다.",
+    "hint": "방금 봤던 '작은 신호'가 빠졌어요.",
+    "reference": { "lessonId": "lesson-01", "cardId": "lesson-01-card-05" }
+  },
+  {
+    "id": "q-01-fin-01",
+    "lessonId": "lesson-01",
+    "type": "multiple_choice",
+    "difficulty": 1,
+    "tags": ["현재시제", "3인칭단수"],
+    "prompt": "She ___ tea every morning.",
+    "promptKo": "그녀는 매일 아침 차를 마신다.",
+    "choices": [
+      { "id": "a", "text": "drink" },
+      { "id": "b", "text": "drinks" },
+      { "id": "c", "text": "drinking" },
+      { "id": "d", "text": "drank" }
+    ],
+    "answer": "b",
+    "explanation": "She는 제3자라서 -s 신호가 필요해요. 'every morning'은 평소를 나타내니까 현재시제가 맞고요."
+  },
+  {
+    "id": "q-01-fin-02",
+    "lessonId": "lesson-01",
+    "type": "ox",
+    "difficulty": 1,
+    "tags": ["현재시제", "부정문"],
+    "prompt": "He doesn't likes milk.",
+    "answer": false,
+    "explanation": "이미 doesn't가 밖으로 나와서 \"이건 부정이야\"를 외치고 있어요. 뒤의 동사는 원래 모습으로 돌아갑니다 — 'He doesn't like milk.'"
+  },
+  {
+    "id": "q-01-fin-03",
+    "lessonId": "lesson-01",
+    "type": "word_arrange",
+    "difficulty": 1,
+    "tags": ["현재시제", "1인칭"],
+    "promptKo": "나 학교 다녀.",
+    "tokens": [
+      { "id": "t1", "text": "I" },
+      { "id": "t2", "text": "go" },
+      { "id": "t3", "text": "to" },
+      { "id": "t4", "text": "school" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4"],
+    "explanation": "I 옆에 동사를 그대로 두는 가장 단순한 형태예요."
+  },
+  {
+    "id": "q-01-fin-04",
+    "lessonId": "lesson-01",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["현재시제", "부정문", "1인칭"],
+    "prompt": "I ___ coffee.",
+    "promptKo": "나 평소에 커피 안 마셔.",
+    "inputMode": "choices",
+    "choices": ["don't drink", "doesn't drink", "am not drinking", "didn't drink"],
+    "answer": ["don't drink"],
+    "explanation": "주어가 I일 땐 도우미 do가 밖으로 나와 not을 짊어져요. 'doesn't'는 He/She/It용입니다."
+  },
+  {
+    "id": "q-01-fin-05",
+    "lessonId": "lesson-01",
+    "type": "situation_match",
+    "difficulty": 2,
+    "tags": ["현재시제", "습관"],
+    "scenario": "내가 평소에 운동하는 사람이라는 걸 친구에게 알려주고 싶어요.",
+    "scenarioEmoji": "🏃",
+    "choices": [
+      { "id": "a", "en": "I exercise.", "ko": "나는 운동하는 사람이야." },
+      { "id": "b", "en": "I am exercising.", "ko": "나 지금 운동하는 중이야." },
+      { "id": "c", "en": "I exercised.", "ko": "나 운동했어." },
+      { "id": "d", "en": "I will exercise.", "ko": "나 운동할 거야." }
+    ],
+    "answer": "a",
+    "explanation": "평소의 기본값을 말할 땐 가장 단순한 형태! '지금 이 순간'이 아니라 '늘 그런 사람'이라는 뜻이라면 현재시제가 맞아요."
+  },
+  {
+    "id": "q-01-fin-06",
+    "lessonId": "lesson-01",
+    "type": "translation",
+    "difficulty": 2,
+    "tags": ["현재시제", "3인칭단수"],
+    "promptKo": "그녀는 매일 차를 마신다.",
+    "tokens": [
+      { "id": "t1", "text": "She" },
+      { "id": "t2", "text": "drinks" },
+      { "id": "t3", "text": "drink" },
+      { "id": "t4", "text": "tea" },
+      { "id": "t5", "text": "every" },
+      { "id": "t6", "text": "day" },
+      { "id": "t7", "text": "is" }
+    ],
+    "answer": ["t1", "t2", "t4", "t5", "t6"],
+    "explanation": "She는 -s 신호가 필요해요. drinks가 정답. 함정으로 'drink', 'is'가 섞여 있었네요."
+  },
+  {
+    "id": "q-01-fin-07",
+    "lessonId": "lesson-01",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["현재시제", "1인칭"],
+    "prompt": "I ___ in Seoul.",
+    "promptKo": "나는 서울 사는 사람이야.",
+    "inputMode": "keyboard",
+    "answer": ["live"],
+    "explanation": "I는 동사 그대로 — 평소(현재시제)의 기본값을 가장 단순하게 말해요."
+  }
+]

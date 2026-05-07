@@ -1,0 +1,107 @@
+{
+  "id": "lesson-02",
+  "stageId": "stage-1-core",
+  "order": 2,
+  "title": "진행형",
+  "subtitle": "지금 이 순간의 사진",
+  "estimatedMinutes": 5,
+  "objectives": [
+    "지금 이 순간의 모습을 말할 땐 be + 동사ing를 쓴다",
+    "be(am/is/are)는 주어에 따라 옷을 바꿔 입는다",
+    "부정·의문은 도우미 be가 자리를 옮긴다"
+  ],
+  "keyPhrases": [
+    "I am drinking coffee.",
+    "She is cooking dinner.",
+    "They are playing soccer.",
+    "I'm not sleeping.",
+    "Are you working?"
+  ],
+  "cards": [
+    {
+      "id": "lesson-02-card-01",
+      "order": 1,
+      "type": "hook",
+      "emoji": "📸",
+      "text": "이번엔 \"I am drinking coffee\". 1강의 \"I drink coffee\"와 뭐가 다를까요?"
+    },
+    {
+      "id": "lesson-02-card-02",
+      "order": 2,
+      "type": "narration",
+      "text": "지금, 바로 이 순간 컵을 들고 한 모금 마시고 있다는 뜻이에요. 평소가 아니라 '지금 이 순간의 사진' 한 장을 카메라 셔터로 찰칵 잡아낸 거죠."
+    },
+    {
+      "id": "lesson-02-card-03",
+      "order": 3,
+      "type": "analogy",
+      "emoji": "🎬",
+      "text": "1강의 현재시제가 평생 이어지는 다큐멘터리라면, 진행형은 그 다큐 속 한 장면이에요. 동사 뒤에 -ing를 붙여 \"진행 중\"임을 표시하고, 앞에 be(am/is/are)를 데려와 시제를 짊어지게 합니다.",
+      "examples": [
+        { "emoji": "🎬", "en": "I drink coffee.", "ko": "(평소) 커피 마시는 사람이야." },
+        { "emoji": "📸", "en": "I am drinking coffee.", "ko": "(지금) 커피 마시는 중이야." }
+      ]
+    },
+    {
+      "id": "lesson-02-card-04",
+      "order": 4,
+      "type": "example",
+      "text": "be 동사는 주어에 따라 옷을 바꿔 입어요. I엔 am, He/She/It엔 is, You/We/They엔 are. 그 뒤에 동사ing를 붙이면 끝!",
+      "examples": [
+        { "emoji": "📚", "en": "I am studying now.", "ko": "나 지금 공부하는 중이야." }
+      ],
+      "highlight": "am studying"
+    },
+    {
+      "id": "lesson-02-card-05",
+      "order": 5,
+      "type": "example",
+      "emoji": "🍳",
+      "text": "다른 사람의 지금도 같은 공식이에요. 그녀의 사진 한 장 — 부엌에서 저녁을 만드는 모습.",
+      "examples": [
+        { "emoji": "🍳", "en": "She is cooking dinner.", "ko": "그녀는 (지금) 저녁을 만들고 있어." },
+        { "emoji": "⚽", "en": "They are playing soccer.", "ko": "그들은 (지금) 축구하고 있어." }
+      ],
+      "highlight": "is cooking",
+      "afterCardQuizId": "q-02-int-01"
+    },
+    {
+      "id": "lesson-02-card-06",
+      "order": 6,
+      "type": "analogy",
+      "emoji": "🫥",
+      "text": "이번엔 도우미가 다르네요. 1강에선 do/does가 숨어 있었는데, 진행형에선 be(am/is/are) 자체가 도우미 역할을 해요. 부정할 땐 be 옆에 not, 질문할 땐 be가 주어 앞으로 점프!"
+    },
+    {
+      "id": "lesson-02-card-07",
+      "order": 7,
+      "type": "example",
+      "text": "도우미 be가 자리를 옮기면 의미가 바뀌어요. 옆에 not이 붙으면 부정, 앞으로 가면 질문.",
+      "examples": [
+        { "emoji": "😴", "en": "I'm not sleeping.", "ko": "나 (지금) 자는 거 아니야." },
+        { "emoji": "💼", "en": "Are you working?", "ko": "너 (지금) 일하는 중이야?" }
+      ],
+      "highlight": "Are you"
+    },
+    {
+      "id": "lesson-02-card-08",
+      "order": 8,
+      "type": "summary",
+      "emoji": "📸",
+      "text": "지금 이 순간의 사진은 be + 동사ing. 평소는 1강의 단순 형태! 두 옷을 시간 단어(now / every day)로 구분해서 입혀주세요.",
+      "examples": [
+        { "emoji": "🌧️", "en": "It is raining now.", "ko": "지금 비 오고 있어." }
+      ]
+    }
+  ],
+  "interstitialQuizIds": ["q-02-int-01"],
+  "finalQuizIds": [
+    "q-02-fin-01",
+    "q-02-fin-02",
+    "q-02-fin-03",
+    "q-02-fin-04",
+    "q-02-fin-05",
+    "q-02-fin-06",
+    "q-02-fin-07"
+  ]
+}

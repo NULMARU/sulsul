@@ -1,0 +1,129 @@
+[
+  {
+    "id": "q-12-int-01",
+    "lessonId": "lesson-12",
+    "type": "multiple_choice",
+    "difficulty": 1,
+    "tags": ["절", "이유"],
+    "prompt": "___ I am tired, I will sleep early.",
+    "promptKo": "피곤하니까 일찍 잘게.",
+    "choices": [
+      { "id": "a", "text": "When" },
+      { "id": "b", "text": "If" },
+      { "id": "c", "text": "Because" },
+      { "id": "d", "text": "That" }
+    ],
+    "answer": "c",
+    "explanation": "이유의 끈은 because. \"~이기 때문에\"라는 뜻이에요.",
+    "reference": { "lessonId": "lesson-12", "cardId": "lesson-12-card-05" }
+  },
+  {
+    "id": "q-12-fin-01",
+    "lessonId": "lesson-12",
+    "type": "multiple_choice",
+    "difficulty": 1,
+    "tags": ["절", "조건"],
+    "prompt": "___ it rains, I will stay home.",
+    "promptKo": "비 오면 집에 있을게.",
+    "choices": [
+      { "id": "a", "text": "When" },
+      { "id": "b", "text": "If" },
+      { "id": "c", "text": "Because" },
+      { "id": "d", "text": "That" }
+    ],
+    "answer": "b",
+    "explanation": "\"만약 ~라면\"이라는 조건의 끈은 if."
+  },
+  {
+    "id": "q-12-fin-02",
+    "lessonId": "lesson-12",
+    "type": "ox",
+    "difficulty": 2,
+    "tags": ["절", "if 시제"],
+    "prompt": "If it will rain tomorrow, I will stay home.",
+    "answer": false,
+    "explanation": "if 다음(조건절)에는 미래라도 평소(현재시제) 옷을 입혀요. 'If it rains tomorrow, I will stay home.' 영어의 작은 약속이에요."
+  },
+  {
+    "id": "q-12-fin-03",
+    "lessonId": "lesson-12",
+    "type": "word_arrange",
+    "difficulty": 2,
+    "tags": ["절", "시간"],
+    "promptKo": "어렸을 때 부산에 살았어.",
+    "tokens": [
+      { "id": "t1", "text": "When" },
+      { "id": "t2", "text": "I" },
+      { "id": "t3", "text": "was" },
+      { "id": "t4", "text": "young," },
+      { "id": "t5", "text": "I" },
+      { "id": "t6", "text": "lived" },
+      { "id": "t7", "text": "in" },
+      { "id": "t8", "text": "Busan" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+    "explanation": "When + 작은 문장(I was young), 콤마, 큰 문장. 둘 다 어제 옷(was/lived)."
+  },
+  {
+    "id": "q-12-fin-04",
+    "lessonId": "lesson-12",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["절", "시간"],
+    "prompt": "I'll call you ___ I get home.",
+    "promptKo": "집에 가면 전화할게.",
+    "inputMode": "choices",
+    "choices": ["when", "if", "because", "that"],
+    "answer": ["when"],
+    "explanation": "\"~할 때\"의 끈은 when. (when도 if처럼 미래라도 평소 옷을 입혀요 — get!)"
+  },
+  {
+    "id": "q-12-fin-05",
+    "lessonId": "lesson-12",
+    "type": "situation_match",
+    "difficulty": 2,
+    "tags": ["절", "조건"],
+    "scenario": "친구가 도움이 필요할 수도 있다고 해요. \"필요하면 그냥 말해\"라고 부드럽게 답하고 싶어요.",
+    "scenarioEmoji": "🤝",
+    "choices": [
+      { "id": "a", "en": "When you need help, just ask.", "ko": "(시간) 필요할 때 말해." },
+      { "id": "b", "en": "If you need help, just ask.", "ko": "(조건) 필요하면 그냥 말해." },
+      { "id": "c", "en": "Because you need help, just ask.", "ko": "(이유) 필요하니까 말해." },
+      { "id": "d", "en": "That you need help, just ask.", "ko": "(어색)" }
+    ],
+    "answer": "b",
+    "explanation": "\"만약 필요하면\"이라는 조건이라 if. when도 가능하지만 \"혹시 필요할 수도 있다\" 분위기엔 if가 더 자연스러워요."
+  },
+  {
+    "id": "q-12-fin-06",
+    "lessonId": "lesson-12",
+    "type": "translation",
+    "difficulty": 3,
+    "tags": ["절", "이유"],
+    "promptKo": "네가 친절해서 사랑해.",
+    "tokens": [
+      { "id": "t1", "text": "I" },
+      { "id": "t2", "text": "love" },
+      { "id": "t3", "text": "you" },
+      { "id": "t4", "text": "because" },
+      { "id": "t5", "text": "you" },
+      { "id": "t6", "text": "are" },
+      { "id": "t7", "text": "kind" },
+      { "id": "t8", "text": "if" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+    "explanation": "큰 문장 + because + 작은 문장. 이유의 끈은 because. 함정으로 if가 섞여 있었네요."
+  },
+  {
+    "id": "q-12-fin-07",
+    "lessonId": "lesson-12",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["절"],
+    "prompt": "I was at home ___ you called me.",
+    "promptKo": "네가 전화했을 때 나 집에 있었어.",
+    "inputMode": "keyboard",
+    "answer": ["when"],
+    "explanation": "\"~할 때\"는 when. 큰 문장 뒤에 끈 묶음이 자연스럽게 따라붙는 모양이에요."
+  }
+]

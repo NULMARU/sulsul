@@ -1,0 +1,126 @@
+[
+  {
+    "id": "q-10-int-01",
+    "lessonId": "lesson-10",
+    "type": "multiple_choice",
+    "difficulty": 1,
+    "tags": ["현재완료", "경험"],
+    "prompt": "Have you ___ been to Japan?",
+    "promptKo": "일본 가본 적 있어?",
+    "choices": [
+      { "id": "a", "text": "ever" },
+      { "id": "b", "text": "yesterday" },
+      { "id": "c", "text": "for" },
+      { "id": "d", "text": "now" }
+    ],
+    "answer": "a",
+    "explanation": "경험을 묻는 \"한 번이라도 ~?\"의 단짝은 ever예요.",
+    "reference": { "lessonId": "lesson-10", "cardId": "lesson-10-card-04" }
+  },
+  {
+    "id": "q-10-fin-01",
+    "lessonId": "lesson-10",
+    "type": "multiple_choice",
+    "difficulty": 2,
+    "tags": ["현재완료", "완료"],
+    "prompt": "I ___ finished my homework.",
+    "promptKo": "방금 숙제 다 끝냈어.",
+    "choices": [
+      { "id": "a", "text": "just have" },
+      { "id": "b", "text": "have just" },
+      { "id": "c", "text": "did just" },
+      { "id": "d", "text": "am just" }
+    ],
+    "answer": "b",
+    "explanation": "have + just + p.p. 순서. just는 have와 p.p. 사이에 슬쩍 끼어들어요."
+  },
+  {
+    "id": "q-10-fin-02",
+    "lessonId": "lesson-10",
+    "type": "ox",
+    "difficulty": 2,
+    "tags": ["현재완료", "경험"],
+    "prompt": "She has never tried sushi.",
+    "answer": true,
+    "explanation": "맞아요! never + p.p.로 \"한 번도 ~해본 적 없다\"는 경험을 표현해요."
+  },
+  {
+    "id": "q-10-fin-03",
+    "lessonId": "lesson-10",
+    "type": "word_arrange",
+    "difficulty": 2,
+    "tags": ["현재완료", "결과"],
+    "promptKo": "지갑을 잃어버려서 지금도 없어.",
+    "tokens": [
+      { "id": "t1", "text": "I" },
+      { "id": "t2", "text": "have" },
+      { "id": "t3", "text": "lost" },
+      { "id": "t4", "text": "my" },
+      { "id": "t5", "text": "wallet" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4", "t5"],
+    "explanation": "have lost — 잃어버린 결과가 지금도 남아 있다는 뜻. lose의 p.p.는 lost(불규칙)."
+  },
+  {
+    "id": "q-10-fin-04",
+    "lessonId": "lesson-10",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["현재완료", "already"],
+    "prompt": "She has ___ eaten dinner.",
+    "promptKo": "그녀 벌써 저녁 먹었어.",
+    "inputMode": "choices",
+    "choices": ["already", "yet", "ago", "since"],
+    "answer": ["already"],
+    "explanation": "\"이미/벌써\" 했다는 단짝은 already. yet은 \"아직 ~?\"의 의문/부정에 어울려요."
+  },
+  {
+    "id": "q-10-fin-05",
+    "lessonId": "lesson-10",
+    "type": "situation_match",
+    "difficulty": 2,
+    "tags": ["현재완료", "경험"],
+    "scenario": "친구가 \"해외여행 좋아?\"라고 묻자, 가본 적 있다고 자랑하고 싶어요.",
+    "scenarioEmoji": "🌍",
+    "choices": [
+      { "id": "a", "en": "I traveled abroad.", "ko": "(점) 한 번 다녀온 적 있어." },
+      { "id": "b", "en": "I have traveled abroad.", "ko": "(경험) 가본 적 있어." },
+      { "id": "c", "en": "I travel abroad.", "ko": "(평소) 해외여행 다니는 사람이야." },
+      { "id": "d", "en": "I am traveling abroad.", "ko": "(지금) 여행 중이야." }
+    ],
+    "answer": "b",
+    "explanation": "\"가본 적 있다\"는 경험은 have + p.p. 그냥 다녀왔다는 끝난 점(과거시제)와 살짝 달라요."
+  },
+  {
+    "id": "q-10-fin-06",
+    "lessonId": "lesson-10",
+    "type": "translation",
+    "difficulty": 3,
+    "tags": ["현재완료", "결과"],
+    "promptKo": "그는 사무실에 갔어. (그래서 지금 거기 있어)",
+    "tokens": [
+      { "id": "t1", "text": "He" },
+      { "id": "t2", "text": "has" },
+      { "id": "t3", "text": "gone" },
+      { "id": "t4", "text": "to" },
+      { "id": "t5", "text": "the" },
+      { "id": "t6", "text": "office" },
+      { "id": "t7", "text": "went" },
+      { "id": "t8", "text": "have" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+    "explanation": "He엔 has. go의 p.p.는 gone(불규칙). \"지금 거기 있다\"는 결과를 has gone이 담아줘요."
+  },
+  {
+    "id": "q-10-fin-07",
+    "lessonId": "lesson-10",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["현재완료", "yet"],
+    "prompt": "Have you finished your work ___?",
+    "promptKo": "일 다 끝냈어? (아직?)",
+    "inputMode": "keyboard",
+    "answer": ["yet"],
+    "explanation": "의문문에서 \"아직 ~?\"를 묻는 단짝은 yet — 문장 맨 끝에 자주 와요."
+  }
+]

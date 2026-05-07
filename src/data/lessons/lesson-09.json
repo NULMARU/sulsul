@@ -1,0 +1,106 @@
+{
+  "id": "lesson-09",
+  "stageId": "stage-2-extension",
+  "order": 9,
+  "title": "현재완료 1",
+  "subtitle": "과거에서 지금까지 이어진 선",
+  "estimatedMinutes": 6,
+  "objectives": [
+    "현재완료(have/has + p.p.)는 과거의 한 점이 아니라 지금까지 이어진 선이다",
+    "5년 전부터 지금까지처럼 \"기간\"이 있는 일에 어울린다",
+    "for + 기간, since + 시작 시점이 자주 함께 다닌다"
+  ],
+  "keyPhrases": [
+    "I have lived in Seoul for 5 years.",
+    "She has worked here since 2020.",
+    "I have known him for a long time.",
+    "We have been friends since high school.",
+    "How long have you studied English?"
+  ],
+  "cards": [
+    {
+      "id": "lesson-09-card-01",
+      "order": 1,
+      "type": "hook",
+      "emoji": "📏",
+      "text": "\"I lived in Seoul for 5 years\"는 끝난 점이고, \"I have lived in Seoul for 5 years\"는 지금까지 이어지는 선이에요. 영어는 이 둘을 구분해요."
+    },
+    {
+      "id": "lesson-09-card-02",
+      "order": 2,
+      "type": "narration",
+      "text": "현재완료는 점이 아니라 선이에요. 과거의 어느 시점에서 시작해서 지금 이 순간까지 쭉 이어지는, 가는 선 하나를 그려보세요."
+    },
+    {
+      "id": "lesson-09-card-03",
+      "order": 3,
+      "type": "analogy",
+      "emoji": "📏",
+      "text": "have/has + p.p.가 그 선을 그리는 도구예요. have/has는 \"갖고 있다\"는 뜻에서 나와, \"이 일을 지금도 갖고 있다\"는 느낌으로 발전했어요. p.p.는 동사의 세 번째 옷 — 마치 어제 옷이 하나 더 변신한 모습이에요.",
+      "examples": [
+        { "emoji": "🏙️", "en": "I lived in Seoul.", "ko": "(점) 서울에 살았었어. — 끝남" },
+        { "emoji": "📏", "en": "I have lived in Seoul for 5 years.", "ko": "(선) 5년째 서울에 살고 있어. — 지금도" }
+      ]
+    },
+    {
+      "id": "lesson-09-card-04",
+      "order": 4,
+      "type": "example",
+      "text": "주어가 He/She면 has, 그 외엔 have. 뒤에 오는 p.p.는 동사마다 정해져 있어요 — live → lived, work → worked(규칙), know → known, be → been(불규칙).",
+      "examples": [
+        { "emoji": "💼", "en": "She has worked here since 2020.", "ko": "그녀는 2020년부터 지금까지 여기서 일해." }
+      ],
+      "highlight": "has worked"
+    },
+    {
+      "id": "lesson-09-card-05",
+      "order": 5,
+      "type": "example",
+      "emoji": "🤝",
+      "text": "선의 \"길이\"는 for + 기간으로 표현해요. 선의 \"시작점\"은 since + 시점으로 표현하고요. 둘 다 \"지금까지 이어진다\"는 신호 친구들이에요.",
+      "examples": [
+        { "emoji": "📅", "en": "I have known him for 10 years.", "ko": "그를 알고 지낸 지 10년 됐어." },
+        { "emoji": "🎓", "en": "We have been friends since high school.", "ko": "우리 고등학교 때부터 친구야." }
+      ],
+      "highlight": "for 10 years / since high school",
+      "afterCardQuizId": "q-09-int-01"
+    },
+    {
+      "id": "lesson-09-card-06",
+      "order": 6,
+      "type": "analogy",
+      "emoji": "🎬",
+      "text": "3강 과거시제(점)와 9강 현재완료(선)의 차이를 한 번 정리해요. \"yesterday, last year, ago\" 같은 단어는 끝난 점 — 3강 옷. \"for/since/so far\" 같은 단어는 이어진 선 — 9강 옷."
+    },
+    {
+      "id": "lesson-09-card-07",
+      "order": 7,
+      "type": "example",
+      "text": "물어볼 땐 have/has가 주어 앞으로 점프해요. \"How long ~?\"는 \"얼마나 오래 ~?\"라는 뜻으로, 현재완료의 단짝 질문이에요.",
+      "examples": [
+        { "emoji": "❓", "en": "How long have you studied English?", "ko": "영어 공부한 지 얼마나 됐어?" }
+      ],
+      "highlight": "How long have you studied"
+    },
+    {
+      "id": "lesson-09-card-08",
+      "order": 8,
+      "type": "summary",
+      "emoji": "📏",
+      "text": "현재완료는 과거에서 지금까지 이어진 선. have/has + p.p.로 그려요. for(기간)과 since(시작점)이 단짝. 끝난 점(과거시제)과 헷갈리지 않게 신호 단어를 챙기세요!",
+      "examples": [
+        { "emoji": "🏠", "en": "She has lived alone for 3 years.", "ko": "그녀 혼자 산 지 3년 됐어." }
+      ]
+    }
+  ],
+  "interstitialQuizIds": ["q-09-int-01"],
+  "finalQuizIds": [
+    "q-09-fin-01",
+    "q-09-fin-02",
+    "q-09-fin-03",
+    "q-09-fin-04",
+    "q-09-fin-05",
+    "q-09-fin-06",
+    "q-09-fin-07"
+  ]
+}

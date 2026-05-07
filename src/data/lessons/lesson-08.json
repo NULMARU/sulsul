@@ -1,0 +1,107 @@
+{
+  "id": "lesson-08",
+  "stageId": "stage-2-extension",
+  "order": 8,
+  "title": "There is/are",
+  "subtitle": "무대 위에 처음 등장",
+  "estimatedMinutes": 5,
+  "objectives": [
+    "처음 등장하는 존재를 알릴 땐 There is/are로 무대를 연다",
+    "단수 뒤엔 is, 복수 뒤엔 are가 따라온다",
+    "이미 아는 것은 'The book is on the table'처럼 일반 주어로 말한다"
+  ],
+  "keyPhrases": [
+    "There is a book on the table.",
+    "There are three apples in the basket.",
+    "There is no time left.",
+    "Is there a problem?",
+    "There was a meeting yesterday."
+  ],
+  "cards": [
+    {
+      "id": "lesson-08-card-01",
+      "order": 1,
+      "type": "hook",
+      "emoji": "🎭",
+      "text": "\"테이블에 책이 한 권 있어\". \"A book is on the table\"이라고 말해도 되지만 좀 어색해요. 영어 사람들은 다른 방식을 더 좋아합니다."
+    },
+    {
+      "id": "lesson-08-card-02",
+      "order": 2,
+      "type": "narration",
+      "text": "\"~이 있다\"는 새로운 존재를 처음 무대에 올리는 표현이에요. 영어는 이걸 위해 \"There is/are\"라는 전용 무대 막을 따로 마련해뒀어요."
+    },
+    {
+      "id": "lesson-08-card-03",
+      "order": 3,
+      "type": "analogy",
+      "emoji": "🎬",
+      "text": "There is/are는 \"막이 오른다\" 같은 신호예요. 듣는 사람에게 \"새로운 존재가 등장합니다!\" 하고 알려주는 거죠. 그 뒤에 진짜 주인공이 등장해요.",
+      "examples": [
+        { "emoji": "📖", "en": "There is a book on the table.", "ko": "테이블에 책이 한 권 있어.(처음 등장)" },
+        { "emoji": "🍎", "en": "There are three apples in the basket.", "ko": "바구니에 사과 세 개 있어." }
+      ]
+    },
+    {
+      "id": "lesson-08-card-04",
+      "order": 4,
+      "type": "example",
+      "text": "단수 등장은 There is, 복수 등장은 There are. 무대 뒤에 들어오는 손님이 한 명인지 여러 명인지에 따라 옷을 바꿔 입어요.",
+      "examples": [
+        { "emoji": "🐱", "en": "There is a cat in the room.", "ko": "방에 고양이 한 마리 있어." }
+      ],
+      "highlight": "There is a cat"
+    },
+    {
+      "id": "lesson-08-card-05",
+      "order": 5,
+      "type": "example",
+      "emoji": "❓",
+      "text": "\"있어?\"라고 물어볼 땐 be 동사가 무대 앞으로 — \"Is there ~?\". \"없다\"고 말할 땐 \"There is no ~\" 또는 \"There aren't any ~\"로!",
+      "examples": [
+        { "emoji": "❓", "en": "Is there a problem?", "ko": "무슨 문제 있어?" },
+        { "emoji": "🚫", "en": "There is no time left.", "ko": "남은 시간이 없어." }
+      ],
+      "highlight": "Is there / no time",
+      "afterCardQuizId": "q-08-int-01"
+    },
+    {
+      "id": "lesson-08-card-06",
+      "order": 6,
+      "type": "analogy",
+      "emoji": "📺",
+      "text": "이미 알고 있는 친구는 막을 올릴 필요가 없어요. \"The book is on the table\"은 이미 아는 그 책이 어디 있는지 말하는 거죠. 처음 등장 vs 이미 아는 친구의 위치 — 영어는 두 가지를 다른 모양으로 구분해요."
+    },
+    {
+      "id": "lesson-08-card-07",
+      "order": 7,
+      "type": "example",
+      "text": "There is/are도 시제를 갖춰요. 어제 막이 올랐던 일은 There was/were, 내일 무대는 There will be.",
+      "examples": [
+        { "emoji": "🎤", "en": "There was a meeting yesterday.", "ko": "어제 회의 있었어." },
+        { "emoji": "📅", "en": "There will be a party tomorrow.", "ko": "내일 파티 있을 거야." }
+      ],
+      "highlight": "There was / will be"
+    },
+    {
+      "id": "lesson-08-card-08",
+      "order": 8,
+      "type": "summary",
+      "emoji": "🎭",
+      "text": "처음 등장은 There is/are로 무대를 열어요. 단수면 is, 복수면 are. 이미 아는 친구는 그냥 일반 주어로 — 두 모양을 구분해서 입혀주세요.",
+      "examples": [
+        { "emoji": "🌳", "en": "There are many trees in the park.", "ko": "공원에 나무 많아." }
+      ]
+    }
+  ],
+  "interstitialQuizIds": ["q-08-int-01"],
+  "finalQuizIds": [
+    "q-08-fin-01",
+    "q-08-fin-02",
+    "q-08-fin-03",
+    "q-08-fin-04",
+    "q-08-fin-05",
+    "q-08-fin-06",
+    "q-08-fin-07"
+  ]
+}

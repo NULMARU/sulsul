@@ -1,0 +1,109 @@
+{
+  "id": "lesson-14",
+  "stageId": "stage-2-extension",
+  "order": 14,
+  "title": "조동사 기초",
+  "subtitle": "동사에 마음을 더하는 도구",
+  "estimatedMinutes": 6,
+  "objectives": [
+    "can/should/must는 동사 앞에 붙어 가능·권유·의무 같은 마음을 더한다",
+    "조동사 뒤의 동사는 항상 원래 모습(원형)으로 돌아간다",
+    "have to는 must와 비슷하지만 더 부드럽고 일상적이다"
+  ],
+  "keyPhrases": [
+    "I can swim.",
+    "You should sleep early.",
+    "She must go now.",
+    "I have to study tonight.",
+    "Can you help me?"
+  ],
+  "cards": [
+    {
+      "id": "lesson-14-card-01",
+      "order": 1,
+      "type": "hook",
+      "emoji": "💭",
+      "text": "\"I swim\"은 \"수영해\"인데, \"I can swim\"은 \"수영할 수 있어\"가 돼요. 단어 하나 끼웠는데 마음이 더해진 거죠."
+    },
+    {
+      "id": "lesson-14-card-02",
+      "order": 2,
+      "type": "narration",
+      "text": "조동사는 동사 앞에 살짝 끼어들어 \"가능 / 권유 / 의무 / 추측\" 같은 마음을 슬쩍 얹어주는 친구예요. 동사 자체는 그대로 두고, 마음만 보태죠."
+    },
+    {
+      "id": "lesson-14-card-03",
+      "order": 3,
+      "type": "analogy",
+      "emoji": "🛠️",
+      "text": "조동사는 동사에 마음을 더하는 도구예요. can = 가능 / should = 권유 / must = 강한 의무 / will = 의지(4강에서 만났죠) / may = 허락. 동사 앞에 끼워 넣으면 그 마음이 묻어요.",
+      "examples": [
+        { "emoji": "🏊", "en": "I swim.", "ko": "(평소) 수영해." },
+        { "emoji": "💪", "en": "I can swim.", "ko": "수영할 수 있어.(가능)" }
+      ]
+    },
+    {
+      "id": "lesson-14-card-04",
+      "order": 4,
+      "type": "example",
+      "text": "조동사의 가장 중요한 규칙 — 그 뒤의 동사는 항상 원래 모습(원형)이에요. He에 -s 신호가 필요한 경우에도, 조동사가 앞에 있으면 동사는 옷을 벗어요.",
+      "examples": [
+        { "emoji": "🏊", "en": "She can swim.", "ko": "그녀는 수영할 수 있어." }
+      ],
+      "highlight": "She can swim",
+      "tip": "She swims는 평소 신호로 -s가 필요했지만, can이 앞에 있으면 swim 그대로!"
+    },
+    {
+      "id": "lesson-14-card-05",
+      "order": 5,
+      "type": "example",
+      "emoji": "💡",
+      "text": "should는 \"하는 게 좋겠어\"라는 부드러운 권유. must는 \"꼭 해야 해\"라는 강한 의무. 같은 \"~해야 해\"도 무게가 다른 거죠.",
+      "examples": [
+        { "emoji": "💤", "en": "You should sleep early.", "ko": "(권유) 일찍 자는 게 좋아." },
+        { "emoji": "🏃", "en": "She must go now.", "ko": "(강한 의무) 그녀 지금 꼭 가야 해." }
+      ],
+      "highlight": "should sleep / must go",
+      "afterCardQuizId": "q-14-int-01"
+    },
+    {
+      "id": "lesson-14-card-06",
+      "order": 6,
+      "type": "analogy",
+      "emoji": "🤝",
+      "text": "조동사는 부탁할 때 가장 자주 쓰여요. \"Can you help me?\"는 가능 + 부탁이 합쳐진 자연스러운 영어 표현. \"수영하다\"가 \"수영할 수 있어?\"가 되듯, 마음이 한 겹 얹히면 부탁이 부드러워져요."
+    },
+    {
+      "id": "lesson-14-card-07",
+      "order": 7,
+      "type": "example",
+      "text": "must는 살짝 무거우니 일상에선 have to를 더 자주 써요. 같은 \"꼭 해야 해\"지만 have to가 부드럽고 자연스러운 느낌이에요.",
+      "examples": [
+        { "emoji": "📚", "en": "I have to study tonight.", "ko": "오늘 밤 꼭 공부해야 해.(부드러운 의무)" },
+        { "emoji": "🛒", "en": "He has to go shopping.", "ko": "그는 장 보러 가야 해." }
+      ],
+      "highlight": "have to / has to",
+      "tip": "have to는 He/She일 땐 has to로! 일반 동사처럼 -s 신호를 챙겨요."
+    },
+    {
+      "id": "lesson-14-card-08",
+      "order": 8,
+      "type": "summary",
+      "emoji": "🛠️",
+      "text": "조동사는 동사에 마음을 더하는 작은 도구예요. can(가능), should(권유), must/have to(의무), may(허락). 뒤의 동사는 항상 원형 — 옷을 벗고 가벼워져요.",
+      "examples": [
+        { "emoji": "🤝", "en": "Can you help me?", "ko": "도와줄 수 있어요?" }
+      ]
+    }
+  ],
+  "interstitialQuizIds": ["q-14-int-01"],
+  "finalQuizIds": [
+    "q-14-fin-01",
+    "q-14-fin-02",
+    "q-14-fin-03",
+    "q-14-fin-04",
+    "q-14-fin-05",
+    "q-14-fin-06",
+    "q-14-fin-07"
+  ]
+}

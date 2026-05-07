@@ -1,0 +1,109 @@
+{
+  "id": "lesson-05",
+  "stageId": "stage-1-core",
+  "order": 5,
+  "title": "시제 섞기",
+  "subtitle": "동사가 옷을 갈아입는다",
+  "estimatedMinutes": 6,
+  "objectives": [
+    "같은 동사도 시간에 따라 옷을 갈아입는 걸 한 눈에 본다",
+    "시간 단어(every day, now, yesterday, tomorrow)가 어떤 옷을 입을지 알려준다",
+    "한 문장 안에서도 시제가 다른 옷을 동시에 입을 수 있다"
+  ],
+  "keyPhrases": [
+    "I work at 9.",
+    "I'm working now.",
+    "I worked yesterday.",
+    "I'll work tomorrow.",
+    "I usually drink coffee, but today I'm drinking tea."
+  ],
+  "cards": [
+    {
+      "id": "lesson-05-card-01",
+      "order": 1,
+      "type": "hook",
+      "emoji": "👔",
+      "text": "같은 \"go\"라도 \"go / goes / went / will go / am going\". 어떻게 골라야 할지 막막했죠?"
+    },
+    {
+      "id": "lesson-05-card-02",
+      "order": 2,
+      "type": "narration",
+      "text": "동사는 의미는 그대로 두고, 시간에 맞춰 옷만 갈아입어요. 오늘 입을 옷, 어제 입었던 옷, 내일 입을 옷이 다르듯이요."
+    },
+    {
+      "id": "lesson-05-card-03",
+      "order": 3,
+      "type": "analogy",
+      "emoji": "🗂️",
+      "text": "1~4강이 옷장 네 칸이에요. 1강은 평소의 옷, 2강은 지금 이 순간의 사진, 3강은 어제 입었던 옷, 4강은 내일 입을 옷. 같은 동사도 상황에 맞춰 그 칸의 옷을 꺼내 입혀주세요.",
+      "examples": [
+        { "emoji": "🎬", "en": "I work at 9.", "ko": "(평소) 9시 출근하는 사람." },
+        { "emoji": "📸", "en": "I'm working now.", "ko": "(지금) 일하는 중이야." },
+        { "emoji": "🎞️", "en": "I worked yesterday.", "ko": "(어제) 일했어." },
+        { "emoji": "📅", "en": "I'll work tomorrow.", "ko": "(내일) 일할 거야." }
+      ]
+    },
+    {
+      "id": "lesson-05-card-04",
+      "order": 4,
+      "type": "example",
+      "emoji": "🕘",
+      "text": "한 사람의 하루를 시제로 따라가 봐요. 같은 동사 work가 시간에 맞춰 다른 옷으로 갈아입는 모습이 보이시나요?",
+      "examples": [
+        { "emoji": "🌅", "en": "I work at 9 every day.", "ko": "(평소) 매일 9시에 일해." },
+        { "emoji": "💻", "en": "I'm working right now.", "ko": "(지금) 일하는 중이야." }
+      ],
+      "highlight": "work / am working"
+    },
+    {
+      "id": "lesson-05-card-05",
+      "order": 5,
+      "type": "example",
+      "emoji": "👗",
+      "text": "한 문장 안에서도 옷을 바꿔 입을 수 있어요. \"평소엔 이런데, 오늘은 다르네\" 같은 말이 그래요.",
+      "examples": [
+        { "emoji": "🍵", "en": "I usually drink coffee, but today I'm drinking tea.", "ko": "평소엔 커피, 오늘은 차 마시고 있어." }
+      ],
+      "highlight": "usually drink / am drinking",
+      "afterCardQuizId": "q-05-int-01"
+    },
+    {
+      "id": "lesson-05-card-06",
+      "order": 6,
+      "type": "analogy",
+      "emoji": "🪧",
+      "text": "어떤 옷을 꺼낼지는 시간 단어가 알려줘요. 평소 신호 — always/usually/every day. 지금 신호 — now/right now. 어제 신호 — yesterday/last~/ago. 내일 신호 — tomorrow/next~. 시간 단어를 보면 옷이 자동으로 결정돼요."
+    },
+    {
+      "id": "lesson-05-card-07",
+      "order": 7,
+      "type": "example",
+      "text": "두 사람 사이를 오가는 대화처럼 — 평소의 그녀와 지금의 그녀가 한 문장에 동시에 등장할 수도 있어요.",
+      "examples": [
+        { "emoji": "📖", "en": "She studies English every morning, but right now she is reading a novel.", "ko": "(평소) 매일 아침 영어 공부하지만, (지금) 소설 읽고 있어." }
+      ],
+      "highlight": "studies / is reading"
+    },
+    {
+      "id": "lesson-05-card-08",
+      "order": 8,
+      "type": "summary",
+      "emoji": "👔",
+      "text": "동사는 의미는 같고 옷만 갈아입어요. 시간 단어를 보면 어떤 옷을 입혀야 할지 보여요. 1~4강 옷장에서 알맞은 칸을 꺼내 입혀주세요.",
+      "examples": [
+        { "emoji": "🍳", "en": "He cooks dinner every night, but tonight I'll cook.", "ko": "(평소) 매일 그가 저녁 만들지만, (내일/오늘 밤) 내가 만들게." }
+      ]
+    }
+  ],
+  "interstitialQuizIds": ["q-05-int-01"],
+  "finalQuizIds": [
+    "q-05-fin-01",
+    "q-05-fin-02",
+    "q-05-fin-03",
+    "q-05-fin-04",
+    "q-05-fin-05",
+    "q-05-fin-06",
+    "q-05-fin-07"
+  ]
+}

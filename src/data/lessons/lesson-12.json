@@ -1,0 +1,106 @@
+{
+  "id": "lesson-12",
+  "stageId": "stage-3-advanced",
+  "order": 12,
+  "title": "절 2 — when/if/because",
+  "subtitle": "시간·조건·이유의 작은 문장",
+  "estimatedMinutes": 6,
+  "objectives": [
+    "when은 \"~할 때\"라는 시간을 묶어주는 끈이다",
+    "if는 \"만약 ~라면\"이라는 조건을 묶어주는 끈이다",
+    "because는 \"~이기 때문에\"라는 이유를 묶어주는 끈이다"
+  ],
+  "keyPhrases": [
+    "When I was young, I lived in Busan.",
+    "If it rains, I will stay home.",
+    "Because I am tired, I will sleep early.",
+    "I'll call you when I get home.",
+    "If you need help, just ask."
+  ],
+  "cards": [
+    {
+      "id": "lesson-12-card-01",
+      "order": 1,
+      "type": "hook",
+      "emoji": "🪢",
+      "text": "11강의 that이 \"생각·말\"을 큰 문장에 묶어줬다면, 시간·조건·이유는 어떤 끈으로 묶을까요?"
+    },
+    {
+      "id": "lesson-12-card-02",
+      "order": 2,
+      "type": "narration",
+      "text": "각자 전용 끈이 따로 있어요. 시간엔 when, 조건엔 if, 이유엔 because. 작은 문장 앞에 슬쩍 끼우면 큰 문장에 자연스럽게 묶여요."
+    },
+    {
+      "id": "lesson-12-card-03",
+      "order": 3,
+      "type": "analogy",
+      "emoji": "🪢",
+      "text": "끈 하나는 작은 문장 한 묶음. \"내가 어렸을 때\"라는 작은 문장에 when이라는 끈을 묶으면 \"When I was young\"이라는 묶음이 만들어져요. 그걸 큰 문장에 콤마로 살짝 붙이면 끝.",
+      "examples": [
+        { "emoji": "🌳", "en": "When I was young, I lived in Busan.", "ko": "어렸을 때 부산에 살았어." }
+      ]
+    },
+    {
+      "id": "lesson-12-card-04",
+      "order": 4,
+      "type": "example",
+      "text": "if는 조건의 끈이에요. \"만약 비가 오면 집에 있을게\" 같은 \"~라면\"을 묶을 때 가장 자주 써요.",
+      "examples": [
+        { "emoji": "🌧️", "en": "If it rains, I will stay home.", "ko": "비 오면 집에 있을게." }
+      ],
+      "highlight": "If it rains",
+      "tip": "조건절(if 다음 부분)은 미래에 일어날 일이라도 평소(현재시제) 옷으로 입혀요. 영어의 작은 약속이에요."
+    },
+    {
+      "id": "lesson-12-card-05",
+      "order": 5,
+      "type": "example",
+      "emoji": "💤",
+      "text": "because는 이유의 끈이에요. \"~이기 때문에\". 어렵지 않은데, 한국어와 어순이 살짝 달라서 익숙해질 시간이 좀 필요해요.",
+      "examples": [
+        { "emoji": "💤", "en": "Because I am tired, I will sleep early.", "ko": "피곤하니까 일찍 잘게." }
+      ],
+      "highlight": "Because I am tired",
+      "afterCardQuizId": "q-12-int-01"
+    },
+    {
+      "id": "lesson-12-card-06",
+      "order": 6,
+      "type": "analogy",
+      "emoji": "↔️",
+      "text": "끈 묶음(작은 문장)은 큰 문장의 앞이나 뒤 어디든 와도 돼요. 앞에 오면 콤마(,)로 큰 문장과 구분하고, 뒤에 오면 콤마 없이 자연스럽게 이어붙여요."
+    },
+    {
+      "id": "lesson-12-card-07",
+      "order": 7,
+      "type": "example",
+      "text": "끈 묶음이 뒤에 오는 모양도 익숙해져 봐요. 자연스러운 영어 회화에선 이 순서가 더 흔해요.",
+      "examples": [
+        { "emoji": "📞", "en": "I'll call you when I get home.", "ko": "집에 가면 전화할게." },
+        { "emoji": "🤝", "en": "If you need help, just ask.", "ko": "도움 필요하면 그냥 말해." }
+      ],
+      "highlight": "when I get home / If you need help"
+    },
+    {
+      "id": "lesson-12-card-08",
+      "order": 8,
+      "type": "summary",
+      "emoji": "🪢",
+      "text": "시간·조건·이유의 작은 문장은 각자 전용 끈이 있어요. 시간 = when, 조건 = if, 이유 = because. 묶음을 큰 문장 앞·뒤 어느 쪽에 붙여도 됩니다.",
+      "examples": [
+        { "emoji": "❤️", "en": "I love you because you are kind.", "ko": "네가 친절해서 사랑해." }
+      ]
+    }
+  ],
+  "interstitialQuizIds": ["q-12-int-01"],
+  "finalQuizIds": [
+    "q-12-fin-01",
+    "q-12-fin-02",
+    "q-12-fin-03",
+    "q-12-fin-04",
+    "q-12-fin-05",
+    "q-12-fin-06",
+    "q-12-fin-07"
+  ]
+}

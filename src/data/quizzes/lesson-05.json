@@ -1,0 +1,127 @@
+[
+  {
+    "id": "q-05-int-01",
+    "lessonId": "lesson-05",
+    "type": "multiple_choice",
+    "difficulty": 1,
+    "tags": ["시제 섞기", "현재 vs 진행"],
+    "prompt": "I ___ now.",
+    "promptKo": "지금 이 순간, 일하는 중.",
+    "choices": [
+      { "id": "a", "text": "work" },
+      { "id": "b", "text": "works" },
+      { "id": "c", "text": "am working" },
+      { "id": "d", "text": "worked" }
+    ],
+    "answer": "c",
+    "explanation": "'now'는 지금 이 순간이라는 신호 — 2강 옷장(be + 동사ing)에서 옷을 꺼내요.",
+    "reference": { "lessonId": "lesson-05", "cardId": "lesson-05-card-04" }
+  },
+  {
+    "id": "q-05-fin-01",
+    "lessonId": "lesson-05",
+    "type": "multiple_choice",
+    "difficulty": 3,
+    "tags": ["시제 섞기", "한 문장 두 시제"],
+    "prompt": "She usually ___ coffee, but today she ___ tea.",
+    "promptKo": "평소엔 커피, 오늘은 차.",
+    "choices": [
+      { "id": "a", "text": "drink / drinks" },
+      { "id": "b", "text": "drinks / is drinking" },
+      { "id": "c", "text": "drinks / drinks" },
+      { "id": "d", "text": "is drinking / drinks" }
+    ],
+    "answer": "b",
+    "explanation": "'usually'는 평소(1강) 신호, 'today'와 \"하고 있다\"는 지금(2강) 신호. 한 문장에 두 옷이 동시에 등장!"
+  },
+  {
+    "id": "q-05-fin-02",
+    "lessonId": "lesson-05",
+    "type": "ox",
+    "difficulty": 2,
+    "tags": ["시제 섞기"],
+    "prompt": "I am go to school every day.",
+    "answer": false,
+    "explanation": "옷을 두 벌 동시에 입었어요 — am(2강 옷)에 go(1강 옷). every day는 평소니까 1강 옷만 — 'I go to school every day.'"
+  },
+  {
+    "id": "q-05-fin-03",
+    "lessonId": "lesson-05",
+    "type": "word_arrange",
+    "difficulty": 1,
+    "tags": ["시제 섞기", "진행"],
+    "promptKo": "그는 지금 자고 있다.",
+    "tokens": [
+      { "id": "t1", "text": "He" },
+      { "id": "t2", "text": "is" },
+      { "id": "t3", "text": "sleeping" },
+      { "id": "t4", "text": "now" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4"],
+    "explanation": "'now'는 지금 신호 — 2강 옷(be + 동사ing). He의 짝은 is."
+  },
+  {
+    "id": "q-05-fin-04",
+    "lessonId": "lesson-05",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["시제 섞기", "과거"],
+    "prompt": "I ___ TV yesterday.",
+    "promptKo": "나 어제 TV 봤어.",
+    "inputMode": "choices",
+    "choices": ["watched", "watch", "am watching", "will watch"],
+    "answer": ["watched"],
+    "explanation": "'yesterday'는 끝난 일 신호 — 3강 옷(동사 어제 옷). watch에 -ed가 살짝 붙어 watched."
+  },
+  {
+    "id": "q-05-fin-05",
+    "lessonId": "lesson-05",
+    "type": "situation_match",
+    "difficulty": 2,
+    "tags": ["시제 섞기", "시간 단어"],
+    "scenario": "친구가 \"매일 아침 뭐 해?\"라고 물어요. \"매일 운동해\"라고 답하고 싶어요.",
+    "scenarioEmoji": "🏃",
+    "choices": [
+      { "id": "a", "en": "I exercise.", "ko": "(평소) 운동하는 사람이야." },
+      { "id": "b", "en": "I am exercising.", "ko": "(지금) 운동하는 중이야." },
+      { "id": "c", "en": "I exercised.", "ko": "(어제) 운동했어." },
+      { "id": "d", "en": "I will exercise.", "ko": "(내일) 운동할 거야." }
+    ],
+    "answer": "a",
+    "explanation": "'매일'은 평소 신호. 1강 옷장에서 가장 단순한 형태를 꺼내 입혀요."
+  },
+  {
+    "id": "q-05-fin-06",
+    "lessonId": "lesson-05",
+    "type": "translation",
+    "difficulty": 3,
+    "tags": ["시제 섞기", "한 문장 두 시제"],
+    "promptKo": "나는 매일 운동하지만 오늘은 쉬고 있다.",
+    "tokens": [
+      { "id": "t1", "text": "I" },
+      { "id": "t2", "text": "exercise" },
+      { "id": "t3", "text": "exercising" },
+      { "id": "t4", "text": "every" },
+      { "id": "t5", "text": "day" },
+      { "id": "t6", "text": "but" },
+      { "id": "t7", "text": "today" },
+      { "id": "t8", "text": "I'm" },
+      { "id": "t9", "text": "resting" },
+      { "id": "t10", "text": "rested" }
+    ],
+    "answer": ["t1", "t2", "t4", "t5", "t6", "t7", "t8", "t9"],
+    "explanation": "'every day'는 평소 신호 — 1강 옷(exercise). 'today + 쉬고 있다'는 지금 신호 — 2강 옷(I'm resting). 한 문장 안에 두 옷이 같이!"
+  },
+  {
+    "id": "q-05-fin-07",
+    "lessonId": "lesson-05",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["시제 섞기", "과거"],
+    "prompt": "She ___ to Busan last weekend.",
+    "promptKo": "그녀는 지난 주말에 부산에 갔어.",
+    "inputMode": "keyboard",
+    "answer": ["went"],
+    "explanation": "'last weekend'는 끝난 일 신호. go의 어제 옷은 went — 통째로 변신하는 동사예요."
+  }
+]

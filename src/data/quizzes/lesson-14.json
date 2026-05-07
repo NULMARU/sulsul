@@ -1,0 +1,118 @@
+[
+  {
+    "id": "q-14-int-01",
+    "lessonId": "lesson-14",
+    "type": "ox",
+    "difficulty": 1,
+    "tags": ["조동사", "원형"],
+    "prompt": "She can swims.",
+    "answer": false,
+    "explanation": "조동사 뒤의 동사는 항상 원형! can이 앞에 있으면 swims가 아니라 swim. 'She can swim.'",
+    "hint": "조동사가 앞에 있으면 동사는 옷을 벗어요.",
+    "reference": { "lessonId": "lesson-14", "cardId": "lesson-14-card-04" }
+  },
+  {
+    "id": "q-14-fin-01",
+    "lessonId": "lesson-14",
+    "type": "multiple_choice",
+    "difficulty": 1,
+    "tags": ["조동사", "권유"],
+    "prompt": "You ___ sleep early.",
+    "promptKo": "일찍 자는 게 좋아.",
+    "choices": [
+      { "id": "a", "text": "must" },
+      { "id": "b", "text": "should" },
+      { "id": "c", "text": "can" },
+      { "id": "d", "text": "may" }
+    ],
+    "answer": "b",
+    "explanation": "부드러운 권유는 should. must는 너무 강한 의무 느낌이에요."
+  },
+  {
+    "id": "q-14-fin-02",
+    "lessonId": "lesson-14",
+    "type": "ox",
+    "difficulty": 2,
+    "tags": ["조동사", "have to"],
+    "prompt": "He have to go now.",
+    "answer": false,
+    "explanation": "have to는 일반 동사처럼 He/She엔 -s 신호 필요 — 'He has to go now.'"
+  },
+  {
+    "id": "q-14-fin-03",
+    "lessonId": "lesson-14",
+    "type": "word_arrange",
+    "difficulty": 1,
+    "tags": ["조동사", "부탁"],
+    "promptKo": "도와줄 수 있어요?",
+    "tokens": [
+      { "id": "t1", "text": "Can" },
+      { "id": "t2", "text": "you" },
+      { "id": "t3", "text": "help" },
+      { "id": "t4", "text": "me" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4"],
+    "explanation": "조동사가 앞으로 점프하면 부탁이 돼요. Can you help me?"
+  },
+  {
+    "id": "q-14-fin-04",
+    "lessonId": "lesson-14",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["조동사", "가능"],
+    "prompt": "I ___ speak three languages.",
+    "promptKo": "나 세 가지 언어 할 수 있어.",
+    "inputMode": "choices",
+    "choices": ["can", "must", "should", "have"],
+    "answer": ["can"],
+    "explanation": "\"~할 수 있어\"는 가능 — 도구 can을 동사 앞에 끼워주세요."
+  },
+  {
+    "id": "q-14-fin-05",
+    "lessonId": "lesson-14",
+    "type": "situation_match",
+    "difficulty": 2,
+    "tags": ["조동사", "권유"],
+    "scenario": "친구가 머리 아파해요. \"물 좀 마시는 게 좋겠어\"라고 부드럽게 권하고 싶어요.",
+    "scenarioEmoji": "💧",
+    "choices": [
+      { "id": "a", "en": "You must drink water.", "ko": "꼭 물 마셔야 해.(강함)" },
+      { "id": "b", "en": "You should drink water.", "ko": "물 마시는 게 좋겠어.(권유)" },
+      { "id": "c", "en": "You can drink water.", "ko": "물 마실 수 있어.(가능)" },
+      { "id": "d", "en": "You drink water.", "ko": "(평소) 물 마셔." }
+    ],
+    "answer": "b",
+    "explanation": "부드러운 권유에 가장 잘 맞는 도구는 should. must는 \"꼭\"의 무게가 너무 커서 부담스러울 수 있어요."
+  },
+  {
+    "id": "q-14-fin-06",
+    "lessonId": "lesson-14",
+    "type": "translation",
+    "difficulty": 3,
+    "tags": ["조동사", "have to"],
+    "promptKo": "그녀는 오늘 밤 꼭 공부해야 한다.",
+    "tokens": [
+      { "id": "t1", "text": "She" },
+      { "id": "t2", "text": "has" },
+      { "id": "t3", "text": "have" },
+      { "id": "t4", "text": "to" },
+      { "id": "t5", "text": "study" },
+      { "id": "t6", "text": "studies" },
+      { "id": "t7", "text": "tonight" }
+    ],
+    "answer": ["t1", "t2", "t4", "t5", "t7"],
+    "explanation": "She엔 has to (-s 신호). to 뒤의 동사는 원형 — study! She has to study tonight."
+  },
+  {
+    "id": "q-14-fin-07",
+    "lessonId": "lesson-14",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["조동사", "원형"],
+    "prompt": "He can ___ very fast.",
+    "promptKo": "그는 정말 빨리 달릴 수 있어.",
+    "inputMode": "keyboard",
+    "answer": ["run"],
+    "explanation": "can 뒤엔 동사 원형 — runs가 아니라 run."
+  }
+]

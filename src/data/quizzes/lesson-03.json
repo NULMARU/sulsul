@@ -1,0 +1,120 @@
+[
+  {
+    "id": "q-03-int-01",
+    "lessonId": "lesson-03",
+    "type": "ox",
+    "difficulty": 1,
+    "tags": ["과거시제", "불규칙"],
+    "prompt": "I goed to school yesterday.",
+    "answer": false,
+    "explanation": "go는 통째로 옷을 갈아입는 동사예요 — 어제 옷은 went. 'I went to school yesterday.'가 맞습니다.",
+    "hint": "go는 -ed 꼬리를 못 달고 통째로 변신해요.",
+    "reference": { "lessonId": "lesson-03", "cardId": "lesson-03-card-05" }
+  },
+  {
+    "id": "q-03-fin-01",
+    "lessonId": "lesson-03",
+    "type": "multiple_choice",
+    "difficulty": 1,
+    "tags": ["과거시제", "불규칙"],
+    "prompt": "She ___ a letter last night.",
+    "promptKo": "그녀는 어젯밤에 편지를 썼다.",
+    "choices": [
+      { "id": "a", "text": "writes" },
+      { "id": "b", "text": "wrote" },
+      { "id": "c", "text": "is writing" },
+      { "id": "d", "text": "writing" }
+    ],
+    "answer": "b",
+    "explanation": "'last night'은 끝난 일이라는 신호예요. write는 통째로 변신해서 wrote가 됩니다."
+  },
+  {
+    "id": "q-03-fin-02",
+    "lessonId": "lesson-03",
+    "type": "ox",
+    "difficulty": 2,
+    "tags": ["과거시제", "부정문"],
+    "prompt": "He didn't went to school.",
+    "answer": false,
+    "explanation": "didn't가 이미 \"끝난 일이고 부정\"을 다 짊어졌어요. 동사는 가벼운 원래 모습으로 — 'He didn't go to school.'"
+  },
+  {
+    "id": "q-03-fin-03",
+    "lessonId": "lesson-03",
+    "type": "word_arrange",
+    "difficulty": 1,
+    "tags": ["과거시제", "규칙"],
+    "promptKo": "나 어제 영화 봤어.",
+    "tokens": [
+      { "id": "t1", "text": "I" },
+      { "id": "t2", "text": "watched" },
+      { "id": "t3", "text": "a" },
+      { "id": "t4", "text": "movie" },
+      { "id": "t5", "text": "yesterday" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4", "t5"],
+    "explanation": "watch는 꼬리에 -ed가 살짝 붙는 규칙형. 'yesterday'와 함께 다니면 끝난 일이라는 게 더 분명해져요."
+  },
+  {
+    "id": "q-03-fin-04",
+    "lessonId": "lesson-03",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["과거시제", "불규칙"],
+    "prompt": "I ___ to Busan last weekend.",
+    "promptKo": "나 지난 주말에 부산 갔어.",
+    "inputMode": "choices",
+    "choices": ["went", "go", "goes", "going"],
+    "answer": ["went"],
+    "explanation": "go의 어제 옷은 went. 'last weekend'가 끝난 일이라는 단서를 주고 있어요."
+  },
+  {
+    "id": "q-03-fin-05",
+    "lessonId": "lesson-03",
+    "type": "situation_match",
+    "difficulty": 2,
+    "tags": ["과거시제"],
+    "scenario": "친구가 \"어제 뭐 했어?\"라고 물어봐요. 집에서 그냥 쉬었다고 답하고 싶어요.",
+    "scenarioEmoji": "🛋️",
+    "choices": [
+      { "id": "a", "en": "I stay home.", "ko": "나는 집에 있는 사람이야." },
+      { "id": "b", "en": "I am staying home.", "ko": "나 (지금) 집에 있어." },
+      { "id": "c", "en": "I stayed home.", "ko": "나 (어제) 집에 있었어." },
+      { "id": "d", "en": "I will stay home.", "ko": "나 집에 있을 거야." }
+    ],
+    "answer": "c",
+    "explanation": "어제 한 일은 끝난 사건. stay에 -ed를 붙여 stayed로 동사가 어제 옷을 입었어요."
+  },
+  {
+    "id": "q-03-fin-06",
+    "lessonId": "lesson-03",
+    "type": "translation",
+    "difficulty": 3,
+    "tags": ["과거시제", "부정문"],
+    "promptKo": "그녀는 어제 책을 읽지 않았다.",
+    "tokens": [
+      { "id": "t1", "text": "She" },
+      { "id": "t2", "text": "didn't" },
+      { "id": "t3", "text": "read" },
+      { "id": "t4", "text": "doesn't" },
+      { "id": "t5", "text": "a" },
+      { "id": "t6", "text": "book" },
+      { "id": "t7", "text": "yesterday" },
+      { "id": "t8", "text": "readed" }
+    ],
+    "answer": ["t1", "t2", "t3", "t5", "t6", "t7"],
+    "explanation": "didn't가 이미 \"끝남 + 부정\"을 짊어졌으니 동사는 원래 모습 read로 충분해요. 함정으로 doesn't, readed가 섞여 있었네요."
+  },
+  {
+    "id": "q-03-fin-07",
+    "lessonId": "lesson-03",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["과거시제", "규칙"],
+    "prompt": "I ___ English last night.",
+    "promptKo": "나 어젯밤 영어 공부했어.",
+    "inputMode": "keyboard",
+    "answer": ["studied"],
+    "explanation": "study처럼 y로 끝나는 동사는 y → i로 살짝 바꾸고 -ed를 붙여요. studied가 어제 옷이에요."
+  }
+]

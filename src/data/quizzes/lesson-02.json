@@ -1,0 +1,119 @@
+[
+  {
+    "id": "q-02-int-01",
+    "lessonId": "lesson-02",
+    "type": "ox",
+    "difficulty": 1,
+    "tags": ["진행형", "be동사"],
+    "prompt": "She cooking dinner now.",
+    "answer": false,
+    "explanation": "지금 이 순간의 사진엔 도우미 be가 꼭 필요해요. 'She is cooking dinner now.'가 맞습니다.",
+    "hint": "동사ing 앞에 들어가야 할 짝꿍이 있어요.",
+    "reference": { "lessonId": "lesson-02", "cardId": "lesson-02-card-05" }
+  },
+  {
+    "id": "q-02-fin-01",
+    "lessonId": "lesson-02",
+    "type": "multiple_choice",
+    "difficulty": 1,
+    "tags": ["진행형", "1인칭"],
+    "prompt": "I ___ TV right now.",
+    "promptKo": "나 지금 TV 보고 있어.",
+    "choices": [
+      { "id": "a", "text": "watch" },
+      { "id": "b", "text": "watches" },
+      { "id": "c", "text": "am watching" },
+      { "id": "d", "text": "watched" }
+    ],
+    "answer": "c",
+    "explanation": "'right now'는 지금 이 순간의 사진이라는 신호예요. I엔 am을 붙이고 동사 뒤엔 -ing!"
+  },
+  {
+    "id": "q-02-fin-02",
+    "lessonId": "lesson-02",
+    "type": "ox",
+    "difficulty": 2,
+    "tags": ["진행형", "현재시제 구분"],
+    "prompt": "He is wearing glasses every day.",
+    "answer": false,
+    "explanation": "'every day'는 평소를 말하는 신호예요. 이럴 땐 1강의 단순 형태 — 'He wears glasses every day.'가 맞아요. 진행형은 '지금 이 순간'에 어울립니다."
+  },
+  {
+    "id": "q-02-fin-03",
+    "lessonId": "lesson-02",
+    "type": "word_arrange",
+    "difficulty": 1,
+    "tags": ["진행형"],
+    "promptKo": "지금 비가 오고 있어.",
+    "tokens": [
+      { "id": "t1", "text": "It" },
+      { "id": "t2", "text": "is" },
+      { "id": "t3", "text": "raining" },
+      { "id": "t4", "text": "now" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4"],
+    "explanation": "It은 He/She처럼 is와 짝이에요. 거기에 rain + ing을 붙이면 '지금 비 오는 사진'이 됩니다."
+  },
+  {
+    "id": "q-02-fin-04",
+    "lessonId": "lesson-02",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["진행형", "복수"],
+    "prompt": "They ___ soccer right now.",
+    "promptKo": "걔네들 지금 축구하고 있어.",
+    "inputMode": "choices",
+    "choices": ["are playing", "is playing", "play", "plays"],
+    "answer": ["are playing"],
+    "explanation": "They는 are와 짝이에요. 'right now'가 지금 이 순간이라는 신호니까 동사엔 -ing!"
+  },
+  {
+    "id": "q-02-fin-05",
+    "lessonId": "lesson-02",
+    "type": "situation_match",
+    "difficulty": 2,
+    "tags": ["진행형"],
+    "scenario": "친구가 전화했는데 지금 통화 중이라 시끄럽다고 알려주고 싶어요.",
+    "scenarioEmoji": "📞",
+    "choices": [
+      { "id": "a", "en": "I talk on the phone.", "ko": "나 전화하는 사람이야." },
+      { "id": "b", "en": "I'm on the phone.", "ko": "나 (지금) 통화 중이야." },
+      { "id": "c", "en": "I talked on the phone.", "ko": "나 전화 통화 했었어." },
+      { "id": "d", "en": "I will be on the phone.", "ko": "나 통화하고 있을 거야." }
+    ],
+    "answer": "b",
+    "explanation": "'지금 이 순간'을 잡아낸 사진을 보내야 해요. be + on the phone으로 진행형 표현을 쓰면 깔끔합니다."
+  },
+  {
+    "id": "q-02-fin-06",
+    "lessonId": "lesson-02",
+    "type": "translation",
+    "difficulty": 2,
+    "tags": ["진행형", "3인칭"],
+    "promptKo": "그는 지금 책을 읽고 있다.",
+    "tokens": [
+      { "id": "t1", "text": "He" },
+      { "id": "t2", "text": "is" },
+      { "id": "t3", "text": "are" },
+      { "id": "t4", "text": "reading" },
+      { "id": "t5", "text": "reads" },
+      { "id": "t6", "text": "a" },
+      { "id": "t7", "text": "book" },
+      { "id": "t8", "text": "now" }
+    ],
+    "answer": ["t1", "t2", "t4", "t6", "t7", "t8"],
+    "explanation": "He의 짝은 is. 그 뒤엔 동사+ing — 함정으로 are, reads가 섞여 있었네요."
+  },
+  {
+    "id": "q-02-fin-07",
+    "lessonId": "lesson-02",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["진행형", "be동사"],
+    "prompt": "I ___ studying English now.",
+    "promptKo": "나 지금 영어 공부하는 중이야.",
+    "inputMode": "keyboard",
+    "answer": ["am", "'m"],
+    "explanation": "I의 짝은 am. 줄여서 I'm으로도 자주 써요."
+  }
+]

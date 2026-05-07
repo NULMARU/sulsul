@@ -1,0 +1,127 @@
+[
+  {
+    "id": "q-16-int-01",
+    "lessonId": "lesson-16",
+    "type": "multiple_choice",
+    "difficulty": 2,
+    "tags": ["가정법", "were"],
+    "prompt": "If I ___ rich, I would travel the world.",
+    "promptKo": "내가 부자라면 세계 여행 다닐 텐데.",
+    "choices": [
+      { "id": "a", "text": "am" },
+      { "id": "b", "text": "is" },
+      { "id": "c", "text": "were" },
+      { "id": "d", "text": "will be" }
+    ],
+    "answer": "c",
+    "explanation": "현실(부자 아님)에서 거리를 두려면 시제를 과거로 — 그리고 가정법의 단정한 옷은 was 대신 were예요.",
+    "reference": { "lessonId": "lesson-16", "cardId": "lesson-16-card-05" }
+  },
+  {
+    "id": "q-16-fin-01",
+    "lessonId": "lesson-16",
+    "type": "multiple_choice",
+    "difficulty": 2,
+    "tags": ["가정법"],
+    "prompt": "If I had a car, I ___ drive to the beach.",
+    "promptKo": "차가 있다면 해변에 운전해서 갈 텐데.",
+    "choices": [
+      { "id": "a", "text": "will" },
+      { "id": "b", "text": "would" },
+      { "id": "c", "text": "have" },
+      { "id": "d", "text": "did" }
+    ],
+    "answer": "b",
+    "explanation": "If + 과거(had) 다음엔 would + 원형(drive)이 짝이에요. will이 한 발짝 뒤로 물러난 모습."
+  },
+  {
+    "id": "q-16-fin-02",
+    "lessonId": "lesson-16",
+    "type": "ox",
+    "difficulty": 2,
+    "tags": ["가정법"],
+    "prompt": "If I have time, I would help you.",
+    "answer": false,
+    "explanation": "가정법은 시제를 과거로 한 칸 밀어요. 'If I had time, I would help you.'가 자연스러워요."
+  },
+  {
+    "id": "q-16-fin-03",
+    "lessonId": "lesson-16",
+    "type": "word_arrange",
+    "difficulty": 2,
+    "tags": ["가정법", "I wish"],
+    "promptKo": "날 수 있으면 좋겠다.",
+    "tokens": [
+      { "id": "t1", "text": "I" },
+      { "id": "t2", "text": "wish" },
+      { "id": "t3", "text": "I" },
+      { "id": "t4", "text": "could" },
+      { "id": "t5", "text": "fly" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4", "t5"],
+    "explanation": "I wish + (현실과 다른 바람). can을 한 칸 뒤로 밀어 could로!"
+  },
+  {
+    "id": "q-16-fin-04",
+    "lessonId": "lesson-16",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["가정법"],
+    "prompt": "If she ___ harder, she would pass.",
+    "promptKo": "그녀가 더 열심히 공부하면 합격할 텐데.",
+    "inputMode": "choices",
+    "choices": ["studied", "studies", "study", "will study"],
+    "answer": ["studied"],
+    "explanation": "If 다음엔 시제를 한 칸 뒤로 — studied. 짝은 would pass."
+  },
+  {
+    "id": "q-16-fin-05",
+    "lessonId": "lesson-16",
+    "type": "situation_match",
+    "difficulty": 3,
+    "tags": ["가정법"],
+    "scenario": "지금은 시간이 없지만, \"시간이 있다면 같이 갈 텐데\"라고 아쉬움을 표현하고 싶어요.",
+    "scenarioEmoji": "⏰",
+    "choices": [
+      { "id": "a", "en": "If I have time, I will go with you.", "ko": "(현실 있음 가정) 시간 있으면 같이 갈게." },
+      { "id": "b", "en": "If I had time, I would go with you.", "ko": "(현실 없음 가정) 시간 있다면 같이 갈 텐데." },
+      { "id": "c", "en": "If I have time, I would go with you.", "ko": "(시제 어색)" },
+      { "id": "d", "en": "If I had time, I will go with you.", "ko": "(시제 어색)" }
+    ],
+    "answer": "b",
+    "explanation": "지금 시간이 없는 현실 → 한 칸 뒤로(had + would). 두 부분 모두 짝을 맞춰주세요."
+  },
+  {
+    "id": "q-16-fin-06",
+    "lessonId": "lesson-16",
+    "type": "translation",
+    "difficulty": 3,
+    "tags": ["가정법", "과거"],
+    "promptKo": "알았더라면 전화했을 텐데.",
+    "tokens": [
+      { "id": "t1", "text": "If" },
+      { "id": "t2", "text": "I" },
+      { "id": "t3", "text": "had" },
+      { "id": "t4", "text": "known," },
+      { "id": "t5", "text": "I" },
+      { "id": "t6", "text": "would" },
+      { "id": "t7", "text": "have" },
+      { "id": "t8", "text": "called" },
+      { "id": "t9", "text": "knew" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+    "explanation": "과거 사실에 대한 가정은 한 칸 더 뒤로 — had known / would have called. 함정으로 knew가 섞여 있었네요."
+  },
+  {
+    "id": "q-16-fin-07",
+    "lessonId": "lesson-16",
+    "type": "fill_blank",
+    "difficulty": 3,
+    "tags": ["가정법"],
+    "prompt": "If I ___ you, I would say sorry.",
+    "promptKo": "내가 너라면 사과할 텐데.",
+    "inputMode": "keyboard",
+    "answer": ["were", "was"],
+    "explanation": "If I were ~는 가정법의 단정한 옷. 회화에선 was도 자주 쓰여 둘 다 인정해요."
+  }
+]

@@ -1,0 +1,110 @@
+{
+  "id": "lesson-13",
+  "stageId": "stage-3-advanced",
+  "order": 13,
+  "title": "절 3 — 관계대명사",
+  "subtitle": "사람·사물 뒤에 작은 문장으로 설명 추가",
+  "estimatedMinutes": 7,
+  "objectives": [
+    "사람 뒤엔 who, 사물 뒤엔 which/that 끈으로 설명을 묶는다",
+    "관계대명사는 \"앞 사람·사물을 받아 작은 문장 안에서 다시 등장하는\" 자리이다",
+    "회화에선 사물·목적어 자리의 that을 자주 생략한다"
+  ],
+  "keyPhrases": [
+    "The man who lives next door is kind.",
+    "The book that I read was great.",
+    "I have a friend who speaks Spanish.",
+    "This is the cake which she made.",
+    "The movie (that) we watched was sad."
+  ],
+  "cards": [
+    {
+      "id": "lesson-13-card-01",
+      "order": 1,
+      "type": "hook",
+      "emoji": "🔗",
+      "text": "\"옆집에 사는 그 남자\". 한국어는 \"~사는\"이 앞에 붙지만, 영어는 사람 뒤에 작은 문장을 살짝 매다는 식이에요."
+    },
+    {
+      "id": "lesson-13-card-02",
+      "order": 2,
+      "type": "narration",
+      "text": "사람·사물 뒤에 \"이 사람은/이 사물은 ~한 사람/사물이다\"라는 작은 문장을 매달 때 쓰는 끈이 관계대명사예요. 누구를 받느냐에 따라 끈의 모양이 달라요."
+    },
+    {
+      "id": "lesson-13-card-03",
+      "order": 3,
+      "type": "analogy",
+      "emoji": "🔗",
+      "text": "사람을 받는 끈은 who, 사물을 받는 끈은 which 또는 that이에요. 받은 명사는 작은 문장 안에서 다시 \"등장할 자리\"를 차지해요. 끈이 그 자리를 대신 채워주는 거죠.",
+      "examples": [
+        { "emoji": "👨", "en": "The man who lives next door is kind.", "ko": "옆집에 사는 그 남자 친절해. (the man = he)" }
+      ]
+    },
+    {
+      "id": "lesson-13-card-04",
+      "order": 4,
+      "type": "example",
+      "text": "사물을 받을 땐 which나 that. 둘 다 자주 쓰여요. that이 좀 더 일상적이고, which는 글에서 더 자주 보입니다.",
+      "examples": [
+        { "emoji": "📖", "en": "The book that I read was great.", "ko": "내가 읽은 그 책 좋았어." }
+      ],
+      "highlight": "that I read"
+    },
+    {
+      "id": "lesson-13-card-05",
+      "order": 5,
+      "type": "example",
+      "emoji": "🇪🇸",
+      "text": "같은 사람을 두 번째 작은 문장에서 또 부르려고 하면 길어지죠. 그래서 끈 하나로 묶어서 한 문장으로 만들어요. \"내 친구가 있어 + 그 친구가 스페인어 해\" → 한 문장으로!",
+      "examples": [
+        { "emoji": "👫", "en": "I have a friend who speaks Spanish.", "ko": "스페인어 하는 친구 있어." },
+        { "emoji": "🍰", "en": "This is the cake which she made.", "ko": "이게 그녀가 만든 케이크야." }
+      ],
+      "highlight": "who speaks / which she made",
+      "afterCardQuizId": "q-13-int-01"
+    },
+    {
+      "id": "lesson-13-card-06",
+      "order": 6,
+      "type": "analogy",
+      "emoji": "💨",
+      "text": "관계대명사가 작은 문장 안에서 \"목적어 자리\"를 대신할 땐 회화에서 자주 생략돼요. 11강에서 본 that 생략과 같은 풍습이에요.",
+      "examples": [
+        { "emoji": "🎬", "en": "The movie that we watched was sad.", "ko": "우리가 본 그 영화 슬펐어." },
+        { "emoji": "💨", "en": "The movie we watched was sad.", "ko": "(that 생략) 같은 뜻." }
+      ]
+    },
+    {
+      "id": "lesson-13-card-07",
+      "order": 7,
+      "type": "example",
+      "text": "끈이 주어 자리(\"who lives\")일 땐 생략이 안 돼요. 끈이 목적어 자리(\"that I read\")면 회화에선 슬쩍 빼도 됩니다.",
+      "examples": [
+        { "emoji": "✅", "en": "The man who lives next door is kind.", "ko": "(주어 자리, 생략 X)" },
+        { "emoji": "💨", "en": "The book I read was great.", "ko": "(목적어 자리, that 생략 OK)" }
+      ],
+      "highlight": "주어 vs 목적어"
+    },
+    {
+      "id": "lesson-13-card-08",
+      "order": 8,
+      "type": "summary",
+      "emoji": "🔗",
+      "text": "사람을 받으면 who, 사물을 받으면 which/that. 받은 명사는 작은 문장 안의 자리를 메우고, 그 자리가 목적어면 회화에선 끈을 슬쩍 빼도 됩니다.",
+      "examples": [
+        { "emoji": "🚗", "en": "The car that he bought is red.", "ko": "그가 산 그 차는 빨간색이야." }
+      ]
+    }
+  ],
+  "interstitialQuizIds": ["q-13-int-01"],
+  "finalQuizIds": [
+    "q-13-fin-01",
+    "q-13-fin-02",
+    "q-13-fin-03",
+    "q-13-fin-04",
+    "q-13-fin-05",
+    "q-13-fin-06",
+    "q-13-fin-07"
+  ]
+}

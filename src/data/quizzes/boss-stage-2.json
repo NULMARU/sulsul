@@ -1,0 +1,222 @@
+[
+  {
+    "id": "boss-2-q01",
+    "lessonId": "boss-stage-2",
+    "type": "multiple_choice",
+    "difficulty": 1,
+    "tags": ["to부정사"],
+    "prompt": "I want ___ a new phone.",
+    "promptKo": "새 폰 사고 싶어.",
+    "choices": [
+      { "id": "a", "text": "buy" },
+      { "id": "b", "text": "buying" },
+      { "id": "c", "text": "to buy" },
+      { "id": "d", "text": "bought" }
+    ],
+    "answer": "c",
+    "explanation": "want는 미래 시선 — to + 원형이 짝.",
+    "reference": { "lessonId": "lesson-06" }
+  },
+  {
+    "id": "boss-2-q02",
+    "lessonId": "boss-stage-2",
+    "type": "ox",
+    "difficulty": 2,
+    "tags": ["동명사"],
+    "prompt": "I enjoy to play soccer.",
+    "answer": false,
+    "explanation": "enjoy는 \"이미 즐기는\" 익숙함이라 -ing와 짝. 'I enjoy playing soccer.'",
+    "reference": { "lessonId": "lesson-06" }
+  },
+  {
+    "id": "boss-2-q03",
+    "lessonId": "boss-stage-2",
+    "type": "multiple_choice",
+    "difficulty": 2,
+    "tags": ["가주어 It"],
+    "prompt": "___ is fun to learn K-pop dances.",
+    "promptKo": "케이팝 댄스 배우는 거 재밌어.",
+    "choices": [
+      { "id": "a", "text": "This" },
+      { "id": "b", "text": "That" },
+      { "id": "c", "text": "It" },
+      { "id": "d", "text": "There" }
+    ],
+    "answer": "c",
+    "explanation": "긴 주어 대신 자리를 잡아주는 임시 주어는 It.",
+    "reference": { "lessonId": "lesson-07" }
+  },
+  {
+    "id": "boss-2-q04",
+    "lessonId": "boss-stage-2",
+    "type": "word_arrange",
+    "difficulty": 2,
+    "tags": ["가주어 It"],
+    "promptKo": "여행하는 건 재밌어.",
+    "tokens": [
+      { "id": "t1", "text": "It" },
+      { "id": "t2", "text": "is" },
+      { "id": "t3", "text": "fun" },
+      { "id": "t4", "text": "to" },
+      { "id": "t5", "text": "travel" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4", "t5"],
+    "explanation": "It is + 형용사 + to V 공식.",
+    "reference": { "lessonId": "lesson-07" }
+  },
+  {
+    "id": "boss-2-q05",
+    "lessonId": "boss-stage-2",
+    "type": "multiple_choice",
+    "difficulty": 1,
+    "tags": ["There is/are"],
+    "prompt": "There ___ many people at the party.",
+    "promptKo": "파티에 사람 많이 있어.",
+    "choices": [
+      { "id": "a", "text": "is" },
+      { "id": "b", "text": "are" },
+      { "id": "c", "text": "have" },
+      { "id": "d", "text": "has" }
+    ],
+    "answer": "b",
+    "explanation": "many people은 복수 — There are.",
+    "reference": { "lessonId": "lesson-08" }
+  },
+  {
+    "id": "boss-2-q06",
+    "lessonId": "boss-stage-2",
+    "type": "ox",
+    "difficulty": 2,
+    "tags": ["There is/are"],
+    "prompt": "이미 \"내 책\"을 아는 상황에서 \"There is the book on the table.\"이 자연스럽다.",
+    "answer": false,
+    "explanation": "이미 아는 것엔 굳이 무대를 열 필요 없이 'The book is on the table.' There is/are는 처음 등장에 어울려요.",
+    "reference": { "lessonId": "lesson-08" }
+  },
+  {
+    "id": "boss-2-q07",
+    "lessonId": "boss-stage-2",
+    "type": "ox",
+    "difficulty": 1,
+    "tags": ["조동사", "원형"],
+    "prompt": "She can swims.",
+    "answer": false,
+    "explanation": "조동사 뒤의 동사는 항상 원형 — 'She can swim.'",
+    "reference": { "lessonId": "lesson-14" }
+  },
+  {
+    "id": "boss-2-q08",
+    "lessonId": "boss-stage-2",
+    "type": "situation_match",
+    "difficulty": 2,
+    "tags": ["조동사", "권유"],
+    "scenario": "친구가 머리 아파해요. \"물 좀 마시는 게 좋겠어\"라고 부드럽게 권하고 싶어요.",
+    "scenarioEmoji": "💧",
+    "choices": [
+      { "id": "a", "en": "You must drink water.", "ko": "꼭 물 마셔야 해.(강함)" },
+      { "id": "b", "en": "You should drink water.", "ko": "물 마시는 게 좋겠어.(권유)" },
+      { "id": "c", "en": "You can drink water.", "ko": "물 마실 수 있어.(가능)" },
+      { "id": "d", "en": "You drink water.", "ko": "(평소) 물 마셔." }
+    ],
+    "answer": "b",
+    "explanation": "부드러운 권유는 should — must는 \"꼭\"의 무게가 너무 커요.",
+    "reference": { "lessonId": "lesson-14" }
+  },
+  {
+    "id": "boss-2-q09",
+    "lessonId": "boss-stage-2",
+    "type": "multiple_choice",
+    "difficulty": 2,
+    "tags": ["현재완료"],
+    "prompt": "I ___ in Seoul for 5 years.",
+    "promptKo": "5년째 서울에 살고 있어.",
+    "choices": [
+      { "id": "a", "text": "live" },
+      { "id": "b", "text": "lived" },
+      { "id": "c", "text": "have lived" },
+      { "id": "d", "text": "am living" }
+    ],
+    "answer": "c",
+    "explanation": "for 5 years는 \"이어진 선\" 신호 — have + p.p.",
+    "reference": { "lessonId": "lesson-09" }
+  },
+  {
+    "id": "boss-2-q10",
+    "lessonId": "boss-stage-2",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["현재완료", "since"],
+    "prompt": "We have been friends ___ high school.",
+    "promptKo": "우리 고등학교 때부터 친구야.",
+    "inputMode": "choices",
+    "choices": ["since", "for", "ago", "from"],
+    "answer": ["since"],
+    "explanation": "since + 시작점. for는 기간 길이엔 어울려요.",
+    "reference": { "lessonId": "lesson-09" }
+  },
+  {
+    "id": "boss-2-q11",
+    "lessonId": "boss-stage-2",
+    "type": "ox",
+    "difficulty": 2,
+    "tags": ["현재완료", "vs 과거"],
+    "prompt": "I have lived in Seoul yesterday.",
+    "answer": false,
+    "explanation": "yesterday는 끝난 점 신호. 'I lived in Seoul yesterday.' 현재완료는 \"지금까지 이어진다\"는 신호와만 어울려요.",
+    "reference": { "lessonId": "lesson-09" }
+  },
+  {
+    "id": "boss-2-q12",
+    "lessonId": "boss-stage-2",
+    "type": "word_arrange",
+    "difficulty": 2,
+    "tags": ["현재완료", "결과"],
+    "promptKo": "지갑을 잃어버려서 지금도 없어.",
+    "tokens": [
+      { "id": "t1", "text": "I" },
+      { "id": "t2", "text": "have" },
+      { "id": "t3", "text": "lost" },
+      { "id": "t4", "text": "my" },
+      { "id": "t5", "text": "wallet" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4", "t5"],
+    "explanation": "have lost — 결과가 지금도 남았다는 뜻. lose의 p.p.는 lost.",
+    "reference": { "lessonId": "lesson-10" }
+  },
+  {
+    "id": "boss-2-q13",
+    "lessonId": "boss-stage-2",
+    "type": "translation",
+    "difficulty": 3,
+    "tags": ["to부정사", "동명사"],
+    "promptKo": "다음달에 여행 갈 계획이고 영어 공부하는 걸 즐겨.",
+    "tokens": [
+      { "id": "t1", "text": "I" },
+      { "id": "t2", "text": "plan" },
+      { "id": "t3", "text": "to" },
+      { "id": "t4", "text": "travel" },
+      { "id": "t5", "text": "next" },
+      { "id": "t6", "text": "month" },
+      { "id": "t7", "text": "and" },
+      { "id": "t8", "text": "enjoy" },
+      { "id": "t9", "text": "studying" },
+      { "id": "t10", "text": "English" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9", "t10"],
+    "explanation": "plan은 미래 → to. enjoy는 익숙함 → -ing. 한 문장에 두 종류!",
+    "reference": { "lessonId": "lesson-06" }
+  },
+  {
+    "id": "boss-2-q14",
+    "lessonId": "boss-stage-2",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["현재완료", "경험"],
+    "prompt": "Have you ___ been to Japan?",
+    "promptKo": "일본 가본 적 있어?",
+    "inputMode": "keyboard",
+    "answer": ["ever"],
+    "explanation": "경험을 묻는 \"한 번이라도 ~?\"의 단짝은 ever.",
+    "reference": { "lessonId": "lesson-10" }
+  }
+]

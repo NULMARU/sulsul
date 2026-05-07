@@ -1,0 +1,104 @@
+{
+  "id": "lesson-16",
+  "stageId": "stage-3-advanced",
+  "order": 16,
+  "title": "가정법",
+  "subtitle": "시제를 과거로 밀어 현실과 거리 두기",
+  "estimatedMinutes": 7,
+  "objectives": [
+    "현실에서 멀어지려면 시제를 한 칸 과거로 민다",
+    "If + 과거시제, 주어 + would/could + 동사원형 — 지금의 가정",
+    "If I were ~ 처럼 was 대신 were를 쓰는 게 가정법의 단정한 옷이다"
+  ],
+  "keyPhrases": [
+    "If I had a car, I would drive.",
+    "If I were rich, I would travel.",
+    "If she studied harder, she would pass.",
+    "I wish I could fly.",
+    "If I had known, I would have called."
+  ],
+  "cards": [
+    {
+      "id": "lesson-16-card-01",
+      "order": 1,
+      "type": "hook",
+      "emoji": "🚗",
+      "text": "\"내가 차가 있다면 운전할 텐데\". 한국어는 \"있다면\"으로 가정하지만, 영어는 시제로 가정해요."
+    },
+    {
+      "id": "lesson-16-card-02",
+      "order": 2,
+      "type": "narration",
+      "text": "현실과 거리를 두려면 영어는 시제를 과거로 한 칸 밀어요. 지금 차가 없는데 \"있다면\"으로 가정하려면, 동사를 어제 옷(had)으로 바꿔서 \"실제론 다른 얘기야\"라고 신호를 줘요."
+    },
+    {
+      "id": "lesson-16-card-03",
+      "order": 3,
+      "type": "analogy",
+      "emoji": "↩️",
+      "text": "현실에서 한 칸 뒤로 밀어내는 거예요. 평소 옷(have)을 어제 옷(had)으로, will을 한 발짝 뒤(would)로. 시제 자체가 \"이건 현실이 아니야\"라는 신호 역할을 합니다.",
+      "examples": [
+        { "emoji": "🚗", "en": "If I had a car, I would drive.", "ko": "차가 있다면 운전할 텐데. (실제론 차 없음)" }
+      ]
+    },
+    {
+      "id": "lesson-16-card-04",
+      "order": 4,
+      "type": "example",
+      "text": "공식은 단순해요. If + 주어 + 과거시제 동사, 주어 + would/could + 동사원형. 두 부분이 한 쌍처럼 항상 같이 다녀요.",
+      "examples": [
+        { "emoji": "💸", "en": "If I had more money, I would buy it.", "ko": "돈이 더 있으면 살 텐데." }
+      ],
+      "highlight": "If + 과거 / would + 원형"
+    },
+    {
+      "id": "lesson-16-card-05",
+      "order": 5,
+      "type": "example",
+      "emoji": "🤴",
+      "text": "가정법에서 was 대신 were를 쓰는 단정한 풍습이 있어요. \"If I were rich\"는 \"부자가 아닌데 그렇다고 가정하면\"이라는 뜻이에요. (회화에선 was도 자주 쓰지만, 글이나 정중한 자리에선 were가 단정합니다.)",
+      "examples": [
+        { "emoji": "🤴", "en": "If I were rich, I would travel.", "ko": "내가 부자라면 여행 다닐 텐데." }
+      ],
+      "highlight": "If I were",
+      "afterCardQuizId": "q-16-int-01"
+    },
+    {
+      "id": "lesson-16-card-06",
+      "order": 6,
+      "type": "analogy",
+      "emoji": "💭",
+      "text": "\"I wish ~\"도 같은 풍경이에요. 지금 사실과 다른 걸 바랄 때, 동사를 한 칸 과거로 밀어요. \"I wish I could fly\"는 지금 못 나는 사람이 \"날 수 있으면 좋겠다\"고 하는 거죠."
+    },
+    {
+      "id": "lesson-16-card-07",
+      "order": 7,
+      "type": "example",
+      "text": "과거 사실에 대한 가정은 한 칸 더 뒤로 밀어요 — had + p.p. 짝꿍은 would have + p.p. \"알았더라면 전화했을 텐데\"가 좋은 예시예요.",
+      "examples": [
+        { "emoji": "📞", "en": "If I had known, I would have called.", "ko": "알았더라면 전화했을 텐데." }
+      ],
+      "highlight": "had known / would have called"
+    },
+    {
+      "id": "lesson-16-card-08",
+      "order": 8,
+      "type": "summary",
+      "emoji": "↩️",
+      "text": "현실에서 멀어지려면 시제를 과거로 한 칸 밀어요. 지금의 가정 = If + 과거 / would + 원형. 과거의 가정 = If + had p.p. / would have p.p. were은 가정법의 단정한 옷.",
+      "examples": [
+        { "emoji": "🌍", "en": "If she studied harder, she would pass.", "ko": "더 열심히 공부하면 합격할 텐데." }
+      ]
+    }
+  ],
+  "interstitialQuizIds": ["q-16-int-01"],
+  "finalQuizIds": [
+    "q-16-fin-01",
+    "q-16-fin-02",
+    "q-16-fin-03",
+    "q-16-fin-04",
+    "q-16-fin-05",
+    "q-16-fin-06",
+    "q-16-fin-07"
+  ]
+}

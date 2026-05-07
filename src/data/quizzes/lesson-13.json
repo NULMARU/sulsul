@@ -1,0 +1,129 @@
+[
+  {
+    "id": "q-13-int-01",
+    "lessonId": "lesson-13",
+    "type": "multiple_choice",
+    "difficulty": 1,
+    "tags": ["관계대명사", "사람"],
+    "prompt": "I have a friend ___ speaks Spanish.",
+    "promptKo": "스페인어 하는 친구 있어.",
+    "choices": [
+      { "id": "a", "text": "which" },
+      { "id": "b", "text": "who" },
+      { "id": "c", "text": "what" },
+      { "id": "d", "text": "where" }
+    ],
+    "answer": "b",
+    "explanation": "사람을 받는 끈은 who. (회화에선 that도 가능하지만 사람엔 who가 가장 자연스러워요.)",
+    "reference": { "lessonId": "lesson-13", "cardId": "lesson-13-card-05" }
+  },
+  {
+    "id": "q-13-fin-01",
+    "lessonId": "lesson-13",
+    "type": "multiple_choice",
+    "difficulty": 1,
+    "tags": ["관계대명사", "사물"],
+    "prompt": "The book ___ I read was great.",
+    "promptKo": "내가 읽은 그 책 좋았어.",
+    "choices": [
+      { "id": "a", "text": "who" },
+      { "id": "b", "text": "that" },
+      { "id": "c", "text": "where" },
+      { "id": "d", "text": "when" }
+    ],
+    "answer": "b",
+    "explanation": "사물을 받는 끈은 that 또는 which. 회화에선 목적어 자리라 생략도 가능해요."
+  },
+  {
+    "id": "q-13-fin-02",
+    "lessonId": "lesson-13",
+    "type": "ox",
+    "difficulty": 2,
+    "tags": ["관계대명사", "생략"],
+    "prompt": "회화에서 \"The movie we watched was sad.\"는 자연스러운 영어이다.",
+    "answer": true,
+    "explanation": "맞아요. 끈(that)이 목적어 자리에 있을 땐 회화에서 생략돼도 자연스러워요."
+  },
+  {
+    "id": "q-13-fin-03",
+    "lessonId": "lesson-13",
+    "type": "word_arrange",
+    "difficulty": 2,
+    "tags": ["관계대명사", "사람"],
+    "promptKo": "옆집에 사는 그 남자 친절해.",
+    "tokens": [
+      { "id": "t1", "text": "The" },
+      { "id": "t2", "text": "man" },
+      { "id": "t3", "text": "who" },
+      { "id": "t4", "text": "lives" },
+      { "id": "t5", "text": "next" },
+      { "id": "t6", "text": "door" },
+      { "id": "t7", "text": "is" },
+      { "id": "t8", "text": "kind" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+    "explanation": "The man + (who lives next door) + is kind. 사람을 who가 받고, 작은 문장이 사람 뒤에 매달려요."
+  },
+  {
+    "id": "q-13-fin-04",
+    "lessonId": "lesson-13",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["관계대명사", "사물"],
+    "prompt": "This is the cake ___ she made.",
+    "promptKo": "이게 그녀가 만든 케이크야.",
+    "inputMode": "choices",
+    "choices": ["which", "who", "where", "when"],
+    "answer": ["which"],
+    "explanation": "사물을 받는 끈은 which 또는 that. (회화에선 생략도 가능)"
+  },
+  {
+    "id": "q-13-fin-05",
+    "lessonId": "lesson-13",
+    "type": "situation_match",
+    "difficulty": 2,
+    "tags": ["관계대명사"],
+    "scenario": "친구에게 \"내가 어제 만난 그 여자 정말 친절했어\"라고 말하고 싶어요.",
+    "scenarioEmoji": "👩",
+    "choices": [
+      { "id": "a", "en": "The woman I met yesterday was very kind.", "ko": "(목적어 자리 생략) 자연스러움." },
+      { "id": "b", "en": "The woman who I met yesterday was very kind.", "ko": "(끈 살림) 가능." },
+      { "id": "c", "en": "The woman where I met yesterday was very kind.", "ko": "(끈 잘못)" },
+      { "id": "d", "en": "I met yesterday the woman was very kind.", "ko": "(어순 깨짐)" }
+    ],
+    "answer": "a",
+    "explanation": "끈이 작은 문장의 목적어 자리(I met ___ yesterday)라 회화에선 생략이 가장 자연스러워요. who(또는 that)를 살려도 정답이지만 더 격식체에 가까워요."
+  },
+  {
+    "id": "q-13-fin-06",
+    "lessonId": "lesson-13",
+    "type": "translation",
+    "difficulty": 3,
+    "tags": ["관계대명사", "사물"],
+    "promptKo": "그가 산 그 차는 빨간색이야.",
+    "tokens": [
+      { "id": "t1", "text": "The" },
+      { "id": "t2", "text": "car" },
+      { "id": "t3", "text": "that" },
+      { "id": "t4", "text": "he" },
+      { "id": "t5", "text": "bought" },
+      { "id": "t6", "text": "is" },
+      { "id": "t7", "text": "red" },
+      { "id": "t8", "text": "who" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+    "explanation": "사물(car)을 받는 끈은 that. \"그가 ~을 샀다\"의 목적어 자리에 끈이 들어가 있어요. 함정으로 who가 섞여 있었네요."
+  },
+  {
+    "id": "q-13-fin-07",
+    "lessonId": "lesson-13",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["관계대명사", "사람"],
+    "prompt": "I know a girl ___ plays the piano very well.",
+    "promptKo": "피아노 정말 잘 치는 여자애 알아.",
+    "inputMode": "keyboard",
+    "answer": ["who"],
+    "explanation": "사람(a girl)을 받는 끈은 who. 작은 문장의 주어 자리라 생략은 안 돼요."
+  }
+]

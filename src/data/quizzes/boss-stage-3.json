@@ -1,0 +1,249 @@
+[
+  {
+    "id": "boss-3-q01",
+    "lessonId": "boss-stage-3",
+    "type": "multiple_choice",
+    "difficulty": 1,
+    "tags": ["that절"],
+    "prompt": "I know ___ you are tired.",
+    "promptKo": "네가 피곤한 거 알아.",
+    "choices": [
+      { "id": "a", "text": "what" },
+      { "id": "b", "text": "that" },
+      { "id": "c", "text": "if" },
+      { "id": "d", "text": "for" }
+    ],
+    "answer": "b",
+    "explanation": "작은 문장을 큰 문장 안에 넣어주는 상자는 that.",
+    "reference": { "lessonId": "lesson-11" }
+  },
+  {
+    "id": "boss-3-q02",
+    "lessonId": "boss-stage-3",
+    "type": "ox",
+    "difficulty": 2,
+    "tags": ["that절", "시제 일치"],
+    "prompt": "She said that she is busy.",
+    "answer": false,
+    "explanation": "큰 문장이 어제 옷(said)이면 작은 문장도 시제를 맞춰 — 'She said that she was busy.'",
+    "reference": { "lessonId": "lesson-11" }
+  },
+  {
+    "id": "boss-3-q03",
+    "lessonId": "boss-stage-3",
+    "type": "multiple_choice",
+    "difficulty": 1,
+    "tags": ["절", "조건"],
+    "prompt": "___ it rains, I will stay home.",
+    "promptKo": "비 오면 집에 있을게.",
+    "choices": [
+      { "id": "a", "text": "When" },
+      { "id": "b", "text": "If" },
+      { "id": "c", "text": "Because" },
+      { "id": "d", "text": "That" }
+    ],
+    "answer": "b",
+    "explanation": "조건의 끈은 if.",
+    "reference": { "lessonId": "lesson-12" }
+  },
+  {
+    "id": "boss-3-q04",
+    "lessonId": "boss-stage-3",
+    "type": "ox",
+    "difficulty": 2,
+    "tags": ["절", "if 시제"],
+    "prompt": "If it will rain tomorrow, I will stay home.",
+    "answer": false,
+    "explanation": "if 다음(조건절)에는 미래라도 평소(현재시제) 옷. 'If it rains tomorrow, I will stay home.'",
+    "reference": { "lessonId": "lesson-12" }
+  },
+  {
+    "id": "boss-3-q05",
+    "lessonId": "boss-stage-3",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["절", "이유"],
+    "prompt": "I will sleep early ___ I am tired.",
+    "promptKo": "피곤하니까 일찍 잘게.",
+    "inputMode": "choices",
+    "choices": ["because", "if", "when", "that"],
+    "answer": ["because"],
+    "explanation": "이유의 끈은 because.",
+    "reference": { "lessonId": "lesson-12" }
+  },
+  {
+    "id": "boss-3-q06",
+    "lessonId": "boss-stage-3",
+    "type": "multiple_choice",
+    "difficulty": 2,
+    "tags": ["관계대명사", "사람"],
+    "prompt": "I have a friend ___ speaks Spanish.",
+    "promptKo": "스페인어 하는 친구 있어.",
+    "choices": [
+      { "id": "a", "text": "which" },
+      { "id": "b", "text": "who" },
+      { "id": "c", "text": "what" },
+      { "id": "d", "text": "where" }
+    ],
+    "answer": "b",
+    "explanation": "사람을 받는 끈은 who.",
+    "reference": { "lessonId": "lesson-13" }
+  },
+  {
+    "id": "boss-3-q07",
+    "lessonId": "boss-stage-3",
+    "type": "word_arrange",
+    "difficulty": 2,
+    "tags": ["관계대명사", "사물"],
+    "promptKo": "내가 읽은 그 책 좋았어.",
+    "tokens": [
+      { "id": "t1", "text": "The" },
+      { "id": "t2", "text": "book" },
+      { "id": "t3", "text": "that" },
+      { "id": "t4", "text": "I" },
+      { "id": "t5", "text": "read" },
+      { "id": "t6", "text": "was" },
+      { "id": "t7", "text": "great" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+    "explanation": "사물을 받는 끈은 that. 작은 문장의 목적어 자리에 끈이 들어가 있어요.",
+    "reference": { "lessonId": "lesson-13" }
+  },
+  {
+    "id": "boss-3-q08",
+    "lessonId": "boss-stage-3",
+    "type": "situation_match",
+    "difficulty": 2,
+    "tags": ["조동사", "정중"],
+    "scenario": "처음 만난 사람에게 \"문 좀 열어주실래요?\"라고 정중하게 부탁할 때.",
+    "scenarioEmoji": "🚪",
+    "choices": [
+      { "id": "a", "en": "Open the door.", "ko": "(명령) 문 열어." },
+      { "id": "b", "en": "Can you open the door?", "ko": "(가능) 열 수 있어요?" },
+      { "id": "c", "en": "Could you open the door?", "ko": "(부드러움) 열어주실래요?" },
+      { "id": "d", "en": "You must open the door.", "ko": "(강요)" }
+    ],
+    "answer": "c",
+    "explanation": "could는 한 발짝 부드러워진 옷 — 정중한 부탁에 가장 자연스러워요.",
+    "reference": { "lessonId": "lesson-15" }
+  },
+  {
+    "id": "boss-3-q09",
+    "lessonId": "boss-stage-3",
+    "type": "multiple_choice",
+    "difficulty": 2,
+    "tags": ["조동사", "추측"],
+    "prompt": "It ___ rain tomorrow, but I'm not sure.",
+    "promptKo": "내일 비 올지도 몰라.(약한 추측)",
+    "choices": [
+      { "id": "a", "text": "must" },
+      { "id": "b", "text": "might" },
+      { "id": "c", "text": "should" },
+      { "id": "d", "text": "would" }
+    ],
+    "answer": "b",
+    "explanation": "확신 없는 약한 추측은 might.",
+    "reference": { "lessonId": "lesson-15" }
+  },
+  {
+    "id": "boss-3-q10",
+    "lessonId": "boss-stage-3",
+    "type": "fill_blank",
+    "difficulty": 3,
+    "tags": ["조동사", "have p.p."],
+    "prompt": "You ___ have called me.",
+    "promptKo": "전화했어야지.(후회)",
+    "inputMode": "choices",
+    "choices": ["should", "would", "could", "might"],
+    "answer": ["should"],
+    "explanation": "과거에 대한 후회는 should + have + p.p.",
+    "reference": { "lessonId": "lesson-15" }
+  },
+  {
+    "id": "boss-3-q11",
+    "lessonId": "boss-stage-3",
+    "type": "multiple_choice",
+    "difficulty": 2,
+    "tags": ["가정법"],
+    "prompt": "If I had a car, I ___ drive to the beach.",
+    "promptKo": "차가 있다면 해변에 운전해서 갈 텐데.",
+    "choices": [
+      { "id": "a", "text": "will" },
+      { "id": "b", "text": "would" },
+      { "id": "c", "text": "have" },
+      { "id": "d", "text": "did" }
+    ],
+    "answer": "b",
+    "explanation": "If + 과거(had) 다음엔 would + 원형. 한 칸 뒤로 물러난 모습.",
+    "reference": { "lessonId": "lesson-16" }
+  },
+  {
+    "id": "boss-3-q12",
+    "lessonId": "boss-stage-3",
+    "type": "ox",
+    "difficulty": 3,
+    "tags": ["가정법"],
+    "prompt": "If I have time, I would help you.",
+    "answer": false,
+    "explanation": "가정법은 시제를 한 칸 뒤로 — 'If I had time, I would help you.'",
+    "reference": { "lessonId": "lesson-16" }
+  },
+  {
+    "id": "boss-3-q13",
+    "lessonId": "boss-stage-3",
+    "type": "word_arrange",
+    "difficulty": 2,
+    "tags": ["가정법", "I wish"],
+    "promptKo": "날 수 있으면 좋겠다.",
+    "tokens": [
+      { "id": "t1", "text": "I" },
+      { "id": "t2", "text": "wish" },
+      { "id": "t3", "text": "I" },
+      { "id": "t4", "text": "could" },
+      { "id": "t5", "text": "fly" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4", "t5"],
+    "explanation": "I wish + 한 칸 과거. can을 could로 밀어요.",
+    "reference": { "lessonId": "lesson-16" }
+  },
+  {
+    "id": "boss-3-q14",
+    "lessonId": "boss-stage-3",
+    "type": "translation",
+    "difficulty": 3,
+    "tags": ["가정법", "과거"],
+    "promptKo": "알았더라면 전화했을 텐데.",
+    "tokens": [
+      { "id": "t1", "text": "If" },
+      { "id": "t2", "text": "I" },
+      { "id": "t3", "text": "had" },
+      { "id": "t4", "text": "known," },
+      { "id": "t5", "text": "I" },
+      { "id": "t6", "text": "would" },
+      { "id": "t7", "text": "have" },
+      { "id": "t8", "text": "called" },
+      { "id": "t9", "text": "knew" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+    "explanation": "과거 사실에 대한 가정 — had known / would have called.",
+    "reference": { "lessonId": "lesson-16" }
+  },
+  {
+    "id": "boss-3-q15",
+    "lessonId": "boss-stage-3",
+    "type": "situation_match",
+    "difficulty": 3,
+    "tags": ["가정법"],
+    "scenario": "지금 시간이 없지만, \"있다면 같이 갈 텐데\"라는 아쉬움을 표현하고 싶어요.",
+    "scenarioEmoji": "⏰",
+    "choices": [
+      { "id": "a", "en": "If I have time, I will go with you.", "ko": "(현실) 시간 있으면 같이 갈게." },
+      { "id": "b", "en": "If I had time, I would go with you.", "ko": "(가정) 있다면 같이 갈 텐데." },
+      { "id": "c", "en": "If I have time, I would go with you.", "ko": "(시제 어색)" },
+      { "id": "d", "en": "If I had time, I will go with you.", "ko": "(시제 어색)" }
+    ],
+    "answer": "b",
+    "explanation": "지금 시간 없는 현실 → 한 칸 뒤로(had + would). 두 부분 짝 맞춰주기.",
+    "reference": { "lessonId": "lesson-16" }
+  }
+]

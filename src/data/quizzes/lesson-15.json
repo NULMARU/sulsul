@@ -1,0 +1,125 @@
+[
+  {
+    "id": "q-15-int-01",
+    "lessonId": "lesson-15",
+    "type": "multiple_choice",
+    "difficulty": 2,
+    "tags": ["조동사", "정중"],
+    "prompt": "처음 만난 사람에게 \"문 좀 열어주실래요?\"라고 정중하게 부탁할 때 가장 자연스러운 표현은?",
+    "promptKo": "한 발짝 부드러운 도구.",
+    "choices": [
+      { "id": "a", "text": "Open the door." },
+      { "id": "b", "text": "Can you open the door?" },
+      { "id": "c", "text": "Could you open the door?" },
+      { "id": "d", "text": "You must open the door." }
+    ],
+    "answer": "c",
+    "explanation": "could는 can보다 한 발짝 부드러운 옷이라 정중한 부탁에 가장 자연스러워요.",
+    "reference": { "lessonId": "lesson-15", "cardId": "lesson-15-card-03" }
+  },
+  {
+    "id": "q-15-fin-01",
+    "lessonId": "lesson-15",
+    "type": "multiple_choice",
+    "difficulty": 2,
+    "tags": ["조동사", "추측"],
+    "prompt": "It ___ rain tomorrow, but I'm not sure.",
+    "promptKo": "내일 비 올지도 몰라.(약한 추측)",
+    "choices": [
+      { "id": "a", "text": "must" },
+      { "id": "b", "text": "might" },
+      { "id": "c", "text": "should" },
+      { "id": "d", "text": "would" }
+    ],
+    "answer": "b",
+    "explanation": "확신 없는 약한 추측은 might. must는 \"분명히 ~할 거야\" 같은 강한 확신이라 어색해요."
+  },
+  {
+    "id": "q-15-fin-02",
+    "lessonId": "lesson-15",
+    "type": "ox",
+    "difficulty": 2,
+    "tags": ["조동사", "과거 가능"],
+    "prompt": "I could swim when I was young.",
+    "answer": true,
+    "explanation": "맞아요. could는 정중함 외에 \"옛날엔 ~할 수 있었다\"는 과거의 가능도 담아요."
+  },
+  {
+    "id": "q-15-fin-03",
+    "lessonId": "lesson-15",
+    "type": "word_arrange",
+    "difficulty": 2,
+    "tags": ["조동사", "would"],
+    "promptKo": "커피 한 잔 드릴까요?",
+    "tokens": [
+      { "id": "t1", "text": "Would" },
+      { "id": "t2", "text": "you" },
+      { "id": "t3", "text": "like" },
+      { "id": "t4", "text": "some" },
+      { "id": "t5", "text": "coffee" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4", "t5"],
+    "explanation": "Would you like ~?는 카페·식당에서 자주 쓰는 정중한 권유 표현이에요."
+  },
+  {
+    "id": "q-15-fin-04",
+    "lessonId": "lesson-15",
+    "type": "fill_blank",
+    "difficulty": 3,
+    "tags": ["조동사", "have p.p.", "후회"],
+    "prompt": "You ___ have called me.",
+    "promptKo": "전화했어야지.(후회)",
+    "inputMode": "choices",
+    "choices": ["should", "would", "could", "might"],
+    "answer": ["should"],
+    "explanation": "과거에 대한 후회·권유는 should + have + p.p.로 표현해요."
+  },
+  {
+    "id": "q-15-fin-05",
+    "lessonId": "lesson-15",
+    "type": "situation_match",
+    "difficulty": 2,
+    "tags": ["조동사", "정중"],
+    "scenario": "낯선 사람에게 길을 물어보고 싶어요. 가장 정중한 부탁 표현은?",
+    "scenarioEmoji": "🗺️",
+    "choices": [
+      { "id": "a", "en": "Tell me the way to the station.", "ko": "(명령) 역 가는 길 알려줘." },
+      { "id": "b", "en": "Can you tell me the way?", "ko": "(가능, 캐주얼) 알려줄 수 있어요?" },
+      { "id": "c", "en": "Could you tell me the way?", "ko": "(부드러움) 알려주실 수 있을까요?" },
+      { "id": "d", "en": "You must tell me the way.", "ko": "(강요) 꼭 알려줘야 해." }
+    ],
+    "answer": "c",
+    "explanation": "처음 만난 사람에겐 한 발짝 물러선 could you가 가장 정중하고 자연스러워요."
+  },
+  {
+    "id": "q-15-fin-06",
+    "lessonId": "lesson-15",
+    "type": "translation",
+    "difficulty": 3,
+    "tags": ["조동사", "추측"],
+    "promptKo": "그녀는 피곤했나봐.",
+    "tokens": [
+      { "id": "t1", "text": "She" },
+      { "id": "t2", "text": "must" },
+      { "id": "t3", "text": "have" },
+      { "id": "t4", "text": "been" },
+      { "id": "t5", "text": "tired" },
+      { "id": "t6", "text": "be" },
+      { "id": "t7", "text": "should" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4", "t5"],
+    "explanation": "must have + p.p.는 \"분명히 ~했나봐\"라는 강한 과거 추측. be의 p.p.는 been."
+  },
+  {
+    "id": "q-15-fin-07",
+    "lessonId": "lesson-15",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["조동사", "과거 가능"],
+    "prompt": "I ___ run very fast when I was 20.",
+    "promptKo": "20살 땐 정말 빨리 달릴 수 있었어.",
+    "inputMode": "keyboard",
+    "answer": ["could"],
+    "explanation": "\"옛날엔 ~할 수 있었다\"는 could. can의 어제 옷이에요."
+  }
+]

@@ -1,0 +1,127 @@
+[
+  {
+    "id": "q-09-int-01",
+    "lessonId": "lesson-09",
+    "type": "multiple_choice",
+    "difficulty": 1,
+    "tags": ["현재완료", "for"],
+    "prompt": "I ___ in Seoul for 5 years.",
+    "promptKo": "5년째 서울에 살고 있어.",
+    "choices": [
+      { "id": "a", "text": "live" },
+      { "id": "b", "text": "lived" },
+      { "id": "c", "text": "have lived" },
+      { "id": "d", "text": "am living" }
+    ],
+    "answer": "c",
+    "explanation": "for 5 years는 \"이어진 선\" 신호. 9강 옷 — have + p.p.를 꺼내요.",
+    "reference": { "lessonId": "lesson-09", "cardId": "lesson-09-card-04" }
+  },
+  {
+    "id": "q-09-fin-01",
+    "lessonId": "lesson-09",
+    "type": "multiple_choice",
+    "difficulty": 1,
+    "tags": ["현재완료", "3인칭"],
+    "prompt": "She ___ here since 2020.",
+    "promptKo": "그녀는 2020년부터 여기서 일해.",
+    "choices": [
+      { "id": "a", "text": "have worked" },
+      { "id": "b", "text": "has worked" },
+      { "id": "c", "text": "worked" },
+      { "id": "d", "text": "is working" }
+    ],
+    "answer": "b",
+    "explanation": "since 2020 = 시작점부터 지금까지 이어진 선. She엔 has — has worked."
+  },
+  {
+    "id": "q-09-fin-02",
+    "lessonId": "lesson-09",
+    "type": "ox",
+    "difficulty": 2,
+    "tags": ["현재완료", "vs 과거"],
+    "prompt": "I have lived in Seoul yesterday.",
+    "answer": false,
+    "explanation": "yesterday는 끝난 점 신호 — 3강 옷이 어울려요. 'I lived in Seoul yesterday.' 현재완료는 \"지금까지 이어진다\"는 신호와만 어울려요."
+  },
+  {
+    "id": "q-09-fin-03",
+    "lessonId": "lesson-09",
+    "type": "word_arrange",
+    "difficulty": 2,
+    "tags": ["현재완료", "for"],
+    "promptKo": "그를 알고 지낸 지 10년 됐어.",
+    "tokens": [
+      { "id": "t1", "text": "I" },
+      { "id": "t2", "text": "have" },
+      { "id": "t3", "text": "known" },
+      { "id": "t4", "text": "him" },
+      { "id": "t5", "text": "for" },
+      { "id": "t6", "text": "10" },
+      { "id": "t7", "text": "years" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+    "explanation": "have known + for 10 years. know의 p.p.는 known(불규칙)."
+  },
+  {
+    "id": "q-09-fin-04",
+    "lessonId": "lesson-09",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["현재완료", "since"],
+    "prompt": "We have been friends ___ high school.",
+    "promptKo": "우리 고등학교 때부터 친구야.",
+    "inputMode": "choices",
+    "choices": ["since", "for", "ago", "from"],
+    "answer": ["since"],
+    "explanation": "since + 시작점(고등학교 때). for는 기간 길이라 \"3 years\" 같은 게 들어가야 해요."
+  },
+  {
+    "id": "q-09-fin-05",
+    "lessonId": "lesson-09",
+    "type": "situation_match",
+    "difficulty": 2,
+    "tags": ["현재완료"],
+    "scenario": "친구가 \"여기서 일한 지 얼마나 됐어?\"라고 물어요. 5년 됐고 지금도 일하고 있다고 답하고 싶어요.",
+    "scenarioEmoji": "💼",
+    "choices": [
+      { "id": "a", "en": "I worked here for 5 years.", "ko": "(끝난 점) 5년 일했었어." },
+      { "id": "b", "en": "I have worked here for 5 years.", "ko": "(이어진 선) 5년째 일하고 있어." },
+      { "id": "c", "en": "I am working here for 5 years.", "ko": "(어색)" },
+      { "id": "d", "en": "I will work here for 5 years.", "ko": "5년 동안 일할 거야." }
+    ],
+    "answer": "b",
+    "explanation": "지금도 일하고 있으면 끝난 게 아니라 이어진 선 — have + p.p."
+  },
+  {
+    "id": "q-09-fin-06",
+    "lessonId": "lesson-09",
+    "type": "translation",
+    "difficulty": 3,
+    "tags": ["현재완료", "의문문"],
+    "promptKo": "영어 공부한 지 얼마나 됐어?",
+    "tokens": [
+      { "id": "t1", "text": "How" },
+      { "id": "t2", "text": "long" },
+      { "id": "t3", "text": "have" },
+      { "id": "t4", "text": "you" },
+      { "id": "t5", "text": "studied" },
+      { "id": "t6", "text": "study" },
+      { "id": "t7", "text": "English" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4", "t5", "t7"],
+    "explanation": "How long + have + 주어 + p.p.? study의 p.p.는 studied(규칙)."
+  },
+  {
+    "id": "q-09-fin-07",
+    "lessonId": "lesson-09",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["현재완료", "p.p."],
+    "prompt": "She has ___ alone for 3 years. (live)",
+    "promptKo": "그녀 혼자 산 지 3년 됐어.",
+    "inputMode": "keyboard",
+    "answer": ["lived"],
+    "explanation": "live는 규칙형 — p.p.도 lived. has lived가 \"3년째 살고 있다\"는 선을 그려줘요."
+  }
+]

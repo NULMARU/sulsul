@@ -1,0 +1,107 @@
+{
+  "id": "lesson-06",
+  "stageId": "stage-2-extension",
+  "order": 6,
+  "title": "to부정사·동명사",
+  "subtitle": "미래로 향하는 to, 이미 겪어 익숙한 -ing",
+  "estimatedMinutes": 6,
+  "objectives": [
+    "to + 동사는 아직 일어나지 않은 일·앞으로 향하는 마음을 담는다",
+    "동사 + ing는 이미 겪어봐서 익숙한 일·지속되는 일을 담는다",
+    "want/plan/hope는 to와, enjoy/finish/keep은 -ing와 짝이다"
+  ],
+  "keyPhrases": [
+    "I want to study English.",
+    "I enjoy studying English.",
+    "She decided to leave.",
+    "He finished writing the email.",
+    "I'm planning to travel."
+  ],
+  "cards": [
+    {
+      "id": "lesson-06-card-01",
+      "order": 1,
+      "type": "hook",
+      "emoji": "🎯",
+      "text": "\"I want to study\"는 자연스러운데 \"I enjoy to study\"는 어색해요. 왜 그럴까요?"
+    },
+    {
+      "id": "lesson-06-card-02",
+      "order": 2,
+      "type": "narration",
+      "text": "to와 -ing는 시간을 보는 시선이 달라요. to는 앞쪽(미래)을 보고, -ing는 이미 손에 닿은 익숙함을 가리켜요."
+    },
+    {
+      "id": "lesson-06-card-03",
+      "order": 3,
+      "type": "analogy",
+      "emoji": "➡️",
+      "text": "to는 화살표예요. \"하기로\", \"하려고\" — 아직 일어나지 않은 일을 향해 가는 마음. 그래서 want, plan, hope처럼 미래를 보는 동사들과 짝이에요.",
+      "examples": [
+        { "emoji": "📚", "en": "I want to study English.", "ko": "(앞으로) 영어 공부하고 싶어." },
+        { "emoji": "🛫", "en": "I'm planning to travel next month.", "ko": "(앞으로) 다음달에 여행 갈 계획이야." }
+      ]
+    },
+    {
+      "id": "lesson-06-card-04",
+      "order": 4,
+      "type": "example",
+      "text": "want, hope, plan, decide, need — 모두 \"앞으로 ~하려는 마음\"이라 화살표 to가 잘 어울려요.",
+      "examples": [
+        { "emoji": "✈️", "en": "She decided to leave.", "ko": "그녀는 떠나기로 결정했어." }
+      ],
+      "highlight": "to leave"
+    },
+    {
+      "id": "lesson-06-card-05",
+      "order": 5,
+      "type": "example",
+      "emoji": "🔁",
+      "text": "반대로 -ing는 이미 손에 닿아 있는 행위예요. 즐기고(enjoy), 끝내고(finish), 계속하고(keep), 피하고(avoid) — 다 \"이미 겪어 본\" 일들이죠.",
+      "examples": [
+        { "emoji": "📚", "en": "I enjoy studying English.", "ko": "영어 공부하는 거 즐겨." },
+        { "emoji": "✉️", "en": "He finished writing the email.", "ko": "그는 이메일 쓰는 걸 다 끝냈어." }
+      ],
+      "highlight": "enjoy studying / finished writing",
+      "afterCardQuizId": "q-06-int-01"
+    },
+    {
+      "id": "lesson-06-card-06",
+      "order": 6,
+      "type": "analogy",
+      "emoji": "🎭",
+      "text": "어떤 동사는 둘 다 받지만 의미가 살짝 달라져요. \"remember to call\"은 앞으로 전화할 거 잊지 마(미래), \"remember calling\"은 전화했던 거 기억나(이미 겪음). 화살표 vs 익숙함의 차이가 그대로!"
+    },
+    {
+      "id": "lesson-06-card-07",
+      "order": 7,
+      "type": "example",
+      "text": "to부정사는 명사 자리에도 들어가 \"~하는 것\"이라는 뜻이 돼요. 동명사 -ing도 같은 자리에 들어갈 수 있고요. 둘 다 동사를 명사처럼 쓰게 해주는 도구.",
+      "examples": [
+        { "emoji": "🏃", "en": "To exercise is important.", "ko": "운동하는 건 중요해.(앞으로 행할 일)" },
+        { "emoji": "🥗", "en": "Eating vegetables is good.", "ko": "채소 먹는 건 좋아.(이미 익숙한 행위)" }
+      ],
+      "highlight": "To exercise / Eating"
+    },
+    {
+      "id": "lesson-06-card-08",
+      "order": 8,
+      "type": "summary",
+      "emoji": "🎯",
+      "text": "to는 앞으로 향하는 화살표, -ing는 이미 손에 닿은 익숙함. 짝이 되는 동사가 어느 쪽인지 떠올리며 둘 중 하나를 골라 입혀주세요.",
+      "examples": [
+        { "emoji": "💪", "en": "I keep going to the gym.", "ko": "(이미 익숙한) 헬스장 계속 다녀." }
+      ]
+    }
+  ],
+  "interstitialQuizIds": ["q-06-int-01"],
+  "finalQuizIds": [
+    "q-06-fin-01",
+    "q-06-fin-02",
+    "q-06-fin-03",
+    "q-06-fin-04",
+    "q-06-fin-05",
+    "q-06-fin-06",
+    "q-06-fin-07"
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "id": "lesson-04",
+  "stageId": "stage-1-core",
+  "order": 4,
+  "title": "미래시제",
+  "subtitle": "의지의 무게",
+  "estimatedMinutes": 6,
+  "objectives": [
+    "방금 떠오른 결정엔 will을 쓴다",
+    "이미 마음먹은 계획엔 be going to를 쓴다",
+    "시간·장소까지 정해진 약속엔 be -ing(현재진행)를 그대로 쓴다"
+  ],
+  "keyPhrases": [
+    "I'll get it.",
+    "I'm going to start a diet.",
+    "I'm meeting Tom at 7.",
+    "She will help you.",
+    "We're going to travel next month."
+  ],
+  "cards": [
+    {
+      "id": "lesson-04-card-01",
+      "order": 1,
+      "type": "hook",
+      "emoji": "📅",
+      "text": "\"내일 친구 만나\"를 영어로 말할 때 will, be going to, be -ing 중에 뭘 골라야 할까요?"
+    },
+    {
+      "id": "lesson-04-card-02",
+      "order": 2,
+      "type": "narration",
+      "text": "셋 다 미래를 가리키지만 의지의 무게가 달라요. 가벼운 즉흥, 중간의 계획, 단단한 약속 — 같은 미래도 마음의 무게가 다르면 다른 옷을 입혀줘요."
+    },
+    {
+      "id": "lesson-04-card-03",
+      "order": 3,
+      "type": "analogy",
+      "emoji": "⚖️",
+      "text": "셋의 무게를 그림으로 그려보면 — 방금 떠오른 결정은 가벼운 will, 이미 마음먹은 계획은 좀 더 묵직한 be going to, 시간장소까지 박힌 약속은 가장 단단한 be -ing.",
+      "examples": [
+        { "emoji": "🪶", "en": "I'll get it.", "ko": "(즉흥) 내가 받을게." },
+        { "emoji": "📋", "en": "I'm going to start a diet.", "ko": "(계획) 다이어트 시작할 거야." },
+        { "emoji": "📌", "en": "I'm meeting Tom at 7.", "ko": "(약속) 7시에 톰이랑 만나기로 했어." }
+      ]
+    },
+    {
+      "id": "lesson-04-card-04",
+      "order": 4,
+      "type": "example",
+      "emoji": "📞",
+      "text": "전화벨이 울리는 그 순간 \"내가 받을게\"라고 즉흥적으로 결정하면 will이 가장 자연스러워요. 가볍게, 한순간에 결정한 마음.",
+      "examples": [
+        { "emoji": "📞", "en": "I will get it.", "ko": "내가 받을게.(방금 결정)" },
+        { "emoji": "💧", "en": "I'll bring you some water.", "ko": "물 좀 가져다줄게.(방금 떠올린)" }
+      ],
+      "highlight": "I will / I'll"
+    },
+    {
+      "id": "lesson-04-card-05",
+      "order": 5,
+      "type": "example",
+      "emoji": "📋",
+      "text": "이미 마음속에 정해두고 \"하기로 했어\"라는 느낌이면 be going to가 어울려요. 가는 방향이 잡혀 있는 거죠.",
+      "examples": [
+        { "emoji": "🏃", "en": "I'm going to start a diet.", "ko": "나 다이어트 시작할 거야.(이미 마음먹음)" },
+        { "emoji": "✈️", "en": "We're going to travel to Japan next month.", "ko": "우리 다음달에 일본 여행 갈 거야.(계획)" }
+      ],
+      "highlight": "going to",
+      "afterCardQuizId": "q-04-int-01"
+    },
+    {
+      "id": "lesson-04-card-06",
+      "order": 6,
+      "type": "analogy",
+      "emoji": "📌",
+      "text": "시간·장소·상대까지 다 박혀버린 약속은 가장 단단해요. 너무 단단해서 마치 지금 일어나는 일처럼, 영어는 진행형 옷(be -ing)을 그대로 빌려 씁니다."
+    },
+    {
+      "id": "lesson-04-card-07",
+      "order": 7,
+      "type": "example",
+      "text": "\"오후 7시에 강남역에서 톰이랑 만나기로 했어\"처럼 약속이 박혀버린 일은 진행형으로 미래를 표현해요.",
+      "examples": [
+        { "emoji": "📌", "en": "I'm meeting Tom at 7.", "ko": "(이미 잡힌 약속) 7시에 톰 만나." },
+        { "emoji": "✈️", "en": "We're flying to Seoul tomorrow.", "ko": "내일 서울 가는 비행기 잡혀 있어." }
+      ],
+      "highlight": "I'm meeting"
+    },
+    {
+      "id": "lesson-04-card-08",
+      "order": 8,
+      "type": "summary",
+      "emoji": "⚖️",
+      "text": "방금 결정한 가벼운 마음은 will, 이미 마음먹은 계획은 be going to, 시간장소까지 박힌 약속은 be -ing. 의지의 무게로 옷을 골라 입혀주세요.",
+      "examples": [
+        { "emoji": "🤝", "en": "She will help you.", "ko": "그녀가 도와줄 거야.(약속/예측)" }
+      ]
+    }
+  ],
+  "interstitialQuizIds": ["q-04-int-01"],
+  "finalQuizIds": [
+    "q-04-fin-01",
+    "q-04-fin-02",
+    "q-04-fin-03",
+    "q-04-fin-04",
+    "q-04-fin-05",
+    "q-04-fin-06",
+    "q-04-fin-07"
+  ]
+}

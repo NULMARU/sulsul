@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Brand yellow background, rounded for non-maskable contexts -->
+  <rect width="512" height="512" rx="112" fill="#F5C842"/>
+
+  <!-- Subtle inner glow / second card peeking behind -->
+  <rect x="84" y="116" width="344" height="240" rx="44"
+        fill="#FFFFFF" opacity="0.35"
+        transform="rotate(-4 256 236)"/>
+
+  <!-- Main speech-bubble card -->
+  <g>
+    <rect x="80" y="120" width="352" height="232" rx="44" fill="#FFFFFF"/>
+    <!-- Bubble tail pointing down-left -->
+    <path d="M 168 348 L 168 408 L 220 348 Z" fill="#FFFFFF"/>
+  </g>
+
+  <!-- 3 dots = conversation / "..." flowing speech -->
+  <g>
+    <circle cx="170" cy="236" r="26" fill="#F5C842"/>
+    <circle cx="256" cy="236" r="26" fill="#E8A317"/>
+    <circle cx="342" cy="236" r="26" fill="#F5C842"/>
+  </g>
+</svg>

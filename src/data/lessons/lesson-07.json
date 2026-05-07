@@ -1,0 +1,106 @@
+{
+  "id": "lesson-07",
+  "stageId": "stage-2-extension",
+  "order": 7,
+  "title": "가주어 It",
+  "subtitle": "진짜 주어가 너무 길어서 It이 자리만 잡아준다",
+  "estimatedMinutes": 5,
+  "objectives": [
+    "긴 진짜 주어 대신 자리만 잡아주는 임시 주어 It을 쓴다",
+    "진짜 주어는 문장 뒤로 보내고 to + 동사로 표현한다",
+    "It is + 형용사 + to V 구조의 리듬에 익숙해진다"
+  ],
+  "keyPhrases": [
+    "It is hard to study English.",
+    "It is fun to travel.",
+    "It is important to sleep well.",
+    "It is easy to learn this.",
+    "It was nice to meet you."
+  ],
+  "cards": [
+    {
+      "id": "lesson-07-card-01",
+      "order": 1,
+      "type": "hook",
+      "emoji": "🪑",
+      "text": "\"To study English is hard.\" 영어로 가능한 문장이지만, 어쩐지 어색해요. 왜일까요?"
+    },
+    {
+      "id": "lesson-07-card-02",
+      "order": 2,
+      "type": "narration",
+      "text": "주어가 너무 길면 머리가 무거워져요. 영어는 머리 무거운 문장을 싫어해서, 진짜 주어를 뒤로 보내고 그 자리에 \"It\"이라는 임시 주어를 앉혀둬요."
+    },
+    {
+      "id": "lesson-07-card-03",
+      "order": 3,
+      "type": "analogy",
+      "emoji": "🪑",
+      "text": "It은 진짜 주인이 올 때까지 자리를 잡아주는 빈 의자 같은 친구예요. 진짜 주어(to study English)는 의자 밖에서 천천히 따라 들어와요.",
+      "examples": [
+        { "emoji": "📚", "en": "It is hard to study English.", "ko": "영어 공부하는 건 어려워." },
+        { "emoji": "🪑", "en": "(진짜 주어 = to study English)", "ko": "It은 자리만 잡아준다." }
+      ]
+    },
+    {
+      "id": "lesson-07-card-04",
+      "order": 4,
+      "type": "example",
+      "text": "공식은 단순해요. It is + 형용사 + to + 동사. 형용사 자리에 hard / easy / fun / important처럼 느낌이 들어가면 자연스러운 문장이 돼요.",
+      "examples": [
+        { "emoji": "✈️", "en": "It is fun to travel.", "ko": "여행하는 건 재밌어." }
+      ],
+      "highlight": "It is fun to travel"
+    },
+    {
+      "id": "lesson-07-card-05",
+      "order": 5,
+      "type": "example",
+      "emoji": "💤",
+      "text": "긴 주어는 무겁고 부담스럽지만, It이 먼저 자리를 잡아주면 듣는 사람도 호흡하기 편해져요.",
+      "examples": [
+        { "emoji": "💤", "en": "It is important to sleep well.", "ko": "잘 자는 게 중요해." },
+        { "emoji": "🌱", "en": "It is easy to learn this.", "ko": "이거 배우는 건 쉬워." }
+      ],
+      "highlight": "It is important",
+      "afterCardQuizId": "q-07-int-01"
+    },
+    {
+      "id": "lesson-07-card-06",
+      "order": 6,
+      "type": "analogy",
+      "emoji": "🎬",
+      "text": "It은 시제도 짊어질 수 있어요. 1강 옷장에서 옷을 꺼내면 평소(It is), 3강 옷장이면 어제(It was), 4강이면 내일(It will be). 자리만 잡아주는 친구지만 시제는 챙겨요!"
+    },
+    {
+      "id": "lesson-07-card-07",
+      "order": 7,
+      "type": "example",
+      "text": "헤어질 때 자주 쓰는 \"It was nice to meet you\"도 가주어 It이에요. 진짜 주어는 to meet you — 만난 일이 좋았다는 뜻이죠.",
+      "examples": [
+        { "emoji": "🤝", "en": "It was nice to meet you.", "ko": "만나서 반가웠어요." }
+      ],
+      "highlight": "It was nice to meet you"
+    },
+    {
+      "id": "lesson-07-card-08",
+      "order": 8,
+      "type": "summary",
+      "emoji": "🪑",
+      "text": "긴 주어는 뒤로, 자리는 It이 잡아준다 — It is + 형용사 + to V. 머리가 무겁지 않게 호흡을 맞춰주는 영어의 친절한 배려예요.",
+      "examples": [
+        { "emoji": "🍳", "en": "It is fun to cook.", "ko": "요리하는 거 재밌어." }
+      ]
+    }
+  ],
+  "interstitialQuizIds": ["q-07-int-01"],
+  "finalQuizIds": [
+    "q-07-fin-01",
+    "q-07-fin-02",
+    "q-07-fin-03",
+    "q-07-fin-04",
+    "q-07-fin-05",
+    "q-07-fin-06",
+    "q-07-fin-07"
+  ]
+}

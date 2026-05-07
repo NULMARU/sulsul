@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Maskable: full-bleed yellow, content fits inside the inner 80% safe zone -->
+  <rect width="512" height="512" fill="#F5C842"/>
+
+  <!-- Safe zone is roughly x=51..461, y=51..461. Content centered ~256, kept inside. -->
+  <rect x="120" y="148" width="272" height="180" rx="36"
+        fill="#FFFFFF" opacity="0.35"
+        transform="rotate(-4 256 238)"/>
+
+  <g>
+    <rect x="116" y="152" width="280" height="180" rx="36" fill="#FFFFFF"/>
+    <path d="M 188 328 L 188 376 L 232 328 Z" fill="#FFFFFF"/>
+  </g>
+
+  <g>
+    <circle cx="188" cy="242" r="22" fill="#F5C842"/>
+    <circle cx="256" cy="242" r="22" fill="#E8A317"/>
+    <circle cx="324" cy="242" r="22" fill="#F5C842"/>
+  </g>
+</svg>

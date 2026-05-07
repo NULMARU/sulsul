@@ -1,0 +1,125 @@
+[
+  {
+    "id": "q-08-int-01",
+    "lessonId": "lesson-08",
+    "type": "ox",
+    "difficulty": 1,
+    "tags": ["There is/are", "복수"],
+    "prompt": "There is three apples in the basket.",
+    "answer": false,
+    "explanation": "복수 등장 뒤엔 are가 따라와요. 'There are three apples in the basket.'",
+    "hint": "사과가 세 개! 단수일까 복수일까?",
+    "reference": { "lessonId": "lesson-08", "cardId": "lesson-08-card-04" }
+  },
+  {
+    "id": "q-08-fin-01",
+    "lessonId": "lesson-08",
+    "type": "multiple_choice",
+    "difficulty": 1,
+    "tags": ["There is/are"],
+    "prompt": "There ___ a cat in the room.",
+    "promptKo": "방에 고양이 한 마리 있어.",
+    "choices": [
+      { "id": "a", "text": "is" },
+      { "id": "b", "text": "are" },
+      { "id": "c", "text": "be" },
+      { "id": "d", "text": "have" }
+    ],
+    "answer": "a",
+    "explanation": "단수(고양이 한 마리) 등장은 There is. \"있다\"는 영어로 have가 아니라 There is/are!"
+  },
+  {
+    "id": "q-08-fin-02",
+    "lessonId": "lesson-08",
+    "type": "multiple_choice",
+    "difficulty": 2,
+    "tags": ["There is/are", "복수"],
+    "prompt": "There ___ many people at the party.",
+    "promptKo": "파티에 사람 많이 있어.",
+    "choices": [
+      { "id": "a", "text": "is" },
+      { "id": "b", "text": "are" },
+      { "id": "c", "text": "have" },
+      { "id": "d", "text": "has" }
+    ],
+    "answer": "b",
+    "explanation": "many people은 복수 — There are가 어울려요."
+  },
+  {
+    "id": "q-08-fin-03",
+    "lessonId": "lesson-08",
+    "type": "ox",
+    "difficulty": 2,
+    "tags": ["There is/are", "구분"],
+    "prompt": "이미 \"내 책\"을 아는 상황이라면 \"There is the book on the table.\"이 가장 자연스럽다.",
+    "answer": false,
+    "explanation": "이미 아는 것은 굳이 무대를 열 필요 없이 'The book is on the table.' 처음 등장이 아니면 There is/are는 어색해요."
+  },
+  {
+    "id": "q-08-fin-04",
+    "lessonId": "lesson-08",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["There is/are", "의문문"],
+    "prompt": "___ a problem?",
+    "promptKo": "문제 있어?",
+    "inputMode": "choices",
+    "choices": ["Is there", "Are there", "Is it", "Have there"],
+    "answer": ["Is there"],
+    "explanation": "물을 땐 be가 there 앞으로 점프 — Is there ~? 단수(a problem)니까 Is가 어울려요."
+  },
+  {
+    "id": "q-08-fin-05",
+    "lessonId": "lesson-08",
+    "type": "word_arrange",
+    "difficulty": 2,
+    "tags": ["There is/are", "과거"],
+    "promptKo": "어제 회의 있었어.",
+    "tokens": [
+      { "id": "t1", "text": "There" },
+      { "id": "t2", "text": "was" },
+      { "id": "t3", "text": "a" },
+      { "id": "t4", "text": "meeting" },
+      { "id": "t5", "text": "yesterday" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4", "t5"],
+    "explanation": "어제(yesterday) 등장은 There was. 단수 회의 한 건이라 was."
+  },
+  {
+    "id": "q-08-fin-06",
+    "lessonId": "lesson-08",
+    "type": "situation_match",
+    "difficulty": 2,
+    "tags": ["There is/are"],
+    "scenario": "친구 집에 처음 가서 거실을 보니 큰 TV가 한 대 있어요. \"TV가 있네\"라고 처음 말하고 싶어요.",
+    "scenarioEmoji": "📺",
+    "choices": [
+      { "id": "a", "en": "TV is here.", "ko": "(어색) TV는 여기에 있다." },
+      { "id": "b", "en": "There is a TV here.", "ko": "여기 TV 한 대 있네." },
+      { "id": "c", "en": "It is a TV here.", "ko": "(어색)" },
+      { "id": "d", "en": "Have a TV here.", "ko": "(틀림)" }
+    ],
+    "answer": "b",
+    "explanation": "처음 본 \"TV가 있다\"는 등장 — There is가 무대를 열어줘요."
+  },
+  {
+    "id": "q-08-fin-07",
+    "lessonId": "lesson-08",
+    "type": "translation",
+    "difficulty": 3,
+    "tags": ["There is/are", "미래"],
+    "promptKo": "내일 파티 있을 거야.",
+    "tokens": [
+      { "id": "t1", "text": "There" },
+      { "id": "t2", "text": "will" },
+      { "id": "t3", "text": "be" },
+      { "id": "t4", "text": "a" },
+      { "id": "t5", "text": "party" },
+      { "id": "t6", "text": "tomorrow" },
+      { "id": "t7", "text": "is" },
+      { "id": "t8", "text": "have" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+    "explanation": "There + will be로 미래 무대를 예고. There will be a party tomorrow."
+  }
+]

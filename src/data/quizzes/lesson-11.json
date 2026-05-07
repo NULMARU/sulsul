@@ -1,0 +1,118 @@
+[
+  {
+    "id": "q-11-int-01",
+    "lessonId": "lesson-11",
+    "type": "ox",
+    "difficulty": 1,
+    "tags": ["that절"],
+    "prompt": "회화에선 \"I think he is right.\"처럼 that을 생략해도 자연스럽다.",
+    "answer": true,
+    "explanation": "맞아요. 자연스러운 영어 회화에선 that이 자주 생략돼요. 글에선 that을 살리는 게 더 명확하고요.",
+    "reference": { "lessonId": "lesson-11", "cardId": "lesson-11-card-05" }
+  },
+  {
+    "id": "q-11-fin-01",
+    "lessonId": "lesson-11",
+    "type": "multiple_choice",
+    "difficulty": 1,
+    "tags": ["that절"],
+    "prompt": "I know ___ you are tired.",
+    "promptKo": "네가 피곤한 거 알아.",
+    "choices": [
+      { "id": "a", "text": "what" },
+      { "id": "b", "text": "that" },
+      { "id": "c", "text": "if" },
+      { "id": "d", "text": "for" }
+    ],
+    "answer": "b",
+    "explanation": "작은 문장(\"you are tired\")을 큰 문장 안에 넣어주는 상자는 that. 회화에선 생략도 가능해요."
+  },
+  {
+    "id": "q-11-fin-02",
+    "lessonId": "lesson-11",
+    "type": "ox",
+    "difficulty": 2,
+    "tags": ["that절", "시제 일치"],
+    "prompt": "She said that she is busy.",
+    "answer": false,
+    "explanation": "큰 문장이 어제 옷(said)이면 작은 문장도 시제를 맞춰주는 게 자연스러워요. 'She said that she was busy.'"
+  },
+  {
+    "id": "q-11-fin-03",
+    "lessonId": "lesson-11",
+    "type": "word_arrange",
+    "difficulty": 1,
+    "tags": ["that절"],
+    "promptKo": "그가 맞는 것 같아.",
+    "tokens": [
+      { "id": "t1", "text": "I" },
+      { "id": "t2", "text": "think" },
+      { "id": "t3", "text": "he" },
+      { "id": "t4", "text": "is" },
+      { "id": "t5", "text": "right" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4", "t5"],
+    "explanation": "회화에선 that이 빠진 가장 자연스러운 형태. \"I think he is right.\""
+  },
+  {
+    "id": "q-11-fin-04",
+    "lessonId": "lesson-11",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["that절"],
+    "prompt": "I believe ___ you can do it.",
+    "promptKo": "네가 해낼 수 있다고 믿어.",
+    "inputMode": "choices",
+    "choices": ["that", "what", "if", "for"],
+    "answer": ["that"],
+    "explanation": "believe + 작은 문장의 단짝 상자는 that. (회화에선 생략 가능해요)"
+  },
+  {
+    "id": "q-11-fin-05",
+    "lessonId": "lesson-11",
+    "type": "situation_match",
+    "difficulty": 2,
+    "tags": ["that절"],
+    "scenario": "친구가 시험 망쳤다고 우울해해요. \"네가 다음엔 잘할 거라고 생각해\"라고 격려하고 싶어요.",
+    "scenarioEmoji": "💪",
+    "choices": [
+      { "id": "a", "en": "I think you will do well next time.", "ko": "네가 다음엔 잘할 거라고 생각해." },
+      { "id": "b", "en": "I think you do well next time.", "ko": "(시제 어색)" },
+      { "id": "c", "en": "I think did you do well next time.", "ko": "(어순 깨짐)" },
+      { "id": "d", "en": "I think you well next time.", "ko": "(동사 빠짐)" }
+    ],
+    "answer": "a",
+    "explanation": "큰 문장(I think) + 작은 문장(you will do well next time). \"다음에\"는 미래라 작은 문장에 will이 들어가요."
+  },
+  {
+    "id": "q-11-fin-06",
+    "lessonId": "lesson-11",
+    "type": "translation",
+    "difficulty": 3,
+    "tags": ["that절", "시제 일치"],
+    "promptKo": "그녀는 자기가 바쁘다고 말했어.",
+    "tokens": [
+      { "id": "t1", "text": "She" },
+      { "id": "t2", "text": "said" },
+      { "id": "t3", "text": "that" },
+      { "id": "t4", "text": "she" },
+      { "id": "t5", "text": "was" },
+      { "id": "t6", "text": "is" },
+      { "id": "t7", "text": "busy" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4", "t5", "t7"],
+    "explanation": "큰 문장이 어제(said)면 작은 문장도 어제 옷(was). 함정으로 is가 섞여 있었네요."
+  },
+  {
+    "id": "q-11-fin-07",
+    "lessonId": "lesson-11",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["that절"],
+    "prompt": "We hope ___ it will rain tomorrow.",
+    "promptKo": "내일 비 오기를 바라.",
+    "inputMode": "keyboard",
+    "answer": ["that", ""],
+    "explanation": "hope 뒤의 상자 that. 회화에선 빈칸이어도 자연스러워요(생략 OK)."
+  }
+]

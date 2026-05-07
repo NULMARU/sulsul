@@ -1,0 +1,105 @@
+{
+  "id": "lesson-11",
+  "stageId": "stage-3-advanced",
+  "order": 11,
+  "title": "절 1 — that절",
+  "subtitle": "문장 안의 작은 문장",
+  "estimatedMinutes": 6,
+  "objectives": [
+    "한 문장 안에 또 다른 작은 문장을 \"that\"으로 묶어서 넣을 수 있다",
+    "think/know/believe/say 같은 동사 뒤에 that절이 자주 따라 붙는다",
+    "회화에선 that을 자주 생략한다"
+  ],
+  "keyPhrases": [
+    "I think (that) he is right.",
+    "I know (that) you are tired.",
+    "She said (that) she was busy.",
+    "I believe that you can do it.",
+    "We hope (that) it will rain."
+  ],
+  "cards": [
+    {
+      "id": "lesson-11-card-01",
+      "order": 1,
+      "type": "hook",
+      "emoji": "📦",
+      "text": "\"네 말이 맞다고 생각해\". 한국어로는 한 문장 같지만, 사실 \"네 말이 맞다\"라는 작은 문장이 큰 문장 속에 들어 있죠."
+    },
+    {
+      "id": "lesson-11-card-02",
+      "order": 2,
+      "type": "narration",
+      "text": "영어도 똑같이 큰 문장 안에 작은 문장을 넣을 수 있어요. 그 작은 문장을 묶어주는 끈이 바로 \"that\". 작은 문장을 상자에 담아 큰 문장 안으로 들여놓는 거예요."
+    },
+    {
+      "id": "lesson-11-card-03",
+      "order": 3,
+      "type": "analogy",
+      "emoji": "📦",
+      "text": "큰 문장: \"I think ___\". 그 빈자리에 \"he is right\"라는 작은 문장을 넣고 싶어요. 그냥 들이밀면 어수선하니, that이라는 상자에 담아 \"that he is right\"로 만들어 안전하게 넣어주는 거죠.",
+      "examples": [
+        { "emoji": "💭", "en": "I think that he is right.", "ko": "(작은 문장 = he is right) 나는 그가 맞다고 생각해." }
+      ]
+    },
+    {
+      "id": "lesson-11-card-04",
+      "order": 4,
+      "type": "example",
+      "text": "think, know, believe, say, hope — 머릿속의 생각이나 입에서 나오는 말을 담는 동사들이 that절을 가장 많이 끌고 다녀요.",
+      "examples": [
+        { "emoji": "💡", "en": "I know that you are tired.", "ko": "네가 피곤한 거 알아." }
+      ],
+      "highlight": "know that you are tired"
+    },
+    {
+      "id": "lesson-11-card-05",
+      "order": 5,
+      "type": "example",
+      "emoji": "🗣️",
+      "text": "회화에선 that을 자주 생략해요. 자연스러운 영어일수록 상자(that)가 빠지고 그냥 들어가는 모양이 흔해요.",
+      "examples": [
+        { "emoji": "💬", "en": "I think he is right.", "ko": "(that 생략) 그가 맞는 것 같아." },
+        { "emoji": "💪", "en": "I believe you can do it.", "ko": "(that 생략) 네가 할 수 있다고 믿어." }
+      ],
+      "highlight": "(that 생략)",
+      "afterCardQuizId": "q-11-int-01"
+    },
+    {
+      "id": "lesson-11-card-06",
+      "order": 6,
+      "type": "analogy",
+      "emoji": "🎭",
+      "text": "큰 문장과 작은 문장은 각자 시제 옷을 따로 입어요. \"방금 말했다\"는 큰 문장이 어제 옷(said)이면, 작은 문장도 시제를 맞춰 살짝 과거로 — 이걸 \"시제 일치\"라고 불러요. 입문 단계에선 큰 문장이 평소면 작은 문장도 평소, 어제면 어제 — 정도만 챙기면 충분해요."
+    },
+    {
+      "id": "lesson-11-card-07",
+      "order": 7,
+      "type": "example",
+      "text": "큰 문장이 어제(said)면 작은 문장도 어제 옷을 입혀줘요. \"그녀가 (그때) 바쁘다고 말했다\"가 가장 자연스러워요.",
+      "examples": [
+        { "emoji": "📞", "en": "She said that she was busy.", "ko": "그녀는 자기가 바쁘다고 말했어." }
+      ],
+      "highlight": "said that she was"
+    },
+    {
+      "id": "lesson-11-card-08",
+      "order": 8,
+      "type": "summary",
+      "emoji": "📦",
+      "text": "that은 작은 문장을 큰 문장에 넣어주는 상자. think/know/believe/say/hope 뒤에 자주 붙고, 회화에선 자주 생략돼요. 시제는 큰 문장에 맞춰 챙기기!",
+      "examples": [
+        { "emoji": "🌧️", "en": "We hope that it will rain.", "ko": "우리 비 오기를 바라." }
+      ]
+    }
+  ],
+  "interstitialQuizIds": ["q-11-int-01"],
+  "finalQuizIds": [
+    "q-11-fin-01",
+    "q-11-fin-02",
+    "q-11-fin-03",
+    "q-11-fin-04",
+    "q-11-fin-05",
+    "q-11-fin-06",
+    "q-11-fin-07"
+  ]
+}

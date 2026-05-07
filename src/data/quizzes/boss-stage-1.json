@@ -1,0 +1,209 @@
+[
+  {
+    "id": "boss-1-q01",
+    "lessonId": "boss-stage-1",
+    "type": "multiple_choice",
+    "difficulty": 2,
+    "tags": ["현재시제", "3인칭"],
+    "prompt": "She ___ tea every morning.",
+    "promptKo": "그녀는 매일 아침 차를 마신다.",
+    "choices": [
+      { "id": "a", "text": "drink" },
+      { "id": "b", "text": "drinks" },
+      { "id": "c", "text": "is drinking" },
+      { "id": "d", "text": "drank" }
+    ],
+    "answer": "b",
+    "explanation": "every morning은 평소 신호 — 1강 옷. She엔 -s 신호 챙기기.",
+    "reference": { "lessonId": "lesson-01" }
+  },
+  {
+    "id": "boss-1-q02",
+    "lessonId": "boss-stage-1",
+    "type": "ox",
+    "difficulty": 2,
+    "tags": ["현재시제", "부정"],
+    "prompt": "He doesn't likes milk.",
+    "answer": false,
+    "explanation": "doesn't가 이미 \"부정\"을 짊어졌어요. 동사는 가벼운 원래 모습 — 'He doesn't like milk.'",
+    "reference": { "lessonId": "lesson-01" }
+  },
+  {
+    "id": "boss-1-q03",
+    "lessonId": "boss-stage-1",
+    "type": "multiple_choice",
+    "difficulty": 2,
+    "tags": ["진행형"],
+    "prompt": "I ___ TV right now.",
+    "promptKo": "나 지금 TV 보고 있어.",
+    "choices": [
+      { "id": "a", "text": "watch" },
+      { "id": "b", "text": "am watching" },
+      { "id": "c", "text": "watched" },
+      { "id": "d", "text": "will watch" }
+    ],
+    "answer": "b",
+    "explanation": "right now는 지금 신호 — 2강 옷(be + 동사ing).",
+    "reference": { "lessonId": "lesson-02" }
+  },
+  {
+    "id": "boss-1-q04",
+    "lessonId": "boss-stage-1",
+    "type": "word_arrange",
+    "difficulty": 2,
+    "tags": ["진행형", "3인칭"],
+    "promptKo": "그녀는 지금 저녁을 만들고 있어.",
+    "tokens": [
+      { "id": "t1", "text": "She" },
+      { "id": "t2", "text": "is" },
+      { "id": "t3", "text": "cooking" },
+      { "id": "t4", "text": "dinner" },
+      { "id": "t5", "text": "now" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4", "t5"],
+    "explanation": "She의 짝은 is. cook + ing — 지금 이 순간의 사진.",
+    "reference": { "lessonId": "lesson-02" }
+  },
+  {
+    "id": "boss-1-q05",
+    "lessonId": "boss-stage-1",
+    "type": "multiple_choice",
+    "difficulty": 2,
+    "tags": ["과거시제", "불규칙"],
+    "prompt": "I ___ to Busan last weekend.",
+    "promptKo": "지난 주말에 부산 갔어.",
+    "choices": [
+      { "id": "a", "text": "go" },
+      { "id": "b", "text": "goes" },
+      { "id": "c", "text": "went" },
+      { "id": "d", "text": "going" }
+    ],
+    "answer": "c",
+    "explanation": "last weekend는 끝난 일 신호. go의 어제 옷은 went.",
+    "reference": { "lessonId": "lesson-03" }
+  },
+  {
+    "id": "boss-1-q06",
+    "lessonId": "boss-stage-1",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["과거시제", "부정"],
+    "prompt": "She ___ a book yesterday.",
+    "promptKo": "그녀는 어제 책을 읽지 않았다.",
+    "inputMode": "choices",
+    "choices": ["didn't read", "doesn't read", "didn't readed", "isn't reading"],
+    "answer": ["didn't read"],
+    "explanation": "didn't가 짐을 가져갔으니 동사는 원래 모습 read. (read 발음은 변하지만 철자는 같아요.)",
+    "reference": { "lessonId": "lesson-03" }
+  },
+  {
+    "id": "boss-1-q07",
+    "lessonId": "boss-stage-1",
+    "type": "situation_match",
+    "difficulty": 2,
+    "tags": ["미래시제", "will"],
+    "scenario": "전화벨이 울리는데 다른 사람들은 바빠 보여요. 즉흥적으로 \"내가 받을게\".",
+    "scenarioEmoji": "📞",
+    "choices": [
+      { "id": "a", "en": "I get it.", "ko": "(평소) 받는 사람이야." },
+      { "id": "b", "en": "I'm getting it.", "ko": "(지금) 받고 있어." },
+      { "id": "c", "en": "I will get it.", "ko": "(즉흥) 내가 받을게." },
+      { "id": "d", "en": "I'm going to get it.", "ko": "(계획해 둠) 받을 거야." }
+    ],
+    "answer": "c",
+    "explanation": "방금 떠오른 가벼운 결정엔 will이 가장 자연스러워요.",
+    "reference": { "lessonId": "lesson-04" }
+  },
+  {
+    "id": "boss-1-q08",
+    "lessonId": "boss-stage-1",
+    "type": "ox",
+    "difficulty": 3,
+    "tags": ["미래시제"],
+    "prompt": "이미 약속을 잡아둔 일에 \"I will meet Tom at 7.\"이 가장 자연스럽다.",
+    "answer": false,
+    "explanation": "시간장소까지 박힌 약속은 가장 단단한 미래 — 'I'm meeting Tom at 7.'(진행형 옷). will은 즉흥에 어울려요.",
+    "reference": { "lessonId": "lesson-04" }
+  },
+  {
+    "id": "boss-1-q09",
+    "lessonId": "boss-stage-1",
+    "type": "multiple_choice",
+    "difficulty": 3,
+    "tags": ["시제 섞기"],
+    "prompt": "She usually ___ coffee, but today she ___ tea.",
+    "promptKo": "평소엔 커피, 오늘은 차.",
+    "choices": [
+      { "id": "a", "text": "drinks / is drinking" },
+      { "id": "b", "text": "drink / drinks" },
+      { "id": "c", "text": "is drinking / drinks" },
+      { "id": "d", "text": "drank / drinks" }
+    ],
+    "answer": "a",
+    "explanation": "usually는 평소(1강), today + 하고 있다는 지금(2강). 한 문장에 두 옷이 같이!",
+    "reference": { "lessonId": "lesson-05" }
+  },
+  {
+    "id": "boss-1-q10",
+    "lessonId": "boss-stage-1",
+    "type": "ox",
+    "difficulty": 2,
+    "tags": ["시제 섞기"],
+    "prompt": "I am go to school every day.",
+    "answer": false,
+    "explanation": "옷을 두 벌 동시에 입었어요 — am(2강)에 go(1강). every day는 평소이니 'I go to school every day.'",
+    "reference": { "lessonId": "lesson-05" }
+  },
+  {
+    "id": "boss-1-q11",
+    "lessonId": "boss-stage-1",
+    "type": "translation",
+    "difficulty": 3,
+    "tags": ["과거", "부정"],
+    "promptKo": "그녀는 어제 학교에 가지 않았다.",
+    "tokens": [
+      { "id": "t1", "text": "She" },
+      { "id": "t2", "text": "didn't" },
+      { "id": "t3", "text": "go" },
+      { "id": "t4", "text": "to" },
+      { "id": "t5", "text": "school" },
+      { "id": "t6", "text": "yesterday" },
+      { "id": "t7", "text": "went" },
+      { "id": "t8", "text": "doesn't" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+    "explanation": "didn't + 원형 go. yesterday는 끝난 일 신호. 함정으로 went, doesn't가 섞여 있었네요.",
+    "reference": { "lessonId": "lesson-03" }
+  },
+  {
+    "id": "boss-1-q12",
+    "lessonId": "boss-stage-1",
+    "type": "situation_match",
+    "difficulty": 2,
+    "tags": ["시간 단어"],
+    "scenario": "친구가 \"매일 아침 뭐해?\"라고 묻자, \"매일 운동해\"라고 답하고 싶어요.",
+    "scenarioEmoji": "🏃",
+    "choices": [
+      { "id": "a", "en": "I exercise.", "ko": "(평소) 운동하는 사람이야." },
+      { "id": "b", "en": "I am exercising.", "ko": "(지금) 운동하는 중이야." },
+      { "id": "c", "en": "I exercised.", "ko": "(어제) 운동했어." },
+      { "id": "d", "en": "I will exercise.", "ko": "(내일) 운동할 거야." }
+    ],
+    "answer": "a",
+    "explanation": "\"매일\"은 평소 신호. 1강 옷장에서 가장 단순한 형태.",
+    "reference": { "lessonId": "lesson-05" }
+  },
+  {
+    "id": "boss-1-q13",
+    "lessonId": "boss-stage-1",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["미래", "be going to"],
+    "prompt": "I'm ___ to start a diet next week.",
+    "promptKo": "다음주부터 다이어트 시작할 거야.(이미 마음먹음)",
+    "inputMode": "keyboard",
+    "answer": ["going"],
+    "explanation": "이미 마음먹은 계획엔 be going to. \"I'm going to start ~\" 형태가 자연스러워요.",
+    "reference": { "lessonId": "lesson-04" }
+  }
+]
