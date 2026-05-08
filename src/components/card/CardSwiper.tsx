@@ -1,8 +1,15 @@
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef, useCallback, forwardRef, useImperativeHandle } from 'react';
 import { motion, AnimatePresence, type PanInfo } from 'framer-motion';
 import type { Card } from '@/types/content';
 import { LessonCard } from './LessonCard';
 import { tap, error } from '@/lib/haptic';
+
+export interface CardSwiperHandle {
+  next: () => void;
+  prev: () => void;
+  isFirst: () => boolean;
+  isLast: () => boolean;
+}
 
 interface CardSwiperProps {
   cards: Card[];
@@ -12,16 +19,12 @@ interface CardSwiperProps {
   onCardEnter?: (card: Card) => void;
 }
 
-export function CardSwiper({
-  cards,
-  initialIndex = 0,
-  onChange,
-  onFinish,
-  onCardEnter,
-}: CardSwiperProps) {
+export const CardSwiper = forwardRef<CardSwiperHandle, CardSwiperProps>(function CardSwiper(
+  { cards, initialIndex = 0, onChange, onFinish, onCardEnter }: CardSwiperProps,
+  ref,
+) {
   const [index, setIndex] = useState(initialIndex);
   const [direction, setDirection] = useState<1 | -1>(1);
-  const [keyboardHandled, setKeyboardHandled] = useState(false);
   const lastEnteredRef = useRef<string | null>(null);
 
   const card = cards[index]!;
@@ -56,16 +59,36 @@ export function CardSwiper({
     tap(10);
   }, [index, onChange]);
 
+  useImperativeHandle(
+    ref,
+    () => ({
+      next,
+      prev,
+      isFirst: () => index <= 0,
+      isLast: () => index >= cards.length - 1,
+    }),
+    [next, prev, index, cards.length],
+  );
+
   useEffect(() => {
-    if (keyboardHandled) return;
-    setKeyboardHandled(true);
     const handler = (e: KeyboardEvent) => {
-      if (e.key === 'ArrowRight') next();
-      if (e.key === 'ArrowLeft') prev();
+      // ignore when focus is in an editable area
+      const t = e.target as HTMLElement | null;
+      if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) {
+        return;
+      }
+      if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        next();
+      }
+      if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        prev();
+      }
     };
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
-  }, [keyboardHandled, next, prev]);
+  }, [next, prev]);
 
   const onDragEnd = (_: unknown, info: PanInfo) => {
     const w = window.innerWidth;
@@ -97,4 +120,4 @@ export function CardSwiper({
       </AnimatePresence>
     </div>
   );
-}
+});

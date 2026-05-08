@@ -63,7 +63,6 @@ export function StagesRoute() {
             <button
               className="w-full text-left"
               onClick={() => setOpenId(open ? null : s.id)}
-              disabled={!unlocked}
             >
               <div className="flex items-center gap-3">
                 <div className="flex-1">
@@ -82,8 +81,13 @@ export function StagesRoute() {
               </div>
             </button>
 
-            {open && unlocked && (
+            {open && (
               <>
+                {!unlocked && (
+                  <p className="mt-3 text-xs text-text-muted">
+                    🔒 직전 단계 80% 완료 시 자동 해금 · 설정에서 즉시 해금 가능
+                  </p>
+                )}
                 <ul className="mt-4 flex flex-col divide-y divide-border">
                   {headings.map((h) => {
                     const exists = availableLessonIds.includes(h.lessonId);
@@ -93,16 +97,19 @@ export function StagesRoute() {
                       : lp && lp.lastViewedCardOrder > 0
                         ? '▶'
                         : '○';
+                    const lessonClickable = exists && unlocked;
                     return (
                       <li key={h.lessonId}>
                         <button
-                          disabled={!exists}
+                          disabled={!lessonClickable}
                           onClick={() => navigate(`/lesson/${h.lessonId}`)}
                           className={`w-full flex items-center gap-3 py-3 text-left ${
-                            exists ? '' : 'opacity-50'
+                            lessonClickable ? '' : 'opacity-60'
                           }`}
                         >
-                          <span className="w-6 text-center text-text-muted">{status}</span>
+                          <span className="w-6 text-center text-text-muted">
+                            {!unlocked ? '🔒' : status}
+                          </span>
                           <span className="flex-1">
                             {h.lessonId.replace('lesson-', '')}강{' '}
                             {!exists && (
@@ -118,16 +125,18 @@ export function StagesRoute() {
                 {s.bossQuizId && (
                   <button
                     onClick={() => navigate(`/quiz/${s.bossQuizId}`)}
-                    disabled={!unlockAll && pct < 1}
+                    disabled={!unlocked || (!unlockAll && pct < 1)}
                     className={`mt-3 w-full rounded-xl border-2 px-4 py-3 font-medium transition-all ${
-                      unlockAll || pct >= 1
+                      unlocked && (unlockAll || pct >= 1)
                         ? 'bg-accent/15 border-accent text-text active:scale-[0.99]'
                         : 'bg-surface-2 border-border text-text-muted opacity-60'
                     }`}
                   >
                     👑 Stage Boss 퀴즈
-                    {!unlockAll && pct < 1 && (
-                      <span className="text-xs ml-2">(모든 강 완료 시 해금)</span>
+                    {(!unlocked || (!unlockAll && pct < 1)) && (
+                      <span className="text-xs ml-2">
+                        {!unlocked ? '(단계 잠김)' : '(모든 강 완료 시 해금)'}
+                      </span>
                     )}
                   </button>
                 )}

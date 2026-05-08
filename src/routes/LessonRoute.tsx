@@ -1,10 +1,10 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { loadLesson, loadQuizzes, prefetchLesson, listLessonIds } from '@/lib/content';
 import type { Lesson, Card } from '@/types/content';
 import type { Quiz } from '@/types/quiz';
 import { useProgressStore } from '@/stores/progressStore';
-import { CardSwiper } from '@/components/card/CardSwiper';
+import { CardSwiper, type CardSwiperHandle } from '@/components/card/CardSwiper';
 import { Sheet } from '@/components/ui/Sheet';
 import { ProgressDots } from '@/components/ui/Progress';
 import { Button } from '@/components/ui/Button';
@@ -29,6 +29,7 @@ export function LessonRoute() {
   const [shadowOpen, setShadowOpen] = useState(false);
   const [noteDraft, setNoteDraft] = useState('');
   const [result, setResult] = useState<QuizSessionResult | null>(null);
+  const swiperRef = useRef<CardSwiperHandle | null>(null);
 
   const lessons = useProgressStore((s) => s.lessons);
   const bookmarks = useProgressStore((s) => s.bookmarks);
@@ -144,9 +145,11 @@ export function LessonRoute() {
   }
 
   const example = activeCard?.examples?.[0];
+  const isFirst = cardIndex <= 0;
+  const isLast = cardIndex >= lesson.cards.length - 1;
 
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col h-full max-w-card mx-auto w-full">
       <header className="flex items-center justify-between gap-2 px-4 pt-3 pb-2">
         <button
           onClick={() => navigate('/stages')}
@@ -199,6 +202,7 @@ export function LessonRoute() {
       </div>
 
       <CardSwiper
+        ref={swiperRef}
         cards={lesson.cards}
         initialIndex={resumeIndex}
         onCardEnter={handleCardEnter}
@@ -206,10 +210,35 @@ export function LessonRoute() {
         onFinish={handleSwipeFinish}
       />
 
-      <div className="px-5 py-3 safe-bottom">
-        <Button block variant="ghost" onClick={handleSwipeFinish}>
-          {cardIndex >= lesson.cards.length - 1 ? '강 종료 퀴즈로 →' : '건너뛰고 퀴즈로'}
-        </Button>
+      <div className="px-5 py-3 safe-bottom flex flex-col gap-2">
+        <div className="flex gap-2">
+          <Button
+            variant="secondary"
+            block
+            onClick={() => swiperRef.current?.prev()}
+            disabled={isFirst}
+            aria-label="이전 카드"
+          >
+            ← 이전
+          </Button>
+          <Button
+            variant="primary"
+            block
+            onClick={() => swiperRef.current?.next()}
+            aria-label={isLast ? '강 종료 퀴즈로' : '다음 카드'}
+          >
+            {isLast ? '강 종료 퀴즈 →' : '다음 →'}
+          </Button>
+        </div>
+        {!isLast && (
+          <button
+            type="button"
+            onClick={handleSwipeFinish}
+            className="text-xs text-text-muted hover:text-text underline-offset-2 hover:underline self-center"
+          >
+            건너뛰고 퀴즈로
+          </button>
+        )}
       </div>
 
       <Sheet open={noteOpen} onClose={() => setNoteOpen(false)} title="메모">
