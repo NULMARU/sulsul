@@ -97,11 +97,10 @@
       { "id": "t3", "text": "drink" },
       { "id": "t4", "text": "tea" },
       { "id": "t5", "text": "every" },
-      { "id": "t6", "text": "day" },
-      { "id": "t7", "text": "is" }
+      { "id": "t6", "text": "day" }
     ],
     "answer": ["t1", "t2", "t4", "t5", "t6"],
-    "explanation": "She는 -s 신호가 필요해요. drinks가 정답. 함정으로 'drink', 'is'가 섞여 있었네요."
+    "explanation": "She는 -s 신호가 필요하니 drinks가 정답. drink는 I/You/We용이라 함정이에요."
   },
   {
     "id": "q-01-fin-07",

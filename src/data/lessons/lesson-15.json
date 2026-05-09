@@ -89,9 +89,22 @@
     {
       "id": "lesson-15-card-08",
       "order": 8,
+      "type": "analogy",
+      "emoji": "⚠️",
+      "text": "should는 \"하는 게 좋겠어\"인데, had better는 한 단계 무거워요. \"안 그러면 안 좋은 일 있을 걸?\" 하는 살짝 위협적인 충고. 친구·아랫사람한테는 OK, 윗사람한테는 너무 강해요.",
+      "examples": [
+        { "emoji": "🌧️", "en": "You should take an umbrella.", "ko": "(부드러운 권유) 우산 챙기는 게 좋아." },
+        { "emoji": "⛈️", "en": "You'd better take an umbrella.", "ko": "(강한 충고) 우산 챙기는 게 좋을걸. 안 그러면 비 맞아." }
+      ],
+      "highlight": "had better",
+      "tip": "축약은 'd better. 뒤에는 동사 원형이 와요. \"You had better not be late\" — 부정은 not better가 아니라 better not!"
+    },
+    {
+      "id": "lesson-15-card-09",
+      "order": 9,
       "type": "summary",
       "emoji": "🌬️",
-      "text": "could / would / might는 한 발짝 부드러워진 조동사. 정중함, 약한 추측, 과거의 가능을 모두 담아요. 조동사 + have + p.p.는 과거에 대한 추측·후회까지 담아내요.",
+      "text": "could / would / might는 한 발짝 부드러워진 조동사 — 정중함·약한 추측·과거의 가능. 조동사 + have + p.p.는 과거에 대한 추측·후회. had better는 should보다 한 단계 무거운 충고. 무게를 골라 쓰세요.",
       "examples": [
         { "emoji": "🚪", "en": "Could you open the door?", "ko": "문 좀 열어주실래요?" }
       ]
@@ -105,6 +118,7 @@
     "q-15-fin-04",
     "q-15-fin-05",
     "q-15-fin-06",
-    "q-15-fin-07"
+    "q-15-fin-07",
+    "q-15-fin-08"
   ]
 }

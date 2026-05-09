@@ -3,8 +3,8 @@
     "id": "stage-1-core",
     "order": 1,
     "title": "왕초보 코어",
-    "description": "시제 5종 — 영어의 뼈대를 잡는 단계",
-    "lessonIds": ["lesson-01", "lesson-02", "lesson-03", "lesson-04", "lesson-05"],
+    "description": "시제 5종 + 발음의 결 — 영어의 뼈대를 잡는 단계",
+    "lessonIds": ["lesson-01", "lesson-02", "lesson-03", "lesson-04", "lesson-05", "lesson-17"],
     "unlockThreshold": 0,
     "bossQuizId": "boss-stage-1"
   },
@@ -14,16 +14,16 @@
     "title": "일상 회화 확장",
     "description": "실생활에서 가장 자주 쓰는 표현들",
     "lessonIds": ["lesson-06", "lesson-07", "lesson-08", "lesson-14", "lesson-09", "lesson-10"],
-    "unlockThreshold": 0.8,
+    "unlockThreshold": 0,
     "bossQuizId": "boss-stage-2"
   },
   {
     "id": "stage-3-advanced",
     "order": 3,
     "title": "심화",
-    "description": "절·가정법 — 표현의 폭을 넓힌다",
-    "lessonIds": ["lesson-11", "lesson-12", "lesson-13", "lesson-15", "lesson-16"],
-    "unlockThreshold": 0.8,
+    "description": "절·관계대명사·수동태·가정법 — 표현의 폭을 넓힌다",
+    "lessonIds": ["lesson-11", "lesson-12", "lesson-13", "lesson-15", "lesson-18", "lesson-16"],
+    "unlockThreshold": 0,
     "bossQuizId": "boss-stage-3"
   }
 ]

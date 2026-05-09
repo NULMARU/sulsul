@@ -1,8 +1,16 @@
-import { useState, useEffect, useRef, useCallback, forwardRef, useImperativeHandle } from 'react';
+import {
+  useState,
+  useEffect,
+  useRef,
+  useCallback,
+  forwardRef,
+  useImperativeHandle,
+} from 'react';
 import { motion, AnimatePresence, type PanInfo } from 'framer-motion';
 import type { Card } from '@/types/content';
 import { LessonCard } from './LessonCard';
 import { tap, error } from '@/lib/haptic';
+import type { NarrationLevel } from '@/stores/settingsStore';
 
 export interface CardSwiperHandle {
   next: () => void;
@@ -17,10 +25,20 @@ interface CardSwiperProps {
   onChange?: (index: number) => void;
   onFinish: () => void;
   onCardEnter?: (card: Card) => void;
+  narrationLevel: NarrationLevel;
+  autoAdvanceMs?: number;
 }
 
 export const CardSwiper = forwardRef<CardSwiperHandle, CardSwiperProps>(function CardSwiper(
-  { cards, initialIndex = 0, onChange, onFinish, onCardEnter }: CardSwiperProps,
+  {
+    cards,
+    initialIndex = 0,
+    onChange,
+    onFinish,
+    onCardEnter,
+    narrationLevel,
+    autoAdvanceMs = 0,
+  }: CardSwiperProps,
   ref,
 ) {
   const [index, setIndex] = useState(initialIndex);
@@ -72,7 +90,6 @@ export const CardSwiper = forwardRef<CardSwiperHandle, CardSwiperProps>(function
 
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
-      // ignore when focus is in an editable area
       const t = e.target as HTMLElement | null;
       if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) {
         return;
@@ -89,6 +106,15 @@ export const CardSwiper = forwardRef<CardSwiperHandle, CardSwiperProps>(function
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
   }, [next, prev]);
+
+  // Auto-advance for hands-free / headphone listening modes.
+  useEffect(() => {
+    if (!autoAdvanceMs || autoAdvanceMs <= 0) return;
+    const timer = window.setTimeout(() => {
+      next();
+    }, autoAdvanceMs);
+    return () => window.clearTimeout(timer);
+  }, [card.id, autoAdvanceMs, next]);
 
   const onDragEnd = (_: unknown, info: PanInfo) => {
     const w = window.innerWidth;
@@ -115,7 +141,7 @@ export const CardSwiper = forwardRef<CardSwiperHandle, CardSwiperProps>(function
           onDragEnd={onDragEnd}
           className="absolute inset-0 px-5 py-6 overflow-y-auto flex flex-col"
         >
-          <LessonCard card={card} />
+          <LessonCard card={card} narrationLevel={narrationLevel} />
         </motion.div>
       </AnimatePresence>
     </div>

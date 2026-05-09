@@ -1,0 +1,127 @@
+{
+  "id": "lesson-17",
+  "stageId": "stage-1-core",
+  "order": 17,
+  "title": "발음의 결",
+  "subtitle": "축약·연음 — 영어가 빨라지면 옷이 줄어든다",
+  "estimatedMinutes": 7,
+  "objectives": [
+    "I am → I'm처럼 빨리 말할 때 단어가 어떻게 줄어드는지 안다",
+    "단어와 단어가 만나면 어떻게 이어 발음되는지(연음) 익힌다",
+    "want to → wanna처럼 회화에서 자주 듣는 줄임을 알아듣는다"
+  ],
+  "keyPhrases": [
+    "I'm hungry.",
+    "She's tired.",
+    "I don't know.",
+    "What are you doing?",
+    "I want to go. → I wanna go.",
+    "going to → gonna"
+  ],
+  "cards": [
+    {
+      "id": "lesson-17-card-01",
+      "order": 1,
+      "type": "hook",
+      "emoji": "🗣️",
+      "text": "원어민이 말하는 \"What are you doing?\"이 \"와류두잉?\"처럼 들린 적 있죠? 영어가 빨라지면 단어들의 옷이 줄어들고 서로 손을 잡아요."
+    },
+    {
+      "id": "lesson-17-card-02",
+      "order": 2,
+      "type": "narration",
+      "text": "한국어도 \"무엇을 → 뭘\"처럼 줄여 말하잖아요. 영어도 똑같아요. 두 단어가 자주 짝지어 나오면 자연스럽게 한 단어처럼 줄어들고, 옆 단어와 발음이 이어집니다. 이게 \"축약\"과 \"연음\"이에요."
+    },
+    {
+      "id": "lesson-17-card-03",
+      "order": 3,
+      "type": "analogy",
+      "emoji": "👕",
+      "text": "축약은 단어가 옷을 살짝 줄여 입는 거예요. I am이 바쁜 길에서 만나면 'm 하나로 합쳐져 I'm이 되죠. is, are, has, have, will, would, not 같은 작은 친구들이 자주 줄어들어요.",
+      "examples": [
+        { "emoji": "🍔", "en": "I'm hungry.", "ko": "배고파.(I am의 축약)" },
+        { "emoji": "😴", "en": "She's tired.", "ko": "그녀 피곤해.(She is의 축약)" }
+      ]
+    },
+    {
+      "id": "lesson-17-card-04",
+      "order": 4,
+      "type": "example",
+      "text": "is/are/am의 축약은 가장 자주 들려요. 'm, 's, 're 한 음절만 슬쩍 붙는 느낌. 듣기 어렵다면 \"앞 단어와 한 호흡\"으로 들어보세요.",
+      "examples": [
+        { "emoji": "🙋", "en": "I'm a student.", "ko": "나 학생이야." },
+        { "emoji": "👀", "en": "You're right.", "ko": "네 말이 맞아." }
+      ],
+      "highlight": "I'm / You're",
+      "tip": "한국어 \"내가\"가 \"내\"로 줄듯, I am이 I'm으로 줄어든다고 생각하면 익숙해져요.",
+      "afterCardQuizId": "q-17-int-01"
+    },
+    {
+      "id": "lesson-17-card-05",
+      "order": 5,
+      "type": "example",
+      "emoji": "🚫",
+      "text": "not의 축약 n't도 도처에 등장해요. 1강의 도우미 do/does/did도 not과 만나면 don't / doesn't / didn't로 옷을 줄여요. won't는 will not의 축약(뜻은 \"안 할 거야\").",
+      "examples": [
+        { "emoji": "🙅", "en": "I don't know.", "ko": "몰라.(do not의 축약)" },
+        { "emoji": "❌", "en": "He won't come.", "ko": "그는 안 올 거야.(will not의 축약)" }
+      ],
+      "highlight": "don't / won't"
+    },
+    {
+      "id": "lesson-17-card-06",
+      "order": 6,
+      "type": "analogy",
+      "emoji": "🤝",
+      "text": "연음은 옆 단어가 손을 잡는 거예요. 앞 단어가 자음으로 끝나고 뒷 단어가 모음으로 시작하면 자연스럽게 이어져요. \"What are\" → \"와라\", \"check it out\" → \"체키라웃\"처럼.",
+      "examples": [
+        { "emoji": "❓", "en": "What are you doing?", "ko": "(연음) 와류 두잉?" },
+        { "emoji": "🔍", "en": "Check it out.", "ko": "(연음) 체키라웃 = 한번 봐봐." }
+      ]
+    },
+    {
+      "id": "lesson-17-card-07",
+      "order": 7,
+      "type": "example",
+      "emoji": "🍔",
+      "text": "회화에서 자주 듣는 큰 줄임 두 가지 — want to → wanna, going to → gonna. 격식 있는 자리에선 안 쓰지만, 친구·일상 회화에선 거의 기본값처럼 나와요.",
+      "examples": [
+        { "emoji": "🍕", "en": "I wanna eat pizza.", "ko": "(= I want to) 피자 먹고 싶어." },
+        { "emoji": "🏋️", "en": "I'm gonna start a diet.", "ko": "(= going to) 다이어트 시작할 거야." }
+      ],
+      "highlight": "wanna / gonna",
+      "tip": "이건 \"써먹기\"보다 \"알아듣기\" 위해서 익혀두세요. 격식 있는 글에선 want to / going to로 다시 풀어 써요."
+    },
+    {
+      "id": "lesson-17-card-08",
+      "order": 8,
+      "type": "example",
+      "emoji": "🎵",
+      "text": "영어는 강세 언어예요. 중요한 단어(명사·동사·의문사)는 길고 또렷하게, 작은 친구(전치사·be동사·도우미)는 짧고 약하게. 이 리듬이 \"빠르고 자연스러운\" 느낌을 만들어요.",
+      "examples": [
+        { "emoji": "🎶", "en": "I'm GOing to the STOre.", "ko": "(강·약 리듬) 가게에 가는 중이야." }
+      ],
+      "tip": "한국어 \"오늘 학교 가\"에서 \"학교\"가 또렷하듯, 영어도 의미 단어를 또렷이 — 작은 친구들은 자연스레 줄어들어요."
+    },
+    {
+      "id": "lesson-17-card-09",
+      "order": 9,
+      "type": "summary",
+      "emoji": "🗣️",
+      "text": "영어가 빨라지면 옷이 줄고('m, 's, n't, 'll), 옆 단어와 손을 잡아요(연음). 격식 있는 글은 또박또박, 일상 회화는 줄임·연음. 같은 문장도 두 얼굴을 가지는 거죠.",
+      "examples": [
+        { "emoji": "👋", "en": "I'm gonna go now.", "ko": "(= I am going to) 지금 갈게." }
+      ]
+    }
+  ],
+  "interstitialQuizIds": ["q-17-int-01"],
+  "finalQuizIds": [
+    "q-17-fin-01",
+    "q-17-fin-02",
+    "q-17-fin-03",
+    "q-17-fin-04",
+    "q-17-fin-05",
+    "q-17-fin-06",
+    "q-17-fin-07"
+  ]
+}

@@ -1,9 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import type { Quiz } from '@/types/quiz';
 import { gradeQuiz, pickPraise, type AnswerValue } from '@/lib/grading';
 import { tap, error as hapticError } from '@/lib/haptic';
 import { useProgressStore } from '@/stores/progressStore';
+import { useSettingsStore } from '@/stores/settingsStore';
 import { ProgressDots } from '@/components/ui/Progress';
 import { Button } from '@/components/ui/Button';
 import { MultipleChoice } from './MultipleChoice';
@@ -11,6 +12,7 @@ import { OxQuizComponent } from './OxQuiz';
 import { FillBlank } from './FillBlank';
 import { WordArrange } from './WordArrange';
 import { SituationMatch } from './SituationMatch';
+import { speak, cancel, primeEngine } from '@/lib/tts';
 
 export interface QuizSessionResult {
   total: number;
@@ -37,6 +39,12 @@ export function QuizRunner({ quizzes, onFinish, onExit, showProgress = true }: Q
   });
   const [praise] = useState(pickPraise());
   const recordQuizAttempt = useProgressStore((s) => s.recordQuizAttempt);
+  const narrationLevel = useSettingsStore((s) => s.narrationLevel);
+  const koreanVoiceURI = useSettingsStore((s) => s.ttsKoreanVoiceURI);
+  const englishVoiceURI = useSettingsStore((s) => s.ttsVoiceURI);
+  const ttsRate = useSettingsStore((s) => s.ttsRate);
+  const ttsPitch = useSettingsStore((s) => s.ttsPitch);
+  const lastNarratedRef = useRef<string | null>(null);
 
   const quiz = quizzes[index]!;
   const total = quizzes.length;
@@ -45,6 +53,44 @@ export function QuizRunner({ quizzes, onFinish, onExit, showProgress = true }: Q
     setPhase('answering');
     setSelected(null);
   }, [index]);
+
+  // Narrate quiz prompt when level === 'all'. We deliberately do NOT read option text,
+  // both to avoid spoiling answers and to keep the audio short.
+  useEffect(() => {
+    if (narrationLevel !== 'all') return;
+    if (lastNarratedRef.current === quiz.id) return;
+    lastNarratedRef.current = quiz.id;
+    primeEngine();
+
+    const parts: string[] = [];
+    if ('promptKo' in quiz && quiz.promptKo) parts.push(quiz.promptKo);
+    if ('prompt' in quiz && typeof quiz.prompt === 'string') {
+      // Replace blanks so TTS doesn't read "underscore underscore"
+      parts.push(quiz.prompt.replace(/_+/g, ' blank '));
+    }
+    if (quiz.type === 'situation_match') {
+      parts.push(quiz.scenario);
+    }
+    if (quiz.type === 'word_arrange' || quiz.type === 'translation') {
+      // For arrange tasks, only read the Korean prompt — reading tokens would dump the answer.
+      if (quiz.promptKo) parts.push(quiz.promptKo);
+    }
+    const text = parts.join('. ');
+    if (!text.trim()) return;
+
+    const t = setTimeout(() => {
+      void speak(text, {
+        lang: 'auto',
+        rate: ttsRate,
+        pitch: ttsPitch,
+        voiceURIByLang: { ko: koreanVoiceURI, en: englishVoiceURI },
+      });
+    }, 350);
+    return () => {
+      clearTimeout(t);
+      cancel();
+    };
+  }, [quiz.id, narrationLevel, koreanVoiceURI, englishVoiceURI, ttsRate, ttsPitch]);
 
   const handleAnswer = async (ans: AnswerValue) => {
     if (phase !== 'answering') return;

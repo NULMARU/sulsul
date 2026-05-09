@@ -1,0 +1,124 @@
+[
+  {
+    "id": "q-18-int-01",
+    "lessonId": "lesson-18",
+    "type": "multiple_choice",
+    "difficulty": 1,
+    "tags": ["수동태", "be + p.p."],
+    "prompt": "The cake ___ yesterday.",
+    "promptKo": "그 케이크 어제 만들어졌어.(수동태)",
+    "choices": [
+      { "id": "a", "text": "made" },
+      { "id": "b", "text": "is made" },
+      { "id": "c", "text": "was made" },
+      { "id": "d", "text": "makes" }
+    ],
+    "answer": "c",
+    "explanation": "수동태 공식: be + p.p. yesterday는 어제 옷이라 was. 'was made'가 정답이에요.",
+    "reference": { "lessonId": "lesson-18", "cardId": "lesson-18-card-04" }
+  },
+  {
+    "id": "q-18-fin-01",
+    "lessonId": "lesson-18",
+    "type": "multiple_choice",
+    "difficulty": 1,
+    "tags": ["수동태", "현재"],
+    "prompt": "English ___ here.",
+    "promptKo": "여긴 영어가 쓰여.(수동, 현재)",
+    "choices": [
+      { "id": "a", "text": "speaks" },
+      { "id": "b", "text": "is speaking" },
+      { "id": "c", "text": "is spoken" },
+      { "id": "d", "text": "spoke" }
+    ],
+    "answer": "c",
+    "explanation": "\"영어가 쓰여진다\"는 수동. be + p.p. — speak의 p.p.는 spoken."
+  },
+  {
+    "id": "q-18-fin-02",
+    "lessonId": "lesson-18",
+    "type": "ox",
+    "difficulty": 2,
+    "tags": ["수동태", "be born"],
+    "prompt": "I born in 1995.",
+    "answer": false,
+    "explanation": "\"태어나다\"는 영어에선 수동 — be + born. 'I was born in 1995.'가 맞아요. 한국어 직역의 함정!"
+  },
+  {
+    "id": "q-18-fin-03",
+    "lessonId": "lesson-18",
+    "type": "word_arrange",
+    "difficulty": 2,
+    "tags": ["수동태", "by"],
+    "promptKo": "그 케이크는 엄마가 만들었어.",
+    "tokens": [
+      { "id": "t1", "text": "The" },
+      { "id": "t2", "text": "cake" },
+      { "id": "t3", "text": "was" },
+      { "id": "t4", "text": "made" },
+      { "id": "t5", "text": "by" },
+      { "id": "t6", "text": "my" },
+      { "id": "t7", "text": "mom" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+    "explanation": "주어(케이크) + was made + by + 행위자(엄마). 카메라가 케이크에 머물러 있어요."
+  },
+  {
+    "id": "q-18-fin-04",
+    "lessonId": "lesson-18",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["수동태", "p.p."],
+    "prompt": "My phone was ___ yesterday.",
+    "promptKo": "내 폰 어제 도둑맞았어.",
+    "inputMode": "choices",
+    "choices": ["stolen", "stole", "stealing", "steals"],
+    "answer": ["stolen"],
+    "explanation": "수동태는 be + p.p. steal의 p.p.는 stolen(불규칙). 행위자가 누군지 모르니 by 없이!"
+  },
+  {
+    "id": "q-18-fin-05",
+    "lessonId": "lesson-18",
+    "type": "situation_match",
+    "difficulty": 2,
+    "tags": ["수동태", "관점"],
+    "scenario": "친구가 \"이 책 누가 썼어?\"라고 물어보지 않고, 그냥 책 자체를 화제로 꺼내고 싶어요. 어떤 문장이 가장 자연스러울까요?",
+    "scenarioEmoji": "📚",
+    "choices": [
+      { "id": "a", "en": "Someone wrote this book in 1925.", "ko": "(능동, 어색함)" },
+      { "id": "b", "en": "This book was written in 1925.", "ko": "(수동) 이 책 1925년에 쓰여졌어." },
+      { "id": "c", "en": "This book wrote in 1925.", "ko": "(틀림 — 책이 글을 쓸 수 없음)" },
+      { "id": "d", "en": "This book is writing in 1925.", "ko": "(틀림)" }
+    ],
+    "answer": "b",
+    "explanation": "책이 주인공일 땐 수동태가 자연스러워요. 행위자(작가)는 모르거나 중요하지 않으니 by 생략."
+  },
+  {
+    "id": "q-18-fin-06",
+    "lessonId": "lesson-18",
+    "type": "translation",
+    "difficulty": 3,
+    "tags": ["수동태", "변환"],
+    "promptKo": "햄릿은 셰익스피어가 썼다.(수동태로)",
+    "tokens": [
+      { "id": "t1", "text": "Hamlet" },
+      { "id": "t2", "text": "was" },
+      { "id": "t3", "text": "written" },
+      { "id": "t4", "text": "by" },
+      { "id": "t5", "text": "Shakespeare" },
+      { "id": "t6", "text": "wrote" }
+    ],
+    "answer": ["t1", "t2", "t3", "t4", "t5"],
+    "explanation": "주인공이 햄릿(작품). was written + by + 작가. write의 p.p.는 written(불규칙)."
+  },
+  {
+    "id": "q-18-fin-07",
+    "lessonId": "lesson-18",
+    "type": "ox",
+    "difficulty": 2,
+    "tags": ["수동태", "by 생략"],
+    "prompt": "행위자를 모르거나 굳이 말할 필요 없으면 수동태에서 by ~를 빼고 말해도 자연스럽다.",
+    "answer": true,
+    "explanation": "맞아요! \"My bike was stolen.\"처럼 행위자를 모를 때, 또는 \"English is spoken here.\"처럼 행위자가 너무 뻔할 때는 by를 생략하는 게 더 자연스러워요."
+  }
+]

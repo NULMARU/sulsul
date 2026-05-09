@@ -14,7 +14,7 @@ interface LessonHeading {
 export function StagesRoute() {
   const navigate = useNavigate();
   const [stages, setStages] = useState<Stage[]>([]);
-  const [openId, setOpenId] = useState<string | null>(null);
+  const [openIds, setOpenIds] = useState<Set<string>>(new Set());
   const lessons = useProgressStore((s) => s.lessons);
   const unlockAll = useSettingsStore((s) => s.unlockAllStages);
   const availableLessonIds = listLessonIds();
@@ -22,7 +22,7 @@ export function StagesRoute() {
   useEffect(() => {
     loadStages().then((s) => {
       setStages(s);
-      setOpenId(s[0]?.id ?? null);
+      setOpenIds(new Set(s.map((x) => x.id)));
     });
   }, []);
 
@@ -40,30 +40,38 @@ export function StagesRoute() {
     return stageProgress(prev) >= s.unlockThreshold;
   };
 
+  const toggle = (id: string) => {
+    setOpenIds((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  };
+
   return (
     <div className="px-5 pt-6 pb-6 max-w-card mx-auto w-full flex flex-col gap-4">
       <h1 className="text-2xl font-bold">학습 단계</h1>
       {stages.map((s, idx) => {
         const unlocked = isUnlocked(s, idx);
         const pct = stageProgress(s);
-        const open = openId === s.id;
+        const open = openIds.has(s.id);
         const headings: LessonHeading[] = s.lessonIds.map((id, i) => ({
           lessonId: id,
           order: i + 1,
         }));
+        const firstUnstartedId = s.lessonIds.find(
+          (id) => !lessons[id]?.completed && availableLessonIds.includes(id),
+        );
+
         return (
           <section
             key={s.id}
             className={`rounded-2xl border p-4 transition-all ${
-              unlocked
-                ? 'bg-surface border-border'
-                : 'bg-surface-2 border-border opacity-60'
+              unlocked ? 'bg-surface border-border' : 'bg-surface-2 border-border opacity-60'
             }`}
           >
-            <button
-              className="w-full text-left"
-              onClick={() => setOpenId(open ? null : s.id)}
-            >
+            <button className="w-full text-left" onClick={() => toggle(s.id)}>
               <div className="flex items-center gap-3">
                 <div className="flex-1">
                   <div className="font-semibold text-lg">
@@ -87,6 +95,14 @@ export function StagesRoute() {
                   <p className="mt-3 text-xs text-text-muted">
                     🔒 직전 단계 80% 완료 시 자동 해금 · 설정에서 즉시 해금 가능
                   </p>
+                )}
+                {unlocked && firstUnstartedId && (
+                  <button
+                    onClick={() => navigate(`/lesson/${firstUnstartedId}`)}
+                    className="mt-3 w-full rounded-xl bg-accent text-[#2A2522] font-medium px-4 py-3 active:scale-[0.99] transition-all"
+                  >
+                    ▶ {firstUnstartedId.replace('lesson-', '')}강부터 시작
+                  </button>
                 )}
                 <ul className="mt-4 flex flex-col divide-y divide-border">
                   {headings.map((h) => {

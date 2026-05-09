@@ -1,0 +1,117 @@
+[
+  {
+    "id": "q-17-int-01",
+    "lessonId": "lesson-17",
+    "type": "multiple_choice",
+    "difficulty": 1,
+    "tags": ["축약", "be동사"],
+    "prompt": "\"I am a student.\"의 축약형으로 가장 자연스러운 문장은?",
+    "promptKo": "친구한테 자기소개할 때.",
+    "choices": [
+      { "id": "a", "text": "I'am a student." },
+      { "id": "b", "text": "I'm a student." },
+      { "id": "c", "text": "Im a student." },
+      { "id": "d", "text": "I are a student." }
+    ],
+    "answer": "b",
+    "explanation": "I am의 축약은 I'm. 어퍼스트로피는 am에서 a를 빼고 m만 남기는 자리에 들어가요.",
+    "reference": { "lessonId": "lesson-17", "cardId": "lesson-17-card-04" }
+  },
+  {
+    "id": "q-17-fin-01",
+    "lessonId": "lesson-17",
+    "type": "multiple_choice",
+    "difficulty": 1,
+    "tags": ["축약", "be동사"],
+    "prompt": "\"She is tired.\"의 자연스러운 축약은?",
+    "promptKo": "친구가 피곤해 보일 때.",
+    "choices": [
+      { "id": "a", "text": "She is tired." },
+      { "id": "b", "text": "She tired." },
+      { "id": "c", "text": "She's tired." },
+      { "id": "d", "text": "Shes tired." }
+    ],
+    "answer": "c",
+    "explanation": "She is의 축약은 She's. 's는 is의 축약으로 자주 들려요."
+  },
+  {
+    "id": "q-17-fin-02",
+    "lessonId": "lesson-17",
+    "type": "ox",
+    "difficulty": 2,
+    "tags": ["축약", "won't"],
+    "prompt": "won't는 will not의 축약이다.",
+    "answer": true,
+    "explanation": "맞아요! will not은 won't로 줄어요. 발음도 변해서(won) 처음엔 어색할 수 있지만, 가장 자주 듣는 축약 중 하나예요."
+  },
+  {
+    "id": "q-17-fin-03",
+    "lessonId": "lesson-17",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["축약", "do not"],
+    "prompt": "I ___ know the answer.",
+    "promptKo": "답을 몰라.(축약형으로)",
+    "inputMode": "choices",
+    "choices": ["don't", "doesn't", "didn't", "won't"],
+    "answer": ["don't"],
+    "explanation": "I/You/We엔 do not → don't가 짝이에요. doesn't는 He/She용, didn't는 과거용."
+  },
+  {
+    "id": "q-17-fin-04",
+    "lessonId": "lesson-17",
+    "type": "situation_match",
+    "difficulty": 2,
+    "tags": ["연음"],
+    "scenario": "원어민이 \"What are you doing?\"을 빨리 말하면 어떻게 들릴까요?",
+    "scenarioEmoji": "👂",
+    "choices": [
+      { "id": "a", "en": "what · are · you · doing", "ko": "(또박또박, 격식)" },
+      { "id": "b", "en": "와류 두잉", "ko": "(연음) What과 are가 손을 잡음." },
+      { "id": "c", "en": "왓 아 유 두잉", "ko": "(과한 끊어 읽기)" },
+      { "id": "d", "en": "왓츠 두잉", "ko": "(잘못된 축약)" }
+    ],
+    "answer": "b",
+    "explanation": "What(자음으로 끝)과 are(모음으로 시작)가 만나면 자연스럽게 이어져요. \"와류 두잉\" 정도가 자연스러운 원어민 발음이에요."
+  },
+  {
+    "id": "q-17-fin-05",
+    "lessonId": "lesson-17",
+    "type": "multiple_choice",
+    "difficulty": 2,
+    "tags": ["축약", "wanna gonna"],
+    "prompt": "\"I'm gonna call you later.\"는 어떤 문장의 회화 줄임일까요?",
+    "promptKo": "회화에서 자주 듣는 표현.",
+    "choices": [
+      { "id": "a", "text": "I am going to call you later." },
+      { "id": "b", "text": "I am go to call you later." },
+      { "id": "c", "text": "I went to call you later." },
+      { "id": "d", "text": "I have got to call you later." }
+    ],
+    "answer": "a",
+    "explanation": "going to → gonna는 회화의 큰 줄임. 격식 있는 글에선 going to로 다시 풀어 써요."
+  },
+  {
+    "id": "q-17-fin-06",
+    "lessonId": "lesson-17",
+    "type": "ox",
+    "difficulty": 2,
+    "tags": ["축약", "wanna"],
+    "prompt": "이력서 같은 격식 있는 글에 \"I wanna join your team.\"이 자연스럽다.",
+    "answer": false,
+    "explanation": "wanna(= want to)는 회화 전용. 이력서·이메일·논문 같은 격식 있는 글에는 want to로 풀어 쓰세요."
+  },
+  {
+    "id": "q-17-fin-07",
+    "lessonId": "lesson-17",
+    "type": "fill_blank",
+    "difficulty": 2,
+    "tags": ["축약", "will"],
+    "prompt": "I ___ help you tomorrow.",
+    "promptKo": "내일 도와줄게.(축약형)",
+    "inputMode": "choices",
+    "choices": ["I'll", "I'd", "I've", "I'm"],
+    "answer": ["I'll"],
+    "explanation": "I will의 축약은 I'll. I'd는 I would, I've는 I have, I'm은 I am의 축약이에요."
+  }
+]

@@ -4,6 +4,7 @@ import { loadLesson, loadQuizzes, prefetchLesson, listLessonIds } from '@/lib/co
 import type { Lesson, Card } from '@/types/content';
 import type { Quiz } from '@/types/quiz';
 import { useProgressStore } from '@/stores/progressStore';
+import { useSettingsStore } from '@/stores/settingsStore';
 import { CardSwiper, type CardSwiperHandle } from '@/components/card/CardSwiper';
 import { Sheet } from '@/components/ui/Sheet';
 import { ProgressDots } from '@/components/ui/Progress';
@@ -11,16 +12,20 @@ import { Button } from '@/components/ui/Button';
 import { QuizRunner, type QuizSessionResult } from '@/components/quiz/QuizRunner';
 import { QuizResult } from '@/components/quiz/QuizResult';
 import { ShadowingPanel } from '@/components/shadowing/ShadowingPanel';
+import { LessonIntroScreen } from '@/components/card/LessonIntroScreen';
 import { useToast } from '@/components/ui/Toast';
+import { saveResume, clearResume, loadResume } from '@/lib/resume';
+import { useStudyTimer } from '@/lib/sessionTimer';
+import { ko } from '@/i18n/ko';
 
-type Phase = 'cards' | 'interstitial' | 'final-quiz' | 'result';
+type Phase = 'intro' | 'cards' | 'interstitial' | 'final-quiz' | 'result';
 
 export function LessonRoute() {
   const { lessonId } = useParams<{ lessonId: string }>();
   const navigate = useNavigate();
   const [lesson, setLesson] = useState<Lesson | null>(null);
   const [quizzes, setQuizzes] = useState<Quiz[]>([]);
-  const [phase, setPhase] = useState<Phase>('cards');
+  const [phase, setPhase] = useState<Phase>('intro');
   const [activeCard, setActiveCard] = useState<Card | null>(null);
   const [interQuiz, setInterQuiz] = useState<Quiz | null>(null);
   const [resumeIndex, setResumeIndex] = useState(0);
@@ -30,6 +35,7 @@ export function LessonRoute() {
   const [noteDraft, setNoteDraft] = useState('');
   const [result, setResult] = useState<QuizSessionResult | null>(null);
   const swiperRef = useRef<CardSwiperHandle | null>(null);
+  const firedInterstitialsRef = useRef<Set<string>>(new Set());
 
   const lessons = useProgressStore((s) => s.lessons);
   const bookmarks = useProgressStore((s) => s.bookmarks);
@@ -39,26 +45,58 @@ export function LessonRoute() {
   const toggleBookmark = useProgressStore((s) => s.toggleBookmark);
   const saveNote = useProgressStore((s) => s.saveNote);
   const bumpStreak = useProgressStore((s) => s.bumpStreak);
+  const narrationLevel = useSettingsStore((s) => s.narrationLevel);
+  const autoAdvanceMs = useSettingsStore((s) => s.autoAdvanceMs);
   const showToast = useToast((s) => s.show);
+
+  useStudyTimer(true);
 
   useEffect(() => {
     if (!lessonId) return;
+    firedInterstitialsRef.current = new Set();
     void Promise.all([loadLesson(lessonId), loadQuizzes(lessonId)]).then(([l, q]) => {
       if (!l) return;
       setLesson(l);
       setQuizzes(q);
-      const lp = lessons[lessonId];
+
+      const r = loadResume();
+      if (r && r.lessonId === lessonId && typeof r.cardOrder === 'number' && r.cardOrder > 0) {
+        const idx = Math.min(Math.max(0, r.cardOrder - 1), l.cards.length - 1);
+        setResumeIndex(idx);
+        setCardIndex(idx);
+        setPhase('cards');
+        return;
+      }
+      // Read lessons fresh without subscribing — we don't want this effect to re-fire
+      // every time progress updates and stomp ongoing phase state.
+      const lp = useProgressStore.getState().lessons[lessonId];
       if (lp && lp.lastViewedCardOrder > 0 && lp.lastViewedCardOrder < l.cards.length) {
         setResumeIndex(lp.lastViewedCardOrder - 1);
+        setCardIndex(lp.lastViewedCardOrder - 1);
+        setPhase('cards');
+      } else {
+        setPhase('intro');
       }
     });
-    // prefetch next
     const ids = listLessonIds();
     const idx = ids.indexOf(lessonId);
     if (idx >= 0 && idx < ids.length - 1) {
       prefetchLesson(ids[idx + 1]!);
     }
-  }, [lessonId, lessons]);
+  }, [lessonId]);
+
+  useEffect(() => {
+    if (!lessonId || !lesson) return;
+    if (phase === 'intro') return;
+    saveResume({
+      path: `/lesson/${lessonId}`,
+      lessonId,
+      cardOrder: cardIndex + 1,
+      phase: phase === 'cards' || phase === 'interstitial' || phase === 'final-quiz' || phase === 'result'
+        ? phase
+        : 'cards',
+    });
+  }, [lessonId, lesson, cardIndex, phase]);
 
   const finalQuizzes = useMemo(
     () =>
@@ -72,14 +110,45 @@ export function LessonRoute() {
     return <div className="p-8 text-center text-text-muted">불러오는 중…</div>;
   }
 
+  const heroEmoji =
+    lesson.cards.find((c) => c.type === 'hook')?.emoji ?? lesson.cards[0]?.emoji ?? '📘';
+
+  if (phase === 'intro') {
+    return (
+      <div className="flex flex-col h-full">
+        <header className="flex items-center justify-between px-4 pt-3">
+          <button
+            onClick={() => navigate('/stages')}
+            className="w-11 h-11 rounded-full hover:bg-surface-2 flex items-center justify-center"
+            aria-label="나가기"
+          >
+            ✕
+          </button>
+          <button
+            className="text-xs text-text-muted underline"
+            onClick={() => setPhase('cards')}
+          >
+            건너뛰기
+          </button>
+        </header>
+        <LessonIntroScreen
+          title={lesson.title}
+          subtitle={lesson.subtitle}
+          emoji={heroEmoji}
+          onContinue={() => setPhase('cards')}
+        />
+      </div>
+    );
+  }
+
   const handleCardEnter = (card: Card) => {
     setActiveCard(card);
     setCardIndex(card.order - 1);
     void recordCardView(lesson.id, card.order, lesson.cards.length);
-    if (card.afterCardQuizId) {
+    if (card.afterCardQuizId && !firedInterstitialsRef.current.has(card.afterCardQuizId)) {
+      firedInterstitialsRef.current.add(card.afterCardQuizId);
       const q = quizzes.find((x) => x.id === card.afterCardQuizId);
       if (q) {
-        // queue interstitial after slight delay so card animates first
         setTimeout(() => {
           setInterQuiz(q);
           setPhase('interstitial');
@@ -95,6 +164,10 @@ export function LessonRoute() {
   const handleInterstitialFinish = () => {
     setInterQuiz(null);
     setPhase('cards');
+    // After interstitial we want to advance past the card that triggered it.
+    const nextIdx = Math.min(cardIndex + 1, lesson.cards.length - 1);
+    setCardIndex(nextIdx);
+    setResumeIndex(nextIdx);
   };
 
   const handleFinalFinish = (r: QuizSessionResult) => {
@@ -102,6 +175,17 @@ export function LessonRoute() {
     setPhase('result');
     void completeLesson(lesson.id);
     void bumpStreak();
+    clearResume();
+  };
+
+  const handleExit = () => {
+    const lp = lessons[lessonId!];
+    const inProgress = !lp?.completed && cardIndex > 0;
+    if (inProgress) {
+      const okExit = window.confirm(ko.lesson.confirmExit);
+      if (!okExit) return;
+    }
+    navigate('/stages');
   };
 
   const isBookmarked = activeCard ? bookmarks.has(activeCard.id) : false;
@@ -136,34 +220,30 @@ export function LessonRoute() {
   }
 
   if (phase === 'result' && result) {
-    return (
-      <QuizResult
-        result={result}
-        onHome={() => navigate('/')}
-      />
-    );
+    return <QuizResult result={result} onHome={() => navigate('/')} />;
   }
 
   const example = activeCard?.examples?.[0];
   const isFirst = cardIndex <= 0;
   const isLast = cardIndex >= lesson.cards.length - 1;
+  const effectiveAutoAdvance = autoAdvanceMs;
 
   return (
     <div className="flex flex-col h-full max-w-card mx-auto w-full">
       <header className="flex items-center justify-between gap-2 px-4 pt-3 pb-2">
         <button
-          onClick={() => navigate('/stages')}
-          className="w-9 h-9 rounded-full hover:bg-surface-2 flex items-center justify-center"
+          onClick={handleExit}
+          className="w-11 h-11 rounded-full hover:bg-surface-2 flex items-center justify-center"
           aria-label="나가기"
         >
           ✕
         </button>
-        <ProgressDots total={lesson.cards.length} current={cardIndex} />
+        <ProgressDots total={lesson.cards.length} current={cardIndex} showCount />
         <div className="flex gap-1">
           {example && (
             <button
               onClick={() => setShadowOpen(true)}
-              className="w-9 h-9 rounded-full hover:bg-surface-2 flex items-center justify-center"
+              className="w-11 h-11 rounded-full hover:bg-surface-2 flex items-center justify-center"
               aria-label="쉐도잉"
               title="쉐도잉"
             >
@@ -176,7 +256,7 @@ export function LessonRoute() {
               await toggleBookmark(activeCard.id);
               showToast(isBookmarked ? '북마크 해제' : '북마크 됨 🔖');
             }}
-            className="w-9 h-9 rounded-full hover:bg-surface-2 flex items-center justify-center"
+            className="w-11 h-11 rounded-full hover:bg-surface-2 flex items-center justify-center"
             aria-label="북마크"
           >
             {isBookmarked ? '🔖' : '📑'}
@@ -186,7 +266,7 @@ export function LessonRoute() {
               setNoteDraft(currentNote);
               setNoteOpen(true);
             }}
-            className="w-9 h-9 rounded-full hover:bg-surface-2 flex items-center justify-center"
+            className="w-11 h-11 rounded-full hover:bg-surface-2 flex items-center justify-center"
             aria-label="메모"
           >
             📝
@@ -208,6 +288,8 @@ export function LessonRoute() {
         onCardEnter={handleCardEnter}
         onChange={setCardIndex}
         onFinish={handleSwipeFinish}
+        narrationLevel={narrationLevel}
+        autoAdvanceMs={effectiveAutoAdvance}
       />
 
       <div className="px-5 py-3 safe-bottom flex flex-col gap-2">
@@ -231,13 +313,14 @@ export function LessonRoute() {
           </Button>
         </div>
         {!isLast && (
-          <button
-            type="button"
+          <Button
+            variant="ghost"
+            size="sm"
             onClick={handleSwipeFinish}
-            className="text-xs text-text-muted hover:text-text underline-offset-2 hover:underline self-center"
+            className="self-center"
           >
-            건너뛰고 퀴즈로
-          </button>
+            건너뛰고 퀴즈로 →
+          </Button>
         )}
       </div>
 

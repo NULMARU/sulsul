@@ -18,13 +18,13 @@
   --bg: #1b1714;
   --surface: #28221d;
   --surface-2: #322a23;
-  --text: #f4eddb;
-  --text-muted: #b6a998;
+  --text: #f8f1de;
+  --text-muted: #d3c5b0;
   --accent: #f5c842;
   --accent-strong: #ffd55c;
-  --success: #4ade80;
-  --error: #f87171;
-  --border: #3a3128;
+  --success: #6ee29a;
+  --error: #ff8c8c;
+  --border: #4a4034;
   color-scheme: dark;
 }
 

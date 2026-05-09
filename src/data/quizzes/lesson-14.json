@@ -88,20 +88,19 @@
     "id": "q-14-fin-06",
     "lessonId": "lesson-14",
     "type": "translation",
-    "difficulty": 3,
+    "difficulty": 2,
     "tags": ["조동사", "have to"],
-    "promptKo": "그녀는 오늘 밤 꼭 공부해야 한다.",
+    "promptKo": "그녀는 오늘 밤 공부해야 해.",
     "tokens": [
       { "id": "t1", "text": "She" },
       { "id": "t2", "text": "has" },
       { "id": "t3", "text": "have" },
       { "id": "t4", "text": "to" },
       { "id": "t5", "text": "study" },
-      { "id": "t6", "text": "studies" },
-      { "id": "t7", "text": "tonight" }
+      { "id": "t6", "text": "tonight" }
     ],
-    "answer": ["t1", "t2", "t4", "t5", "t7"],
-    "explanation": "She엔 has to (-s 신호). to 뒤의 동사는 원형 — study! She has to study tonight."
+    "answer": ["t1", "t2", "t4", "t5", "t6"],
+    "explanation": "She엔 has to(3인칭 -s). to 뒤의 동사는 항상 원형 — study! 'She has to study tonight.'"
   },
   {
     "id": "q-14-fin-07",
@@ -114,5 +113,35 @@
     "inputMode": "keyboard",
     "answer": ["run"],
     "explanation": "can 뒤엔 동사 원형 — runs가 아니라 run."
+  },
+  {
+    "id": "q-14-fin-08",
+    "lessonId": "lesson-14",
+    "type": "situation_match",
+    "difficulty": 3,
+    "tags": ["조동사", "must vs have to"],
+    "scenario": "지각해서 버스 타려고 뛰는 상황. \"버스 타야 해\"를 가장 자연스럽게 말하면?",
+    "scenarioEmoji": "🚌",
+    "choices": [
+      { "id": "a", "en": "I must catch the bus.", "ko": "(내 결심·강조) 꼭 버스 타야 해." },
+      { "id": "b", "en": "I have to catch the bus.", "ko": "(상황상) 버스 타야 해." },
+      { "id": "c", "en": "I should catch the bus.", "ko": "(권유) 타는 게 좋겠어." },
+      { "id": "d", "en": "I can catch the bus.", "ko": "(가능) 탈 수 있어." }
+    ],
+    "answer": "b",
+    "explanation": "외부 상황(지각·시간 압박) 때문에 어쩔 수 없이 해야 할 땐 have to가 자연스러워요. must는 내 안에서 다짐하는 무거운 느낌이라 친구한테 말할 땐 어색해요."
+  },
+  {
+    "id": "q-14-fin-09",
+    "lessonId": "lesson-14",
+    "type": "fill_blank",
+    "difficulty": 3,
+    "tags": ["조동사", "be able to", "과거"],
+    "prompt": "I was ___ to fix the printer yesterday.",
+    "promptKo": "어제 프린터 고쳤어.(고칠 수 있었어)",
+    "inputMode": "choices",
+    "choices": ["able", "can", "could", "have"],
+    "answer": ["able"],
+    "explanation": "can은 과거 옷이 없으니 그 자리를 be able to가 채워요 — was able to. \"그때 실제로 해냈다\"는 결과까지 담아요."
   }
 ]

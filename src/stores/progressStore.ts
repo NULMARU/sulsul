@@ -5,6 +5,7 @@ import type {
   QuizAttempt,
   DailyStreak,
   UserStats,
+  DailyGoalRow,
 } from '@/types/progress';
 import { scheduleNextReview, todayKey } from '@/lib/srs';
 
@@ -16,6 +17,7 @@ interface ProgressState {
   notes: Record<string, string>;
   streak: DailyStreak;
   stats: UserStats;
+  todayGoal: DailyGoalRow;
   hydrate: () => Promise<void>;
   recordCardView: (lessonId: string, cardOrder: number, totalCards: number) => Promise<void>;
   completeLesson: (lessonId: string) => Promise<void>;
@@ -27,17 +29,31 @@ interface ProgressState {
   toggleBookmark: (cardId: string) => Promise<void>;
   saveNote: (cardId: string, text: string) => Promise<void>;
   bumpStreak: () => Promise<void>;
+  addStudySeconds: (seconds: number) => Promise<void>;
   resetAll: () => Promise<void>;
   exportJson: () => string;
 }
 
-const emptyStreak: DailyStreak = { current: 0, longest: 0, lastStudyDate: '' };
+const emptyStreak: DailyStreak = {
+  current: 0,
+  longest: 0,
+  lastStudyDate: '',
+  freezeAvailable: true,
+};
 const emptyStats: UserStats = {
   totalCardsViewed: 0,
   totalQuizzesAttempted: 0,
   ttsPlays: 0,
   recordingsMade: 0,
+  totalStudySeconds: 0,
 };
+
+const todayGoalDefaults = (): DailyGoalRow => ({
+  date: todayKey(),
+  studiedSeconds: 0,
+  cardsViewed: 0,
+  quizzesAttempted: 0,
+});
 
 export const useProgressStore = create<ProgressState>((set, get) => ({
   hydrated: false,
@@ -47,16 +63,20 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
   notes: {},
   streak: emptyStreak,
   stats: emptyStats,
+  todayGoal: todayGoalDefaults(),
 
   hydrate: async () => {
-    const [lessonRows, quizRows, bookmarkRows, noteRows, streakRow, statsRow] = await Promise.all([
-      db.lessonProgress.toArray(),
-      db.quizAttempts.toArray(),
-      db.bookmarks.toArray(),
-      db.notes.toArray(),
-      db.streak.get('singleton'),
-      db.stats.get('singleton'),
-    ]);
+    const today = todayKey();
+    const [lessonRows, quizRows, bookmarkRows, noteRows, streakRow, statsRow, todayRow] =
+      await Promise.all([
+        db.lessonProgress.toArray(),
+        db.quizAttempts.toArray(),
+        db.bookmarks.toArray(),
+        db.notes.toArray(),
+        db.streak.get('singleton'),
+        db.stats.get('singleton'),
+        db.dailyGoals.get(today),
+      ]);
 
     const lessons: Record<string, LessonProgress> = {};
     lessonRows.forEach((r) => (lessons[r.lessonId] = r));
@@ -66,14 +86,25 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
     const notes: Record<string, string> = {};
     noteRows.forEach((n) => (notes[n.cardId] = n.text));
 
+    const streak: DailyStreak = streakRow
+      ? { ...streakRow, freezeAvailable: streakRow.freezeAvailable ?? true }
+      : emptyStreak;
+
+    const stats: UserStats = statsRow
+      ? { ...statsRow, totalStudySeconds: statsRow.totalStudySeconds ?? 0 }
+      : emptyStats;
+
+    const todayGoal = todayRow ?? { ...todayGoalDefaults(), date: today };
+
     set({
       hydrated: true,
       lessons,
       quizAttempts,
       bookmarks,
       notes,
-      streak: streakRow ?? emptyStreak,
-      stats: statsRow ?? emptyStats,
+      streak,
+      stats,
+      todayGoal,
     });
   },
 
@@ -94,7 +125,8 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
     await db.lessonProgress.put(next);
     const stats = { ...get().stats, totalCardsViewed: get().stats.totalCardsViewed + 1 };
     await db.stats.put({ id: 'singleton', ...stats });
-    set({ lessons: { ...get().lessons, [lessonId]: next }, stats });
+    const todayGoal = await bumpDailyGoal({ cardsViewed: 1 });
+    set({ lessons: { ...get().lessons, [lessonId]: next }, stats, todayGoal });
   },
 
   completeLesson: async (lessonId) => {
@@ -138,7 +170,8 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
       totalQuizzesAttempted: get().stats.totalQuizzesAttempted + 1,
     };
     await db.stats.put({ id: 'singleton', ...stats });
-    set({ quizAttempts: { ...get().quizAttempts, [quizId]: next }, stats });
+    const todayGoal = await bumpDailyGoal({ quizzesAttempted: 1 });
+    set({ quizAttempts: { ...get().quizAttempts, [quizId]: next }, stats, todayGoal });
     return next;
   },
 
@@ -172,18 +205,52 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
     const today = todayKey();
     const prev = get().streak;
     if (prev.lastStudyDate === today) return;
+
     const yesterday = new Date();
     yesterday.setDate(yesterday.getDate() - 1);
     const yKey = todayKey(yesterday);
-    const continuing = prev.lastStudyDate === yKey;
-    const nextCurrent = continuing ? prev.current + 1 : 1;
+    const dayBeforeYesterday = new Date();
+    dayBeforeYesterday.setDate(dayBeforeYesterday.getDate() - 2);
+    const dbyKey = todayKey(dayBeforeYesterday);
+
+    let nextCurrent: number;
+    let freezeAvailable = prev.freezeAvailable;
+    let freezeUsedAt = prev.freezeUsedAt;
+
+    if (prev.lastStudyDate === yKey) {
+      nextCurrent = prev.current + 1;
+    } else if (prev.lastStudyDate === dbyKey && prev.freezeAvailable) {
+      nextCurrent = prev.current + 1;
+      freezeAvailable = false;
+      freezeUsedAt = today;
+    } else {
+      nextCurrent = 1;
+    }
+
+    if (nextCurrent > 0 && nextCurrent % 7 === 0) {
+      freezeAvailable = true;
+    }
+
     const next: DailyStreak = {
       current: nextCurrent,
       longest: Math.max(prev.longest, nextCurrent),
       lastStudyDate: today,
+      freezeAvailable,
+      freezeUsedAt,
     };
     await db.streak.put({ id: 'singleton', ...next });
     set({ streak: next });
+  },
+
+  addStudySeconds: async (seconds) => {
+    if (seconds <= 0) return;
+    const stats = {
+      ...get().stats,
+      totalStudySeconds: get().stats.totalStudySeconds + seconds,
+    };
+    await db.stats.put({ id: 'singleton', ...stats });
+    const todayGoal = await bumpDailyGoal({ studiedSeconds: seconds });
+    set({ stats, todayGoal });
   },
 
   resetAll: async () => {
@@ -194,6 +261,7 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
       db.notes.clear(),
       db.streak.clear(),
       db.stats.clear(),
+      db.dailyGoals.clear(),
     ]);
     set({
       lessons: {},
@@ -202,6 +270,7 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
       notes: {},
       streak: emptyStreak,
       stats: emptyStats,
+      todayGoal: todayGoalDefaults(),
     });
   },
 
@@ -215,6 +284,7 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
         notes: s.notes,
         streak: s.streak,
         stats: s.stats,
+        todayGoal: s.todayGoal,
         exportedAt: new Date().toISOString(),
       },
       null,
@@ -222,3 +292,21 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
     );
   },
 }));
+
+async function bumpDailyGoal(delta: Partial<DailyGoalRow>): Promise<DailyGoalRow> {
+  const today = todayKey();
+  const prev = (await db.dailyGoals.get(today)) ?? {
+    date: today,
+    studiedSeconds: 0,
+    cardsViewed: 0,
+    quizzesAttempted: 0,
+  };
+  const next: DailyGoalRow = {
+    date: today,
+    studiedSeconds: prev.studiedSeconds + (delta.studiedSeconds ?? 0),
+    cardsViewed: prev.cardsViewed + (delta.cardsViewed ?? 0),
+    quizzesAttempted: prev.quizzesAttempted + (delta.quizzesAttempted ?? 0),
+  };
+  await db.dailyGoals.put(next);
+  return next;
+}

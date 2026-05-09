@@ -3,20 +3,35 @@ import { persist } from 'zustand/middleware';
 
 export type ThemeMode = 'system' | 'light' | 'dark';
 export type FontSize = 'sm' | 'md' | 'lg';
+export type NarrationLevel = 'off' | 'examples' | 'cards' | 'all';
 
 interface SettingsState {
   darkMode: ThemeMode;
   fontSize: FontSize;
   ttsRate: number;
+  ttsPitch: number;
   ttsVoiceURI: string | null;
+  ttsKoreanVoiceURI: string | null;
   unlockAllStages: boolean;
   notificationEnabled: boolean;
+  notificationTime: string;
+  dailyMinutesGoal: number;
+  narrationLevel: NarrationLevel;
+  narrateLessonIntro: boolean;
+  autoAdvanceMs: number;
   setDarkMode: (m: ThemeMode) => void;
   setFontSize: (s: FontSize) => void;
   setTtsRate: (r: number) => void;
+  setTtsPitch: (p: number) => void;
   setTtsVoiceURI: (v: string | null) => void;
+  setTtsKoreanVoiceURI: (v: string | null) => void;
   setUnlockAll: (v: boolean) => void;
   setNotificationEnabled: (v: boolean) => void;
+  setNotificationTime: (t: string) => void;
+  setDailyMinutesGoal: (m: number) => void;
+  setNarrationLevel: (n: NarrationLevel) => void;
+  setNarrateLessonIntro: (v: boolean) => void;
+  setAutoAdvanceMs: (n: number) => void;
 }
 
 export const useSettingsStore = create<SettingsState>()(
@@ -24,18 +39,48 @@ export const useSettingsStore = create<SettingsState>()(
     (set) => ({
       darkMode: 'system',
       fontSize: 'md',
-      ttsRate: 1.0,
+      ttsRate: 0.95,
+      ttsPitch: 1.0,
       ttsVoiceURI: null,
-      unlockAllStages: false,
+      ttsKoreanVoiceURI: null,
+      unlockAllStages: true,
       notificationEnabled: false,
+      notificationTime: '21:00',
+      dailyMinutesGoal: 5,
+      narrationLevel: 'examples',
+      narrateLessonIntro: true,
+      autoAdvanceMs: 0,
       setDarkMode: (m) => set({ darkMode: m }),
       setFontSize: (s) => set({ fontSize: s }),
       setTtsRate: (r) => set({ ttsRate: r }),
+      setTtsPitch: (p) => set({ ttsPitch: p }),
       setTtsVoiceURI: (v) => set({ ttsVoiceURI: v }),
+      setTtsKoreanVoiceURI: (v) => set({ ttsKoreanVoiceURI: v }),
       setUnlockAll: (v) => set({ unlockAllStages: v }),
       setNotificationEnabled: (v) => set({ notificationEnabled: v }),
+      setNotificationTime: (t) => set({ notificationTime: t }),
+      setDailyMinutesGoal: (m) => set({ dailyMinutesGoal: m }),
+      setNarrationLevel: (n) => set({ narrationLevel: n }),
+      setNarrateLessonIntro: (v) => set({ narrateLessonIntro: v }),
+      setAutoAdvanceMs: (n) => set({ autoAdvanceMs: n }),
     }),
-    { name: 'sulsul-settings' },
+    {
+      name: 'sulsul-settings',
+      version: 2,
+      migrate: (persisted: unknown, version: number) => {
+        const p = (persisted ?? {}) as Record<string, unknown>;
+        if (version < 2) {
+          // headphoneMode -> narrationLevel + autoAdvanceMs
+          const hm = p.headphoneMode === true;
+          if (hm && !p.narrationLevel) p.narrationLevel = 'examples';
+          if (hm && p.autoAdvanceMs == null) p.autoAdvanceMs = 3000;
+          delete p.headphoneMode;
+          if (p.ttsRate == null) p.ttsRate = 0.95;
+          if (p.ttsPitch == null) p.ttsPitch = 1.0;
+        }
+        return p as Partial<SettingsState>;
+      },
+    },
   ),
 );
 

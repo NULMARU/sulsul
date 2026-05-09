@@ -1,0 +1,121 @@
+{
+  "id": "lesson-18",
+  "stageId": "stage-3-advanced",
+  "order": 18,
+  "title": "수동태",
+  "subtitle": "be + p.p. — 주인공이 바뀌는 카메라 앵글",
+  "estimatedMinutes": 7,
+  "objectives": [
+    "수동태는 \"누가 했는지\"보다 \"누가 당했는지\"에 카메라를 둔다",
+    "be + p.p. 형태로 쓴다 (am/is/are/was/were + p.p.)",
+    "by + 행위자는 필요할 때만 붙인다"
+  ],
+  "keyPhrases": [
+    "The window was broken.",
+    "English is spoken here.",
+    "The cake was made by my mom.",
+    "I was born in 1995.",
+    "It is written on the wall."
+  ],
+  "cards": [
+    {
+      "id": "lesson-18-card-01",
+      "order": 1,
+      "type": "hook",
+      "emoji": "🎬",
+      "text": "\"The window broke\"가 아니라 \"The window was broken\". 누가 깼는지보다 \"창문이 깨졌다\"는 사실에 카메라가 멈춰요. 어떤 차이일까요?"
+    },
+    {
+      "id": "lesson-18-card-02",
+      "order": 2,
+      "type": "narration",
+      "text": "한국어로 \"누가 그 창문 깼어?\"라고 묻기보다 \"창문이 깨졌어\"라고 말하는 순간이 있죠. 행위자가 누군지 모르거나, 중요하지 않거나, 굳이 말하기 싫을 때. 영어도 똑같이 카메라 앵글을 바꿔요. 그게 수동태예요."
+    },
+    {
+      "id": "lesson-18-card-03",
+      "order": 3,
+      "type": "analogy",
+      "emoji": "📸",
+      "text": "능동태가 \"누가 무엇을 했다\"의 행위자 시점이라면, 수동태는 \"무엇이 어떻게 됐다\"의 결과 시점. 카메라가 돌아간 거예요. 형태는 be + p.p. — 동사가 \"당함의 모습(p.p.)\"으로 옷을 갈아입어요.",
+      "examples": [
+        { "emoji": "🎯", "en": "He broke the window.", "ko": "(능동) 그가 창문을 깼다." },
+        { "emoji": "🪟", "en": "The window was broken.", "ko": "(수동) 창문이 깨졌다." }
+      ]
+    },
+    {
+      "id": "lesson-18-card-04",
+      "order": 4,
+      "type": "example",
+      "text": "수동태의 공식은 단순해요 — 주어 + be동사 + p.p. be동사가 시제(현재·과거·미래)를 담당하고, p.p.는 \"당함\"을 담당해요.",
+      "examples": [
+        { "emoji": "🌍", "en": "English is spoken here.", "ko": "(현재) 여긴 영어가 쓰여요." },
+        { "emoji": "🎂", "en": "The cake was made yesterday.", "ko": "(과거) 그 케이크 어제 만들어졌어." }
+      ],
+      "highlight": "is spoken / was made",
+      "tip": "1강의 \"평소 옷\", 3강의 \"어제 옷\"이 be에 그대로 묻어요. 옷 갈아입기는 be가 담당!",
+      "afterCardQuizId": "q-18-int-01"
+    },
+    {
+      "id": "lesson-18-card-05",
+      "order": 5,
+      "type": "example",
+      "emoji": "👤",
+      "text": "행위자가 누군지 알리고 싶으면 by + 사람을 뒤에 붙여요. 하지만 대부분의 수동태는 행위자가 모르거나·중요하지 않아서 by를 안 붙여요.",
+      "examples": [
+        { "emoji": "👩‍🍳", "en": "The cake was made by my mom.", "ko": "그 케이크 엄마가 만든 거야." },
+        { "emoji": "🤷", "en": "My bike was stolen.", "ko": "내 자전거 도둑맞았어.(누가 가져갔는지 모름)" }
+      ],
+      "highlight": "by / (생략)"
+    },
+    {
+      "id": "lesson-18-card-06",
+      "order": 6,
+      "type": "analogy",
+      "emoji": "🎯",
+      "text": "수동태가 자연스러운 순간들이 있어요. ① 행위자를 모를 때 (\"My phone was stolen.\"). ② 행위자가 너무 뻔할 때 (\"English is spoken in the US.\" — 누구긴 누구겠어요). ③ 결과·상태에 카메라를 두고 싶을 때 (\"It is written on the wall.\")."
+    },
+    {
+      "id": "lesson-18-card-07",
+      "order": 7,
+      "type": "example",
+      "text": "한국어 \"태어나다\", \"만들어지다\", \"쓰여 있다\"는 영어에선 거의 항상 수동태로 표현돼요. be born, be made, be written 같이 한 덩어리로 외워두면 편해요.",
+      "examples": [
+        { "emoji": "👶", "en": "I was born in 1995.", "ko": "1995년에 태어났어." },
+        { "emoji": "📝", "en": "It is written on the wall.", "ko": "벽에 쓰여 있어." }
+      ],
+      "highlight": "was born / is written",
+      "tip": "be born은 \"태어나다\"의 영어식 모습. \"I born\"이라고 하면 어색해요 — 한국어 직역의 함정!"
+    },
+    {
+      "id": "lesson-18-card-08",
+      "order": 8,
+      "type": "example",
+      "emoji": "🔄",
+      "text": "능동을 수동으로 바꾸는 연습 — 능동의 목적어가 수동의 주어로 점프해요. 동사는 be + p.p.로 옷 갈아입고, 능동의 주어는 by 뒤로 가거나 사라져요.",
+      "examples": [
+        { "emoji": "🎯", "en": "Shakespeare wrote Hamlet.", "ko": "(능동) 셰익스피어가 햄릿을 썼다." },
+        { "emoji": "📜", "en": "Hamlet was written by Shakespeare.", "ko": "(수동) 햄릿은 셰익스피어가 썼다.(주인공이 햄릿!)" }
+      ]
+    },
+    {
+      "id": "lesson-18-card-09",
+      "order": 9,
+      "type": "summary",
+      "emoji": "📸",
+      "text": "수동태는 카메라 앵글을 \"당하는 쪽\"으로 돌리는 옷. 형태는 be + p.p., 시제는 be가 담당. by + 행위자는 필요할 때만. 행위자 모름·뻔함·결과 강조 — 이 세 순간엔 수동태가 자연스러워요.",
+      "examples": [
+        { "emoji": "🌍", "en": "English is spoken all over the world.", "ko": "영어는 전 세계에서 쓰여요." }
+      ]
+    }
+  ],
+  "interstitialQuizIds": ["q-18-int-01"],
+  "finalQuizIds": [
+    "q-18-fin-01",
+    "q-18-fin-02",
+    "q-18-fin-03",
+    "q-18-fin-04",
+    "q-18-fin-05",
+    "q-18-fin-06",
+    "q-18-fin-07"
+  ]
+}

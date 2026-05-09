@@ -205,5 +205,34 @@
     "answer": ["going"],
     "explanation": "이미 마음먹은 계획엔 be going to. \"I'm going to start ~\" 형태가 자연스러워요.",
     "reference": { "lessonId": "lesson-04" }
+  },
+  {
+    "id": "boss-1-q14",
+    "lessonId": "boss-stage-1",
+    "type": "multiple_choice",
+    "difficulty": 1,
+    "tags": ["발음", "축약"],
+    "prompt": "\"She is tired.\"의 가장 자연스러운 회화 축약은?",
+    "promptKo": "친구한테 말할 때.",
+    "choices": [
+      { "id": "a", "text": "She tired." },
+      { "id": "b", "text": "She's tired." },
+      { "id": "c", "text": "Shes tired." },
+      { "id": "d", "text": "She'is tired." }
+    ],
+    "answer": "b",
+    "explanation": "She is의 축약은 She's. 'is가 's로 줄어드는 가장 흔한 축약이에요.",
+    "reference": { "lessonId": "lesson-17" }
+  },
+  {
+    "id": "boss-1-q15",
+    "lessonId": "boss-stage-1",
+    "type": "ox",
+    "difficulty": 2,
+    "tags": ["발음", "축약"],
+    "prompt": "\"won't\"는 will not의 축약이다.",
+    "answer": true,
+    "explanation": "맞아요! will not → won't. 발음도 변해서(won) 처음엔 어색하지만 가장 자주 듣는 축약 중 하나예요.",
+    "reference": { "lessonId": "lesson-17" }
   }
 ]

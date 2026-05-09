@@ -19,12 +19,12 @@ export function BottomNav() {
               to={it.to}
               end={it.to === '/'}
               className={({ isActive }) =>
-                `flex flex-col items-center justify-center gap-0.5 py-2 transition-colors ${
+                `flex flex-col items-center justify-center gap-0.5 min-h-[56px] py-2 transition-colors ${
                   isActive ? 'text-accent-strong' : 'text-text-muted'
                 }`
               }
             >
-              <span className="text-xl">{it.icon}</span>
+              <span className="text-xl leading-none">{it.icon}</span>
               <span className="text-[11px]">{it.label}</span>
             </NavLink>
           </li>

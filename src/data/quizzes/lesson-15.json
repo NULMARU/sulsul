@@ -121,5 +121,22 @@
     "inputMode": "keyboard",
     "answer": ["could"],
     "explanation": "\"옛날엔 ~할 수 있었다\"는 could. can의 어제 옷이에요."
+  },
+  {
+    "id": "q-15-fin-08",
+    "lessonId": "lesson-15",
+    "type": "situation_match",
+    "difficulty": 3,
+    "tags": ["조동사", "had better"],
+    "scenario": "비가 많이 올 것 같아 친구한테 \"우산 챙기는 게 좋을 거야, 안 그러면 비 맞아\"라고 강하게 권하고 싶어요.",
+    "scenarioEmoji": "⛈️",
+    "choices": [
+      { "id": "a", "en": "You should take an umbrella.", "ko": "(부드러운 권유)" },
+      { "id": "b", "en": "You'd better take an umbrella.", "ko": "(강한 충고) 안 그러면 비 맞아." },
+      { "id": "c", "en": "You can take an umbrella.", "ko": "(가능)" },
+      { "id": "d", "en": "You must take an umbrella.", "ko": "(의무·과한 강제)" }
+    ],
+    "answer": "b",
+    "explanation": "\"안 그러면\" 결과가 살짝 위협적인 충고는 had better가 자연스러워요. should보다 한 단계 무겁고, must보다는 가벼워요."
   }
 ]

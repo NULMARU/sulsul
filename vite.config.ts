@@ -33,6 +33,29 @@ export default defineConfig({
             purpose: 'maskable',
           },
         ],
+        shortcuts: [
+          {
+            name: '오늘의 복습',
+            short_name: '복습',
+            description: '오늘 복습할 문항을 바로 풀어요',
+            url: '/#/review',
+            icons: [{ src: 'icons/icon-192.png', sizes: '192x192' }],
+          },
+          {
+            name: '1분 복습',
+            short_name: '1분 복습',
+            description: '자투리 시간 3문항만 빠르게',
+            url: '/#/review?n=3',
+            icons: [{ src: 'icons/icon-192.png', sizes: '192x192' }],
+          },
+          {
+            name: '오답 복습',
+            short_name: '오답만',
+            description: '어제 틀린 문제 우선 복습',
+            url: '/#/review?wrong=1',
+            icons: [{ src: 'icons/icon-192.png', sizes: '192x192' }],
+          },
+        ],
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,webmanifest,json}'],

@@ -122,5 +122,22 @@
     "inputMode": "keyboard",
     "answer": ["yet"],
     "explanation": "의문문에서 \"아직 ~?\"를 묻는 단짝은 yet — 문장 맨 끝에 자주 와요."
+  },
+  {
+    "id": "q-10-fin-08",
+    "lessonId": "lesson-10",
+    "type": "multiple_choice",
+    "difficulty": 2,
+    "tags": ["현재완료", "신호어 위치"],
+    "prompt": "\"아직 안 끝냈어\"를 가장 자연스럽게 표현한 문장은?",
+    "promptKo": "yet의 자리를 잡아보세요.",
+    "choices": [
+      { "id": "a", "text": "I yet haven't finished it." },
+      { "id": "b", "text": "I haven't yet finished it." },
+      { "id": "c", "text": "I haven't finished it yet." },
+      { "id": "d", "text": "I have finished it not yet." }
+    ],
+    "answer": "c",
+    "explanation": "yet은 부정문에서도 문장 맨 끝에 가는 게 가장 자연스러워요. already(가운데)와 자리가 다르다는 점!"
   }
 ]

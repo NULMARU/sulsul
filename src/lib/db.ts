@@ -6,6 +6,7 @@ import type {
   UserStats,
   BookmarkRow,
   NoteRow,
+  DailyGoalRow,
 } from '@/types/progress';
 
 type StreakRow = DailyStreak & { id: 'singleton' };
@@ -18,6 +19,7 @@ export class SulsulDB extends Dexie {
   notes!: Table<NoteRow, string>;
   streak!: Table<StreakRow, 'singleton'>;
   stats!: Table<StatsRow, 'singleton'>;
+  dailyGoals!: Table<DailyGoalRow, string>;
 
   constructor() {
     super('sulsul-db');
@@ -28,6 +30,15 @@ export class SulsulDB extends Dexie {
       notes: 'cardId',
       streak: 'id',
       stats: 'id',
+    });
+    this.version(2).stores({
+      lessonProgress: 'lessonId, completed',
+      quizAttempts: 'quizId, lessonId, nextReviewAt, mastered',
+      bookmarks: 'cardId, createdAt',
+      notes: 'cardId',
+      streak: 'id',
+      stats: 'id',
+      dailyGoals: 'date',
     });
   }
 }

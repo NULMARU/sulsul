@@ -245,5 +245,34 @@
     "answer": "b",
     "explanation": "지금 시간 없는 현실 → 한 칸 뒤로(had + would). 두 부분 짝 맞춰주기.",
     "reference": { "lessonId": "lesson-16" }
+  },
+  {
+    "id": "boss-3-q16",
+    "lessonId": "boss-stage-3",
+    "type": "multiple_choice",
+    "difficulty": 2,
+    "tags": ["수동태"],
+    "prompt": "English ___ all over the world.",
+    "promptKo": "영어는 전 세계에서 쓰여요.(수동)",
+    "choices": [
+      { "id": "a", "text": "speaks" },
+      { "id": "b", "text": "is speaking" },
+      { "id": "c", "text": "is spoken" },
+      { "id": "d", "text": "spoke" }
+    ],
+    "answer": "c",
+    "explanation": "행위자(전 세계 사람들)가 너무 뻔할 땐 수동이 자연스러워요. be + p.p. — speak의 p.p.는 spoken.",
+    "reference": { "lessonId": "lesson-18" }
+  },
+  {
+    "id": "boss-3-q17",
+    "lessonId": "boss-stage-3",
+    "type": "ox",
+    "difficulty": 2,
+    "tags": ["수동태", "be born"],
+    "prompt": "\"I born in Seoul.\"은 자연스러운 영어다.",
+    "answer": false,
+    "explanation": "\"태어나다\"는 영어에선 항상 수동 — be born. 'I was born in Seoul.'가 맞아요.",
+    "reference": { "lessonId": "lesson-18" }
   }
 ]

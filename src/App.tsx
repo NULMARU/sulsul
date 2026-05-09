@@ -1,10 +1,11 @@
 import { useEffect, lazy, Suspense } from 'react';
-import { HashRouter, Route, Routes, useLocation } from 'react-router-dom';
+import { HashRouter, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import { useProgressStore } from '@/stores/progressStore';
 import { useSettingsStore, applyTheme } from '@/stores/settingsStore';
 import { BottomNav } from '@/components/BottomNav';
 import { ToastHost } from '@/components/ui/Toast';
 import { HomeRoute } from '@/routes/HomeRoute';
+import { loadResume } from '@/lib/resume';
 
 const StagesRoute = lazy(() =>
   import('@/routes/StagesRoute').then((m) => ({ default: m.StagesRoute })),
@@ -29,6 +30,25 @@ function RouteFallback() {
   return <div className="p-8 text-center text-text-muted">불러오는 중…</div>;
 }
 
+const RESUME_MAX_AGE_MS = 60 * 60 * 1000; // 1 hour
+
+function ResumeOnce() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname !== '/' || location.search) return;
+    const r = loadResume();
+    if (!r) return;
+    if (Date.now() - r.updatedAt > RESUME_MAX_AGE_MS) return;
+    if (!r.path || r.path === '/') return;
+    navigate(r.path, { replace: true });
+    // run only once on mount
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  return null;
+}
+
 function Shell() {
   const location = useLocation();
   const hideNav =
@@ -36,6 +56,7 @@ function Shell() {
 
   return (
     <div className="flex flex-col h-full">
+      <ResumeOnce />
       <main className="flex-1 overflow-y-auto flex flex-col">
         <Suspense fallback={<RouteFallback />}>
           <Routes>

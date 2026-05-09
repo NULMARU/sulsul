@@ -21,6 +21,8 @@ export interface DailyStreak {
   current: number;
   longest: number;
   lastStudyDate: string;
+  freezeAvailable: boolean;
+  freezeUsedAt?: string;
 }
 
 export interface UserStats {
@@ -28,6 +30,14 @@ export interface UserStats {
   totalQuizzesAttempted: number;
   ttsPlays: number;
   recordingsMade: number;
+  totalStudySeconds: number;
+}
+
+export interface DailyGoalRow {
+  date: string;
+  studiedSeconds: number;
+  cardsViewed: number;
+  quizzesAttempted: number;
 }
 
 export interface BookmarkRow {
