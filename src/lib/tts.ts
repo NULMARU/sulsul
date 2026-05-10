@@ -101,7 +101,7 @@ interface Segment {
   text: string;
 }
 
-const ENGLISH_RE = /[A-Za-z](?:[A-Za-z'.\-]|\s+(?=[A-Za-z]))*/g;
+const ENGLISH_RE = /[A-Za-z](?:[A-Za-z'.-]|\s+(?=[A-Za-z]))*/g;
 
 export function segmentMixed(input: string): Segment[] {
   const text = input.replace(/\s+/g, ' ').trim();

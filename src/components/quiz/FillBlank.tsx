@@ -11,7 +11,7 @@ interface Props {
 }
 
 function renderPrompt(prompt: string, filled?: string) {
-  const parts = prompt.split(/(\_\_\_|\{blank\})/g);
+  const parts = prompt.split(/(___|\{blank\})/g);
   return (
     <span>
       {parts.map((p, i) =>

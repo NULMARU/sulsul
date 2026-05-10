@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import type { WordArrangeQuiz, TranslationQuiz } from '@/types/quiz';
 import { Button } from '@/components/ui/Button';
 
@@ -11,11 +11,16 @@ interface Props {
 }
 
 export function WordArrange({ quiz, onAnswer, locked, selectedAnswer, showResult }: Props) {
-  const [arranged, setArranged] = useState<string[]>([]);
-
-  useEffect(() => {
-    if (selectedAnswer) setArranged(selectedAnswer);
-  }, [selectedAnswer]);
+  // Derived-state-from-prop pattern: when the parent commits a selectedAnswer (e.g.,
+  // showing the locked submitted answer), reset our local pick to mirror it.
+  const [localArranged, setLocalArranged] = useState<string[]>([]);
+  const [prevSelected, setPrevSelected] = useState<string[] | null>(selectedAnswer);
+  if (selectedAnswer !== prevSelected) {
+    setPrevSelected(selectedAnswer);
+    if (selectedAnswer) setLocalArranged(selectedAnswer);
+  }
+  const arranged = localArranged;
+  const setArranged = setLocalArranged;
 
   const tokenById = Object.fromEntries(quiz.tokens.map((t) => [t.id, t]));
   const pool = quiz.tokens.map((t) => t.id).filter((id) => !arranged.includes(id));

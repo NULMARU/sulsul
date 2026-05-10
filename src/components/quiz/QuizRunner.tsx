@@ -49,10 +49,13 @@ export function QuizRunner({ quizzes, onFinish, onExit, showProgress = true }: Q
   const quiz = quizzes[index]!;
   const total = quizzes.length;
 
-  useEffect(() => {
+  // Reset answer state when the quiz index changes — derived-from-prop pattern.
+  const [prevIndex, setPrevIndex] = useState(index);
+  if (prevIndex !== index) {
+    setPrevIndex(index);
     setPhase('answering');
     setSelected(null);
-  }, [index]);
+  }
 
   // Narrate quiz prompt when level === 'all'. We deliberately do NOT read option text,
   // both to avoid spoiling answers and to keep the audio short.
@@ -90,7 +93,7 @@ export function QuizRunner({ quizzes, onFinish, onExit, showProgress = true }: Q
       clearTimeout(t);
       cancel();
     };
-  }, [quiz.id, narrationLevel, koreanVoiceURI, englishVoiceURI, ttsRate, ttsPitch]);
+  }, [quiz, narrationLevel, koreanVoiceURI, englishVoiceURI, ttsRate, ttsPitch]);
 
   const handleAnswer = async (ans: AnswerValue) => {
     if (phase !== 'answering') return;

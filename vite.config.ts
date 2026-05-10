@@ -6,7 +6,12 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
+// GitHub Pages serves the project at https://<user>.github.io/sulsul/, so all asset
+// URLs need to be prefixed. Override locally with `BASE_PATH=/` for root deployment.
+const BASE = process.env.BASE_PATH ?? '/sulsul/';
+
 export default defineConfig({
+  base: BASE,
   plugins: [
     react(),
     VitePWA({
@@ -22,7 +27,9 @@ export default defineConfig({
         display: 'standalone',
         orientation: 'portrait',
         lang: 'ko',
-        start_url: '/',
+        scope: BASE,
+        start_url: BASE,
+        id: BASE,
         icons: [
           { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' },
           { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png' },
@@ -38,27 +45,28 @@ export default defineConfig({
             name: '오늘의 복습',
             short_name: '복습',
             description: '오늘 복습할 문항을 바로 풀어요',
-            url: '/#/review',
+            url: `${BASE}#/review`,
             icons: [{ src: 'icons/icon-192.png', sizes: '192x192' }],
           },
           {
             name: '1분 복습',
             short_name: '1분 복습',
             description: '자투리 시간 3문항만 빠르게',
-            url: '/#/review?n=3',
+            url: `${BASE}#/review?n=3`,
             icons: [{ src: 'icons/icon-192.png', sizes: '192x192' }],
           },
           {
             name: '오답 복습',
             short_name: '오답만',
             description: '어제 틀린 문제 우선 복습',
-            url: '/#/review?wrong=1',
+            url: `${BASE}#/review?wrong=1`,
             icons: [{ src: 'icons/icon-192.png', sizes: '192x192' }],
           },
         ],
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,webmanifest,json}'],
+        navigateFallback: `${BASE}index.html`,
         runtimeCaching: [
           {
             urlPattern: ({ url }) => url.origin === 'https://fonts.googleapis.com',

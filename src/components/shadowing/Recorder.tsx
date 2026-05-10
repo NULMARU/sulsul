@@ -3,7 +3,7 @@ import * as recorder from '@/lib/recorder';
 import { useAudioStore } from '@/stores/audioStore';
 import { useProgressStore } from '@/stores/progressStore';
 import { Button } from '@/components/ui/Button';
-import { useToast } from '@/components/ui/Toast';
+import { useToast } from '@/components/ui/useToast';
 
 export function Recorder() {
   const isRecording = useAudioStore((s) => s.isRecording);

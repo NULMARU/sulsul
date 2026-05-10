@@ -8,7 +8,7 @@ import type { Stage } from '@/types/content';
 import { Button } from '@/components/ui/Button';
 import { Progress, ProgressRing } from '@/components/ui/Progress';
 import { isDueToday } from '@/lib/srs';
-import { useToast } from '@/components/ui/Toast';
+import { useToast } from '@/components/ui/useToast';
 import {
   shouldShowReminderToday,
   markReminderShown,

@@ -41,6 +41,8 @@ export function ReviewRoute() {
     }
   }, [filterWrong, params, setParams]);
 
+  // Compute the session deterministically — due-first by SRS priority, then stable
+  // alphabetical filler. Pure render, no Math.random.
   const session = useMemo(() => {
     if (allQuizzes.length === 0) return [];
     const dueIds = Object.values(quizAttempts)
@@ -60,7 +62,8 @@ export function ReviewRoute() {
       const seen = new Set(picks.map((p) => p.id));
       const filler = allQuizzes
         .filter((q) => !seen.has(q.id))
-        .sort(() => Math.random() - 0.5)
+        .slice()
+        .sort((a, b) => a.id.localeCompare(b.id))
         .slice(0, target - picks.length);
       picks = [...picks, ...filler];
     }

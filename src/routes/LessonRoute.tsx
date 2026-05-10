@@ -13,7 +13,7 @@ import { QuizRunner, type QuizSessionResult } from '@/components/quiz/QuizRunner
 import { QuizResult } from '@/components/quiz/QuizResult';
 import { ShadowingPanel } from '@/components/shadowing/ShadowingPanel';
 import { LessonIntroScreen } from '@/components/card/LessonIntroScreen';
-import { useToast } from '@/components/ui/Toast';
+import { useToast } from '@/components/ui/useToast';
 import { saveResume, clearResume, loadResume } from '@/lib/resume';
 import { useStudyTimer } from '@/lib/sessionTimer';
 import { ko } from '@/i18n/ko';

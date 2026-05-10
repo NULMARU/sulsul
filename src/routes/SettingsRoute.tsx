@@ -10,7 +10,7 @@ import {
   type Lang,
 } from '@/lib/tts';
 import { Button } from '@/components/ui/Button';
-import { useToast } from '@/components/ui/Toast';
+import { useToast } from '@/components/ui/useToast';
 import { ko } from '@/i18n/ko';
 import { getPermission, requestPermission } from '@/lib/notification';
 
