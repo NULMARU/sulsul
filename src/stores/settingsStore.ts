@@ -39,7 +39,7 @@ export const useSettingsStore = create<SettingsState>()(
     (set) => ({
       darkMode: 'system',
       fontSize: 'md',
-      ttsRate: 0.95,
+      ttsRate: 1.25,
       ttsPitch: 1.0,
       ttsVoiceURI: null,
       ttsKoreanVoiceURI: null,
@@ -66,17 +66,23 @@ export const useSettingsStore = create<SettingsState>()(
     }),
     {
       name: 'sulsul-settings',
-      version: 2,
+      version: 3,
       migrate: (persisted: unknown, version: number) => {
         const p = (persisted ?? {}) as Record<string, unknown>;
         if (version < 2) {
-          // headphoneMode -> narrationLevel + autoAdvanceMs
           const hm = p.headphoneMode === true;
           if (hm && !p.narrationLevel) p.narrationLevel = 'examples';
           if (hm && p.autoAdvanceMs == null) p.autoAdvanceMs = 3000;
           delete p.headphoneMode;
           if (p.ttsRate == null) p.ttsRate = 0.95;
           if (p.ttsPitch == null) p.ttsPitch = 1.0;
+        }
+        if (version < 3) {
+          // Bump default speech rate to 1.25 — only if user is still on a previous default.
+          // Anyone who explicitly customised to a non-default value keeps their pick.
+          if (p.ttsRate == null || p.ttsRate === 0.95 || p.ttsRate === 1.0) {
+            p.ttsRate = 1.25;
+          }
         }
         return p as Partial<SettingsState>;
       },

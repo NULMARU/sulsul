@@ -106,11 +106,11 @@ export function SettingsRoute() {
             value={String(settings.ttsRate)}
             onChange={(v) => settings.setTtsRate(Number(v))}
             options={[
-              { v: '0.7', l: '0.7×' },
               { v: '0.85', l: '0.85×' },
-              { v: '0.95', l: '0.95×' },
               { v: '1', l: '1×' },
               { v: '1.15', l: '1.15×' },
+              { v: '1.25', l: '1.25×' },
+              { v: '1.5', l: '1.5×' },
             ]}
           />
         </Row>
